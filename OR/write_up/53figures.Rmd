@@ -1,0 +1,423 @@
+\clearpage
+# Figures
+
+<!-- ====================================================================== --> 
+<!-- ******************************* ES *********************************** --> 
+<!-- ====================================================================== --> 
+
+
+<!-- ====================================================================== --> 
+<!-- ******************* Intro section *************************** --> 
+<!-- ====================================================================== --> 
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(stock_fig_loc, "Vermilion_Map.png"), 
+caption = "Oregon and Washington coastlines with rocky habitat indicated by brown shaded areas. Circled areas represent areas of primary vermilion rockfish occurence.",
+label = 'ORWA-map')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(stock_fig_loc, "TM_Vermilion_ORWA.png"), 
+caption = "Total mortality from the southern Oregon and northern Washington recreational fisheries. These represent ninty and ninty-seven percent of the total vermilion removals in each state, respectively.",
+label = 'tm-plot')
+```
+
+
+<!-- ====================================================================== --> 
+<!-- ******************* Data Used in the Model *************************** --> 
+<!-- ====================================================================== --> 
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "data_plot.png"), 
+caption = "Summary of data sources used in the base model",
+label = 'data-plot')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "comp_lendat__multi-fleet_comparison.png"), 
+caption = "Bubble plot of length compositions by year and fleet. Size of the bubble indicates higher proportion. All proportions within year sum to one",
+label = 'comm-rec-lts_bubbs')
+```
+
+
+<!-- ====================================================================== --> 
+<!-- ******************* Data Used in the Model *************************** --> 
+<!-- ====================================================================== --> 
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(index_fig_loc, "OR_ORBS_Index_S-M_coef.png"), 
+caption = "Species coefficients (blue bars) for presence/absence of vermilion rockfish in the ORBS dockside index. Horizontal black bars represent the 95 percent confidence intervals",
+label = 's-m-coef')
+```	
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(index_fig_loc, "OR_ORBS_Index_S-M_ROC.png"), 
+caption = "The ORBS dockside area under the characteristic curve (AUC) plot, which represents the probability that a randomly chosen observation of presence would be assigned a higher ranked prediction than a randomly chosen observation of absence. Values much greater than 0.5 indicate a significant improvement over a random classifier (AUC = 0.5)",
+label = 'OR-ORBS-Index-S-M-ROC')
+```	
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(index_fig_loc, "ORBS_DataSummary.png"), 
+caption = "Characterization of the final subset of ORBS dockside data used in the delta-GLM analyses to develop an index for vermilion rockfish",
+label = 'ORBS-DataSummary')
+```	
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(index_fig_loc, "ORBS_CPUESummary.png"), 
+caption = "The distribution of trip-level raw positive catch CPUE for the ORBS dockside data relative to potential covariates evaluated in the vermilion rockfish delta-GLM analysis",
+label = 'ORBS-CPUESummary')
+```	
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(index_fig_loc, "ScaledQQplot_bin.png"), 
+caption = "Scaled quantile-quantile plot (left) and rank-transformed versus standardized
+residuals (right) for the binomial model of the ORBS dockside index",
+label = 'ScaledQQplot-bin')
+```	
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(index_fig_loc, "ScaledQQplot_pos.png"), 
+caption = "Scaled quantile-quantile plot (left) and rank-transformed versus standardized
+residuals (right) for the positive model of the ORBS dockside index",
+label = 'ScaledQQplot-pos')
+```	
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(index_fig_loc, "ORBS_OR_Dockside_Index.png"), 
+caption = "Final ORBS dockside index for vermilion rockfish",
+label = 'ORBS-OR-Dockside-Index')
+```	
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(index_fig_loc, "prop_zeros_bin_interaction.png"), 
+caption = "Comparison of data distribution for vermilion rockfish CPUE to model-generated replicate data sets used to evaluate uncertainty for the binomial model component",
+label = 'prop-zeros-bin-interaction')
+```	
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(index_fig_loc, "prop_zeros_pos.png"), 
+caption = "Comparison of data distribution for vermilion rockfish CPUE to model-generated replicate data sets used to evaluate uncertainty for the positive model component",
+label = 'prop-zeros-pos')
+```	
+
+
+<!-- ====================================================================== -->
+<!-- *************************     Biology     **************************** --> 
+<!-- ====================================================================== -->
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(bio_fig_loc, "AG_plot_lines_parameters.png"), 
+caption = "Observed length-at-age by data source and sex. Lines indicate fits to the von Bertalanffy growth equation, with parameter estimates provided in the bottom right corner of the figure",
+label = 'len-age-data')
+```	
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "bio1_sizeatage.png"), 
+caption = "Model estimated length-at-age in the beginning of the year. Shaded area indicates 95 percent distribution of length-at-age around the estimated growth curve",
+label = 'len-age-ss')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(bio_fig_loc, "Age_error_plot.png"), 
+caption = "Agein error matrix (age by standard deviation) values by source. The commercial and recreational matrices are based on inter-reader comparisons",
+label = 'age-error')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "bio6_maturity.png"), 
+caption = "Maturity as a function of  length",
+label = 'maturity')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "bio9_fecundity_len.png"), 
+caption = "Fecundity as a function of length",
+label = 'fecundity')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(bio_fig_loc, "Mdensityplots_OR_vermilion.png"), 
+caption = "Composite natural mortality distriubtion for $S. hopkinsi$ using four longevity estimators each with a SD = 0.2 presuming a lognomral error distibution",
+label = 'M_composite_dists')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(bio_fig_loc, "OR_Vermilion_Sexed Length vs Weight_withpower.png"), 
+caption = "Length-weight data and fits to commercially-derived sex-specific vermilion samples",
+label = 'len-weight-fit')
+```
+
+
+<!-- ====================================================================== -->
+<!-- *********************    Selectivity            ********************** --> 
+<!-- ====================================================================== -->
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(paste0(mod_loc, "/plots"), "sel01_multiple_fleets_length1.png"), 
+caption = "Selectivity at length by fleet",
+label = 'selex')
+```
+
+
+<!-- ====================================================================== -->
+<!-- ***********************  Jitters  ************************************ --> 
+<!-- ====================================================================== -->
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "Jitter Results", "jitterplot_01.png"), 
+caption = "Jitter runs for the squarespot rockfish reference model, with jitter run number on the x-axis and -log likelihood value on the y-axis. Blue dot are models that match the likelihood value of the reference model, while red dots deviate from the reference model. All red dots are above the blue dots, indicating no better fit to the reference model was found",
+label = 'jitter_01')
+```
+
+
+<!-- ====================================================================== -->
+<!-- ****************** Fit to the Length Data **************************** --> 
+<!-- ====================================================================== -->
+
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "comp_lenfit__multi-fleet_comparison.png"), 
+caption = "Pearson residuals for the commercial (top panel) and recreational (bottom panel) fleet. Closed bubble are positive residuals (observed > expected) and open bubbles are negative residuals (observed < expected)",
+label = 'com-rec-pearson')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "comp_lenfit_data_weighting_TA1.8_Commercial_fit.png"), 
+caption = "Mean length index from the commercial fishery with 95 percent confidence intervals based on sample sizes and data weighting",
+label = 'com-mean-len-fit')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "comp_lenfit_data_weighting_TA1.8_Recreational_fit.png"), 
+caption = "Mean length index from the recreational fishery with 95 percent confidence intervals based on sample sizes and data weighting",
+label = 'rec-mean-len-fit')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "comp_lenfit__aggregated_across_time.png"), 
+caption = "Aggregated length comps over all years",
+label = 'agg-len-fit')
+```
+
+
+<!-- ====================================================================== -->
+<!-- ****************** Fit to the Age Data ******************************* --> 
+<!-- ====================================================================== -->
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "comp_condAALfit_data_weighting_TA1.8_condAgeCommercial_fit.png"), 
+caption = "Mean age from conditional age-at-length data for the Commercial",
+label = 'com-mean-caal')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "comp_condAALfit_data_weighting_TA1.8_condAgeRecreational_fit.png"), 
+caption = "Mean age observations from the conditional age-at-length data from the Recreational fishery",
+label = 'rec-mean-caal')
+```
+
+
+<!-- ====================================================================== -->
+<!-- ****************** Fit to the Index*********************************** --> 
+<!-- ====================================================================== -->
+
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "index2_cpuefit_Recreational.png"),
+caption = "Fit to the ORBS recreational survey index of abundance",
+label = 'orbs-index-fit')
+```
+
+
+<!-- ====================================================================== -->
+<!-- ************************* Selectivity ******************************** --> 
+<!-- ====================================================================== -->
+
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "sel01_multiple_fleets_length1.png"),
+caption = "Length-based selectivity curves for the commercial and recreational fisheries",
+label = 'fleet_selectivity')
+```
+
+
+<!-- ======================================================= -->  
+<!-- ****************** Time Series ************************ --> 
+<!-- ======================================================= -->
+
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "ts7_Spawning_output_with_95_asymptotic_intervals_intervals.png"), 
+caption = "Estimated time series of spawning biomass",
+label = 'ssb')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "ts1_Total_biomass_(mt).png"), 
+caption = "Estimated time series of total biomass",
+label = 'tot-bio')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "ts9_Relative_spawning_output_intervals.png"), 
+caption = "Estimated time series of fraction of unfished spawning biomass",
+label = 'depl')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "ts11_Age-0_recruits_(1000s)_with_95_asymptotic_intervals.png"), 
+caption = "Estimated time series of age-0 recruits (1000s)",
+label = 'recruits')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "recdevs2_withbars.png"), 
+caption = "Estimated time series of recruitment deviations",
+label = 'rec-devs')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "recdevs3_varcheck.png"), 
+caption = "Recruitment deviations variance by year. This plot tracks the information content contained in each recruitment deviation. Values below the red line (assumed recruitment variability) indicates years with more informed recruitment deviations",
+label = 'rec-devs-sigmas')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "SR_curve.png"), 
+caption = "Stock-recruit curve. Point colors indicate year, with warmer colors indicating earlier years and cooler colors in showing later years",
+label = 'bh-curve')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "recruit_fit_bias_adjust.png"),
+caption = "Recruitment bias adjustment applied in the base model",
+label = 'bias-adj')
+```
+
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "SR_curve.png"), 
+caption = "Stock recruit curve where point color indicate year, with warmer colors (yellow to green) indicating earlier years and cooler colors (blue) showing later years",
+label = 'sr-curve')
+```
+
+
+<!-- ====================================================================== -->
+<!-- ******************       Sensitivity     ***************************** --> 
+<!-- ====================================================================== -->
+
+```{r, echo=FALSE, results='asis'}
+add_figure(
+filein = file.path(sensi_data_fig_loc, "Sensi_logREplot_SB_Dep_F_MSY.png"),
+caption = "Log relative change (log((Model_sensi-Model_ref)/Model_ref)) in data treatment for 5 derived quantities. Colored boxes indicate 95 percent confidence interval of the reference model",
+label = 'sensi-data-RE')
+```
+
+```{r, echo=FALSE, results='asis'}
+add_figure(
+filein = file.path(sensi_data_fig_loc, "compare2_spawnbio_uncertainty.png"),
+caption = "Spawning biomass time series by data treatment compared to the reference model",
+label = 'sensi-data-ssb')
+```
+
+```{r, echo=FALSE, results='asis'}
+add_figure(
+filein = file.path(sensi_data_fig_loc, "compare4_Bratio_uncertainty.png"),
+caption = "Relative spawning biomass time series by data treatment compared to the reference model",
+label = 'sensi-data-depl')
+```
+
+```{r, echo=FALSE, results='asis'}
+add_figure(
+filein = file.path(sensi_data_fig_loc, "Sensi_logREplot_SB_Dep_F_MSY.png"),
+caption = "Log relative change (log((Model_sensi-Model_ref)/Model_ref)) in data treatment for 5 derived quantities. Colored boxes indicate 95 percent confidence interval of the reference model",
+label = 'sensi-modspec-RE')
+```
+
+```{r, echo=FALSE, results='asis'}
+add_figure(
+filein = file.path(sensi_data_fig_loc, "compare2_spawnbio_uncertainty.png"),
+caption = "Spawning biomass time series by data treatment compared to the reference model",
+label = 'sensi-modspec-ssb')
+```
+
+```{r, echo=FALSE, results='asis'}
+add_figure(
+filein = file.path(sensi_data_fig_loc, "compare4_Bratio_uncertainty.png"),
+caption = "Relative spawning biomass time series by data treatment compared to the reference model",
+label = 'sensi-modspec-depl')
+```
+
+
+<!-- ============================================================================== -->
+<!-- ******************      Likelihood Profiles      ***************************** --> 
+<!-- ============================================================================== -->
+
+<!-- ====================================================================== -->
+<!-- ******************    Reference Points    **************************** --> 
+<!-- ====================================================================== -->
+
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "SPR2_minusSPRseries.png"), 
+caption = "Estimated 1 - relative spawning ratio (SPR) by year",
+label = '1-spr')
+```
+
+\clearpage
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "SPR4_phase.png"), 
+caption = "Phase plot of the relative biomass (also referred to as fraction unfished) versus the SPR ratio where each point represents the biomass ratio at the start of the year and the relative fishing intensity in that same year. Lines through the final point show the 95 percent intervals based on the asymptotic uncertainty for each dimension. The shaded ellipse is a 95 percent region which accounts for the estimated correlations between the biomass ratio and SPR ratio",
+label = 'phase')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(mod_loc, "plots", "yield2_yield_curve_with_refpoints.png"), 
+caption = "Equilibrium yield curve for the base case model. Values are based on the 2020
+fishery selectivities and with steepness fixed at 0.80",
+label = 'yield')
+```
+

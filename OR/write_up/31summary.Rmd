@@ -1,0 +1,8 @@
+## Summary of Previous Assessments and Reviews
+There are no previous assessments for the Oregon `r spp` management unit, thus no summary of previous assessments or reviews.
+
+### History of Modeling Approaches
+The previous treatment of `r spp` that contained the area of Oregon was the application of DBSRA in order to determine OFLs, and was not a model to provide estimates of stock status.
+
+### Most Recent STAR Panel and SSC Recommendations (not required for an update assessment)
+There are no recent STAR or SSC recommendations regarding Oregon `r spp`.

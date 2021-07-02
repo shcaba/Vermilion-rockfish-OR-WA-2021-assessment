@@ -1,0 +1,38 @@
+---
+author:
+  - name: Jason M. Cope
+    code: 1
+    first: J
+    middle: M
+    family: Cope
+  - name: Tien-Shui Tsou
+    code: 2
+    first: T
+    middle: '-'
+    family: Tsou
+  - name: Kristen Hinton
+    code: 2
+    first: K
+    middle: ''
+    family: Hinton
+  - name: Corey Niles
+    code: 2
+    first: C
+    middle: ''
+    family: Niles
+author_list: Cope, J.M., T.-. Tsou, K. Hinton, C. Niles
+affiliation:
+  - code: 1
+    address: Northwest Fisheries Science Center, U.S. Department of Commerce, National
+      Oceanic and Atmospheric Administration, National Marine Fisheries Service, 2725
+      Montlake Boulevard East, Seattle, Washington 98112
+  - code: 2
+    address: Washington Department of Fish and Wildlife, 600 Capital Way North, Olympia,
+      Washington 98501
+address:
+  - ^1^Northwest Fisheries Science Center, U.S. Department of Commerce, National Oceanic
+    and Atmospheric Administration, National Marine Fisheries Service, 2725 Montlake
+    Boulevard East, Seattle, Washington 98112
+  - ^2^Washington Department of Fish and Wildlife, 600 Capital Way North, Olympia,
+    Washington 98501
+---
