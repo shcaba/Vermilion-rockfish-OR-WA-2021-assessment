@@ -97,4 +97,4 @@ t = table_format(x = out,
 )
 
 kableExtra::save_kable(t,
-file = file.path("C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/OR/write_up/modspec_RecMisc_sensis.tex"))
+file = file.path("C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/OR/write_up/tex_tables/modspec_RecMisc_sensis.tex"))

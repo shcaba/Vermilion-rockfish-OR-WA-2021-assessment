@@ -10,7 +10,7 @@ executive[["stock"]] <- paste0("This assessment reports the status of ",
 This assessment reports the status of `r spp` (_`r spp.sci`_) off Oregon state using data through `r endyr`. `r Spp` are found in California and Washington waters, but those are treated separately in other stock assessments. The core range of `r spp` are outside of Oregon waters and in Califoria; this assessment thus considers a smaller population under different mangement considerations and exploitation histories than the California `r spp` stocks. There is substantial biogeographic separation in the populations off Oregon and Washington, thus justifying separation of those populations into different management units and stock assessments.
 
 ## Landings{-}
-`r spp` are historically caught both commercially and recreationally mainly by hook and line gear (Figure \ref{fig:es-catch}). Commercial catches ramped up in the late 1960s with decreasing catches since the mid-1980s. Recreational catches started to increase from the 1980s, fluctuating over time, with high catches over the last several years (Table \ref{tab:removalsES}). 
+`r Spp` are historically caught both commercially and recreationally mainly by hook and line gear (Figure \ref{fig:es-catch}). Commercial catches ramped up in the late 1960s with decreasing catches since the mid-1980s. Recreational catches started to increase from the 1980s, fluctuating over time, with high catches over the last several years (Table \ref{tab:removalsES}). 
 
 
 \clearpage
@@ -118,7 +118,7 @@ fishery selectivities and with steepness fixed at 0.80",
 label = 'es-yield')
 ```
 
-Reference points were calculated using the estimated selectivities and catch distributions among fleets in the most recent year of the model, `r endyr` (Table \ref{tab:es-reference}). Sustainable total yield, removals, using an $\text{SPR}_{50\%}$ is `r format(model$derived_quants[model$derived_quants$Label == 'Dead_Catch_SPR', 'Value'], digits = 0, scientific = FALSE, big.mark = ',')` mt. The spawning biomass equivalent to 40 percent of the unfished spawning biomass ($\text{SB}_{40\%}$) calculated using the SPR target ($\text{SPR}_{50\%}$) was `r format(model$derived_quants[model$derived_quants$Label == 'SSB_SPR', 'Value'], digits = 0, scientific = FALSE, big.mark = ',')` mt. Recent removals have been close to the point estimate of potential long-term yields calculated using an $\text{SPR}_{50\%}$ reference point and the population size has been relatively decreasing toward the target over the past few years.
+Reference points were calculated using the estimated selectivities and catch distributions among fleets in the most recent year of the model, `r endyr` (Table \ref{tab:referenceES}). Sustainable total yield, removals, using an $\text{SPR}_{50\%}$ is `r format(model$derived_quants[model$derived_quants$Label == 'Dead_Catch_SPR', 'Value'], digits = 0, scientific = FALSE, big.mark = ',')` mt. The spawning biomass equivalent to 40 percent of the unfished spawning biomass ($\text{SB}_{40\%}$) calculated using the SPR target ($\text{SPR}_{50\%}$) was `r format(model$derived_quants[model$derived_quants$Label == 'SSB_SPR', 'Value'], digits = 0, scientific = FALSE, big.mark = ',')` mt. Recent removals have been close to the point estimate of potential long-term yields calculated using an $\text{SPR}_{50\%}$ reference point and the population size has been relatively decreasing toward the target over the past few years.
 
 \input{tex_tables/e_ReferencePoints_ES.tex}
 

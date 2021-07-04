@@ -25,10 +25,6 @@
 
 \newpage
 
-\include{tex_tables/OR_vermilion_agesamples.tex}
-
-\newpage
-
 \include{tex_tables/ORBS_filter_criteria.tex}
 
 \newpage

@@ -39,7 +39,7 @@
 \usepackage{xcolor}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \hypersetup{
-  pdftitle={Status of Vermilion rockfish (Sebastes miniatus) along the US West - Oregon coast in 2021},
+  pdftitle={Status of Vermilion rockfish (Sebastes miniatus) along the US West - Washington State coast in 2021},
   pdflang={en},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
@@ -112,9 +112,9 @@
 
 
 \date{}
-\newcommand{\trTitle}{Status of Vermilion rockfish (\emph{Sebastes miniatus}) along the US West - Oregon coast in 2021}
+\newcommand{\trTitle}{Status of Vermilion rockfish (\emph{Sebastes miniatus}) along the US West - Washington State coast in 2021}
 \newcommand{\trYear}{2021}
-\newcommand{\trMonth}{June}
+\newcommand{\trMonth}{July}
 \newcommand{\trAuthsLong}{truetruetruetrue}
 \newcommand{\trAuthsBack}{Cope, J.M., T.-. Tsou, K. Hinton, C. Niles}
 \newcommand{\trCitation}{
@@ -139,10 +139,10 @@
 \pagenumbering{roman}
 \noindent
 \begin{center}
-\title{Status of Vermilion rockfish (\emph{Sebastes miniatus}) along the US West - Oregon coast in 2021}
+\title{Status of Vermilion rockfish (\emph{Sebastes miniatus}) along the US West - Washington State coast in 2021}
 % \textnormal{\MakeTextUppercase{\trTitle{}}}
 \vspace{1.5cm}
-{\Large\textbf\newline{Status of Vermilion rockfish (\emph{Sebastes miniatus}) along the US West - Oregon coast in 2021}}
+{\Large\textbf\newline{Status of Vermilion rockfish (\emph{Sebastes miniatus}) along the US West - Washington State coast in 2021}}
 \vfill
 by\\
 Jason M. Cope\textsuperscript{1}\\
@@ -194,6 +194,22 @@ Correct citation for this publication:
 \newcommand{\lt}{\ensuremath <}
 \newcommand{\gt}{\ensuremath >}
 
+\vspace{500cm}
+
+\tagstructbegin{tag=H1}\tagmcbegin{tag=H1}
+
+\hypertarget{disclaimer}{%
+\section*{Disclaimer}\label{disclaimer}}
+\addcontentsline{toc}{section}{Disclaimer}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+\emph{\textbf{These materials do not constitute a formal publication and are for information only. They are in a pre-review, pre-decisional state and should not be formally cited or reproduced. They are to be considered provisional and do not represent any determination or policy of NOAA or the Department of Commerce.}}
+
+\leavevmode\tagmcend\tagstructend\par
+
 \pagebreak
 \pagenumbering{roman}
 \setcounter{page}{1}
@@ -221,7 +237,7 @@ Correct citation for this publication:
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-This assessment reports the status of Vermilion rockfish (\emph{Sebastes miniatus}) off the US West - Oregon coast using data through xxxx.
+This assessment reports the status of vermilion rockfish (\emph{Sebastes miniatus}) off Washington state using data through 2020. Vermilion rockfish are found in California and Orgon waters, but those are treated separately in other stock assessments. The core range of vermilion rockfish are outside of Washington waters and in Califoria; this assessment thus considers a very small population under different mangement considerations and exploitation histories than vermilion rockfish stocks in either California or Oregon. There is substantial biogeographic separation in the populations off Oregon and Washington, thus justifying separation of those populations into different management units and stock assessments.
 
 \leavevmode\tagmcend\tagstructend\par
 
@@ -235,9 +251,25 @@ This assessment reports the status of Vermilion rockfish (\emph{Sebastes miniatu
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-Replace text.
+Vermilion rockfish are historically caught both commercially and recreationally mainly by hook and line gear (Figure \ref{fig:es-catch}). Commercial catches ramped up in the late 1960s with decreasing catches since the mid-1980s. Recreational catches started to increase from the 1980s, fluctuating over time, with high catches over the last several years (Table \ref{tab:removalsES}).
 
 \leavevmode\tagmcend\tagstructend\par
+
+\clearpage
+
+\input{tex_tables/a_Catches_ES.tex}
+
+\tagstructbegin{tag=Figure,alttext={Landings by fleet used in the base model where catches in metric tons by fleet are stacked.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/catch2 landings stacked.png}
+\caption{Landings by fleet used in the base model where catches in metric tons by fleet are stacked.\label{fig:es-catch}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\clearpage
 
 \tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
 
@@ -249,7 +281,19 @@ Replace text.
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-Replace text.
+The stock assessment for vermilion rockfish off Oregon state was developed using the length- and age-structured model Stock Synthesis (version 3.30.16). No previous stock assessment for vermilion rockfish off Oregon has been conducted. Model structure included two fleets (commercial and recreational) and one fishery-based index of abundance. Life history parameters were sex-specific (i.e., a two-sex model) with natural mortality and growth parameters estimated, along with recruitment. The model time domain is 1949 to 2020, with a 12 year forecast beginning in 2021.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+This assessment integrates data and information from multiple sources into one modeling framework. Specifically, the assessment uses landings data, length and conditional age-at-length composition data (using ageing error matrices to incorporate ageing imprecision) for each fishery, and one index of abundance based from the recreational fishery; fixed parameterizations of weight-at-length, maturity-at-length, and fecundity-at-length, the Beverton-Holt stock-recruitment steepness value and recruitment variability. Estimated values include initial population scale ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(lnR_0\)\leavevmode\tagmcend\tagstructend}), natural mortality and growth for each sex, asymptotic selectivity and recruitment deviations. The base model was tuned to account for the weighting of the length and age data and index variances (which was estimated), as well as the specification of recruitment variance and recruitment bias adjustments. Derived quantities include the time series of spawning biomass, age and size structure, and current and projected future stock status.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Uncertainty is explicitly included in this assessment through variances of all estimated parameters, while between model uncertainty is explored through sensitivity analyses such as data treatment and weighting, and model specification sensitivity to the treatment of life history parameters, selectivity, and recruitment. A reference model was selected that best fit the observed data while concomitantly balancing the desire to capture the central tendency across those sources of uncertainty, ensure model realism and tractability, and promote robustness to potential model misspecification.
 
 \leavevmode\tagmcend\tagstructend\par
 
@@ -263,9 +307,33 @@ Replace text.
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-Replace text.
+Spawning output (in millions of eggs) instead of spawning biomass is used to report the mature population scale as fecundity is nonlinearly related to the weight of the population. The estimated spawning output at the beginning of 2021 was 2 mt (\textasciitilde95 percent asymptotic intervals: -1 to 4 mt, Table \ref{tab:ssbES} and Figure \ref{fig:es-ssb}), which when compared to unfished spawning biomass (3 mt) equates to a relative stock status level of 56 percent (\textasciitilde95 percent asymptotic intervals: 6 to 107 percent, Figure \ref{fig:es-depl}). Overall, spawning output declined with the onset of increasing commercial removals in the 1960s, continued to decline with the increase in recreational catches through the 1990s, even dropping below the target relative stock size. Major recruitment pulses since the mid 1990s onward that are supported by each of the data sets caused a sharp increase of the population through the mid 2010s, after which another decline. Minimum relative stock sizes of 55 percent of unfished levels were seen in 2002. Currently the stock is estimated to be well above the management target of {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(SB_{25\%}\)\leavevmode\tagmcend\tagstructend} in 2021 and has remained well above the target throughout the time series (Table \ref{tab:ssbES} and Figure \ref{fig:es-depl}).
 
 \leavevmode\tagmcend\tagstructend\par
+
+\input{tex_tables/b_SSB_ES.tex}
+
+\tagstructbegin{tag=Figure,alttext={Estimated time series of spawning output (circles and line: median; light broken lines: 95 percent intervals) for the base model.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/ts7_Spawning_output_with_95_asymptotic_intervals_intervals.png}
+\caption{Estimated time series of spawning output (circles and line: median; light broken lines: 95 percent intervals) for the base model.\label{fig:es-ssb}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Estimated time series of fraction of unfished spawning output (circles and line: median; light broken lines: 95 percent intervals) for the base model.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/ts9_Relative_spawning_output_intervals.png}
+\caption{Estimated time series of fraction of unfished spawning output (circles and line: median; light broken lines: 95 percent intervals) for the base model.\label{fig:es-depl}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\clearpage
 
 \tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
 
@@ -277,9 +345,33 @@ Replace text.
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-Replace text.
+Recruitment information begins in the 1960s and peaks in the 1990s (Table \ref{tab:recrES} and Figure \ref{fig:es-recruits}). Data were most informative from the the 1990s to the mid-2010s. Peaks years of recruitments are found in years 1993,1994, 1998, 2005 and 2015 (Figure \ref{fig:es-rec-devs}). Overall, the vermilion rockfish stock has not been reduced to levels that would provide considerable information on how recruitment changes with across spawning biomass levels (i.e., inform the steepness parameter). Thus, all recruitment is based on a fixed assumption about steepness ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(h\)\leavevmode\tagmcend\tagstructend} = 0.72) and recruitment variability ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\sigma_R\)\leavevmode\tagmcend\tagstructend} = 0.6).
 
 \leavevmode\tagmcend\tagstructend\par
+
+\input{tex_tables/c_Recr_ES.tex}
+
+\tagstructbegin{tag=Figure,alttext={Estimated time series of age-0 recruits (1000s) for the base model with 95 percent intervals.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/ts11_Age-0_recruits_(1000s)_with_95_asymptotic_intervals.png}
+\caption{Estimated time series of age-0 recruits (1000s) for the base model with 95 percent intervals.\label{fig:es-recruits}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Estimated time series of recruitment deviations.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/recdevs2_withbars.png}
+\caption{Estimated time series of recruitment deviations.\label{fig:es-rec-devs}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\clearpage
 
 \tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
 
@@ -291,7 +383,35 @@ Replace text.
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-Replace text.
+Trends in fishing intensity (1 - SPR) largely mirrored that of landings until the 1990s when recruitment pulses overcame the catches to lower overall fishing intensity (Figure \ref{fig:es-1-spr}). The maximum fishing intensity was 0.75 in 2019, above the target SPR-based harvest rate of 0.50 (1 - {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\text{SPR}_{50\%}\)\leavevmode\tagmcend\tagstructend}). Current levels of 0.4 for 2020 are near the fishing limit. Fishing intensity over the past decade has ranged between 0.4 and 0.75 and the exploitation rate has been high (0.04 - 0.14, Table \ref{tab:exploitES}). Current estimates indicate that vermilion rockfish spawning output is much greater than than the target biomass level ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\text{SB}_{40\%}\)\leavevmode\tagmcend\tagstructend}), though fishing intensity remains near target {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(F_MSY\)\leavevmode\tagmcend\tagstructend} proxy harvest rate.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\input{tex_tables/d_SPR_ES.tex}
+
+\tagstructbegin{tag=Figure,alttext={Estimated 1 - relative spawning ratio (SPR) by year for the base model. The management target is plotted as a red horizontal line and values above this reflect harvest in excess of the proxy harvest rate.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/SPR2_minusSPRseries.png}
+\caption{Estimated 1 - relative spawning ratio (SPR) by year for the base model. The management target is plotted as a red horizontal line and values above this reflect harvest in excess of the proxy harvest rate.\label{fig:es-1-spr}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\clearpage
+
+\tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
+
+\hypertarget{ecosystem-considerations}{%
+\subsection*{Ecosystem Considerations}\label{ecosystem-considerations}}
+\addcontentsline{toc}{subsection}{Ecosystem Considerations}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+No ecosystem considerations are included in this stock assessment.
 
 \leavevmode\tagmcend\tagstructend\par
 
@@ -305,9 +425,39 @@ Replace text.
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-Replace text.
+The 2021 spawning biomass relative to unfished equilibrium spawning biomass is well above the management target of 40 percent of unfished spawning biomass. The relative biomass compared to the ratio of the estimated SPR to the management target ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\text{SPR}_{50\%}\)\leavevmode\tagmcend\tagstructend}) across all model years are shown in Figure \ref{fig:es-phase} where warmer colors (red) represent early years and colder colors (blue) represent recent years. There have been periods where the stock status has decreased below the target and fishing intensity has been higher than the target fishing intensity based on {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\text{SPR}_{50\%}\)\leavevmode\tagmcend\tagstructend}. Figure \ref{fig:es-yield} shows the equilibrium curve based on a steepness value fixed at 0.72 with vertical dashed lines to indicate the estimate of fraction unfished at the start of 2021 (current) and the estimated management targets calculated based on the relative target biomass (B target), the SPR target, and the maximum sustainable yield (MSY).
 
 \leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=Figure,alttext={Phase plot of estimated 1-SPR versus fraction unfished for the base model.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/SPR4_phase.png}
+\caption{Phase plot of estimated 1-SPR versus fraction unfished for the base model.\label{fig:es-phase}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Equilibrium yield curve for the base case model. Values are based on the 2020 fishery selectivities and with steepness fixed at 0.80.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/yield2_yield_curve_with_refpoints.png}
+\caption{Equilibrium yield curve for the base case model. Values are based on the 2020 fishery selectivities and with steepness fixed at 0.80.\label{fig:es-yield}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Reference points were calculated using the estimated selectivities and catch distributions among fleets in the most recent year of the model, 2020 (Table \ref{tab:referenceES}). Sustainable total yield, removals, using an {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\text{SPR}_{50\%}\)\leavevmode\tagmcend\tagstructend} is 1 mt. The spawning biomass equivalent to 40 percent of the unfished spawning biomass ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\text{SB}_{40\%}\)\leavevmode\tagmcend\tagstructend}) calculated using the SPR target ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\text{SPR}_{50\%}\)\leavevmode\tagmcend\tagstructend}) was 1 mt. Recent removals have been close to the point estimate of potential long-term yields calculated using an {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\text{SPR}_{50\%}\)\leavevmode\tagmcend\tagstructend} reference point and the population size has been relatively decreasing toward the target over the past few years.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\input{tex_tables/e_ReferencePoints_ES.tex}
+
+\clearpage
 
 \tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
 
@@ -319,9 +469,43 @@ Replace text.
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-Replace text.
+Exploitation on vermilion rockfish increased starting around 1960 and reached a high in the early 1990s. Since that time, catch has mostly fluctuated between 5-10 mt, with some values above 10 mt, particularly in the last 4 years. The last ten years of the vermilion component acceptable biological catch (ABC) and annual catch limit (ACL) (which are equivalent) of the Minor Shelf Rockfish North Complex has been set below the overfishing limit (OFL) (Table \ref{tab:ofl-es}), all of which have been exceeded in the most recent 4 years.
 
 \leavevmode\tagmcend\tagstructend\par
+
+\begingroup\fontsize{10}{12}\selectfont
+\begingroup\fontsize{10}{12}\selectfont
+
+\tagstructbegin{tag=Table}\tagmcbegin{tag=Table}
+\begin{longtable}[t]{l>{\raggedright\arraybackslash}p{1.83cm}>{\raggedright\arraybackslash}p{1.83cm}>{\raggedright\arraybackslash}p{1.83cm}>{\raggedright\arraybackslash}p{1.83cm}>{\raggedright\arraybackslash}p{1.83cm}}
+\caption{\label{tab:ofl-es}The OFL, ABC, ACL, landings, and the estimated total mortality in metric tons.}\\
+\toprule
+Year & OFL & ABC & ACL & Landings & Est. Total Mortality\\
+\midrule
+\endfirsthead
+\caption[]{\label{tab:ofl-es}The OFL, ABC, ACL, landings, and the estimated total mortality in metric tons. \textit{(continued)}}\\
+\toprule
+Year & OFL & ABC & ACL & Landings & Est. Total Mortality\\
+\midrule
+\endhead
+
+\endfoot
+\bottomrule
+\endlastfoot
+2011 & 11.1 & 5.6 & 5.6 & 1 & 1\\
+2012 & 11.1 & 5.6 & 5.6 & 1 & 1\\
+2013 & 9.7 & 8.1 & 8.1 & 1 & 1\\
+2014 & 9.7 & 8.1 & 8.1 & 1 & 1\\
+2015 & 9.7 & 8.1 & 8.1 & 1 & 1\\
+2016 & 9.7 & 8.1 & 8.1 & 1 & 1\\
+2017 & 9.7 & 8.1 & 8.1 & 1 & 1\\
+2018 & 9.7 & 8.1 & 8.1 & 1 & 1\\
+2019 & 9.7 & 8.1 & 8.1 & 3 & 3\\
+2020 & 9.7 & 8.1 & 8.1 & 1 & 1\\*
+\end{longtable}
+\leavevmode\tagmcend\tagstructend\par
+\endgroup{}
+\endgroup{}
 
 \tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
 
@@ -333,21 +517,35 @@ Replace text.
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-Replace text.
+The base case model was developed with the goal of balancing parsimony with realism and fitting the data. To achieve parsimony, some simplification of model structure was assumed which may impact the interpretation and fit to specific data sets. While life history values are estimated, uncertainty in natural mortality and growth parameters translates into uncertain estimates of both status and sustainable fishing levels for vermilion rockfish.
 
 \leavevmode\tagmcend\tagstructend\par
 
 \tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
 
-\hypertarget{decision-table}{%
-\subsection*{Decision Table}\label{decision-table}}
-\addcontentsline{toc}{subsection}{Decision Table}
+\hypertarget{scientific-uncertainty}{%
+\subsection*{Scientific Uncertainty}\label{scientific-uncertainty}}
+\addcontentsline{toc}{subsection}{Scientific Uncertainty}
 
 \leavevmode\tagmcend\tagstructend
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-Replace text.
+The model estimated uncertainty around the 2021 spawning biomass was {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\sigma\)\leavevmode\tagmcend\tagstructend} = 0.71 and the uncertainty around the OFL was {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\sigma\)\leavevmode\tagmcend\tagstructend} = 0.76. This is likely an underestimate of overall uncertainty because of the necessity to fix some parameters such as steepness and no explicit incorporation of model structural uncertainty.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
+
+\hypertarget{harvest-projections-and-decision-table}{%
+\subsection*{Harvest Projections and Decision Table}\label{harvest-projections-and-decision-table}}
+\addcontentsline{toc}{subsection}{Harvest Projections and Decision Table}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+TBD
 
 \leavevmode\tagmcend\tagstructend\par
 
@@ -361,7 +559,7 @@ Replace text.
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-Replace text.
+TBD
 
 \leavevmode\tagmcend\tagstructend\par
 
@@ -373,6 +571,8 @@ Replace text.
 \renewcommand{\thetable}{\arabic{table}}
 \setcounter{table}{0}
 \setcounter{figure}{0}
+
+\setlength\parskip{0.5em plus 0.1em minus 0.2em}
 
 \tagstructbegin{tag=H1}\tagmcbegin{tag=H1}
 
@@ -390,7 +590,13 @@ Replace text.
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-This assessment reports the status of Vermilion rockfish (\emph{Sebastes miniatus}) off the US West - Oregon coast using data through xxxx.
+This assessment reports the status of vermilion rockfish (\emph{Sebastes miniatus}) off the waters of Washington state using data through 2020. Vermilion rockfish range from Prince William Sound, Alaska, to central Baja California at depths of 6 m to 436 m {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Love, Yoklavich, and Thorsteinson 2002)\leavevmode\tagmcend\tagstructend}. They are most commonly found from southern Oregon to Punta Baja, Mexico {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Hyde and Vetter 2009)\leavevmode\tagmcend\tagstructend} at depths of 50 m to 150 m {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Hyde and Vetter 2009)\leavevmode\tagmcend\tagstructend}. Hyde and Vetter {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(2009)\leavevmode\tagmcend\tagstructend} describe an additional cryptic species related to vermilion rockfish, the sunset rockfish (\emph{Sebastes crocotulus}). They note that Vermilion rockfish are residents of shallower depths (\textless100 m) versus sunset rockfish. Sunset rockfish tend to be more southerly, and have not been reported in Oregon, so this assessment focuses only on vermilion rockfish. Adult vermilion rockfish tend to cluster on high relief rocky outcrops {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Love, Yoklavich, and Thorsteinson 2002)\leavevmode\tagmcend\tagstructend} and kelp forests {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Hyde and Vetter 2009)\leavevmode\tagmcend\tagstructend}. North of Point Conception, some adults are shallower, living in caves and cracks {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Love, Yoklavich, and Thorsteinson 2002)\leavevmode\tagmcend\tagstructend}. Vermilion rockfish have shown high site fidelity {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Robert W. Hannah and Rankin 2011 (only tagged 1 vermilion); Lea, McAllister, and VenTresca 1999)\leavevmode\tagmcend\tagstructend}, and low average larval dispersal distance {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Hyde and Vetter 2009)\leavevmode\tagmcend\tagstructend}. Lowe et al. {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(\textbf{Lowe2009?})\leavevmode\tagmcend\tagstructend} suggested vermilion rockfish to have a lower site fidelity than previously believed, but they acknowledged that their observations of movements to different depths may have been due to the reality of a shallower species and a deeper species.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+The stock designation of Washington waters as a management unit was based on the observation that most of the habitat and take of vermilion off Washington was in the very northern portion of the Washington coast, while most vermilion in Oregon are taken off southern Oregon (Figure \ref{fig:ORWA-map}). Ninty-seven percent of vermilion catch comes from the northern portion of Washington and ninty percent of the total mortality in Oregon is from the southern part of the state (south of Pt. Arago; Figure \ref{fig:tm-plot}). This large area separation, low movement of larvae and adults, and the biogeographic barriers of the Columbia River outfall and lack of rocky habitat in southern Washington all support separate Washington-Oregon management units.
 
 \leavevmode\tagmcend\tagstructend\par
 
@@ -403,20 +609,50 @@ This assessment reports the status of Vermilion rockfish (\emph{Sebastes miniatu
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-Replace text.
+Approximate lifespan for vermilion rockfish is 60 years, with females living longer and growing larger than their male counterparts. 50\% are mature at 5 years and about 37 cm, with males probably maturing at shorter lengths than females {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Love, Yoklavich, and Thorsteinson 2002)\leavevmode\tagmcend\tagstructend}.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Vermilion rockfish are viviparous, and release 63,000 to 2,600,000 eggs per season. In southern California, vermilion rockfish larvae are released between July and March. In central and northern California, this release occurs in September, December, and April-June {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Love, Yoklavich, and Thorsteinson 2002)\leavevmode\tagmcend\tagstructend}. In Oregon, fertilized females with ripe ovaries are encountered from April to Ocotber {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Robert W. Hannah and Kautzi 2012)\leavevmode\tagmcend\tagstructend}, with larval release sometime during and after that period. Larval release in fall and winter is not common among other rockfish species. Hyde and Vetter {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(2009)\leavevmode\tagmcend\tagstructend} suggest that low larval dispersal may be due to weak poleward flow of nearshore waters corresponding with peak vermilion larval release.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Young-of-the-year (YOY) vermilion rockfish settle out of the plankton during two recruitment periods per year, first from February to April and a second from August to October, and settlement has been observed in May off southern California {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Love, Yoklavich, and Thorsteinson 2002)\leavevmode\tagmcend\tagstructend}. There is no information on YOY settlement in Oregon. Larvae measure about 4.3 mm. Both young-of-the-year vermilion and sunset rockfish are mottled brown with areas of black, and older juveniles turn a mottled orange or red color {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Love et al. 2012)\leavevmode\tagmcend\tagstructend}. Juvenile fish are found individually from 6 m to 36 m, living near sand and structures. After two months, juveniles travel deeper and live on low relief rocky outcrops and other structures {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Love, Yoklavich, and Thorsteinson 2002)\leavevmode\tagmcend\tagstructend}.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Adult vermilion rockfish predominantly eat smaller fish, though sometimes they pursue euphausiids and other various macroplankton {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Phillips 1964)\leavevmode\tagmcend\tagstructend}. Love {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(2002)\leavevmode\tagmcend\tagstructend} noted their diet to include octopus, salps, shrimps, and pelagic red crabs.
 
 \leavevmode\tagmcend\tagstructend\par
 
 \tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
 
-\hypertarget{ecosystem-considerations}{%
-\subsection{Ecosystem Considerations}\label{ecosystem-considerations}}
+\hypertarget{ecosystem-considerations-1}{%
+\subsection{Ecosystem Considerations}\label{ecosystem-considerations-1}}
 
 \leavevmode\tagmcend\tagstructend
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-Replace text.
+This stock assessment does not explicitly incorporate trophic interactions, habitat factors (other than as inform relative abundance indices) or environmental factors into the assessment model, but a brief description of likely or potential ecosystem considerations are provided below.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Vermilion/sunset rockfish are described as feeding on a wide range of both pelagic and benthic prey items, including forage fish species such as anchovies and mesopelagic fishes, squid, krill and octopus, as well as sporadically abundant pelagic organisms such as pyrosomes, salps and pelagic red crabs {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Phillips 1964; Love, Yoklavich, and Thorsteinson 2002)\leavevmode\tagmcend\tagstructend}. Interestingly, other rockfishes (either juvenile or adult stages) have not been documented as prey for vermilion, as they have been for other larger \emph{Sebastes} species such as cowcod, bocaccio and yelloweye rockfish. For the latter species, the idea of ``cultivation effects,'' in which adults crop down forage species that are potential competitors/predators of their own juveniles {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(\textbf{Walters2001?})\leavevmode\tagmcend\tagstructend}, have been suggested by {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(\textbf{baskett\_06?})\leavevmode\tagmcend\tagstructend}. For example, Baskett et al. {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(\textbf{baskett\_06?})\leavevmode\tagmcend\tagstructend} found that in such scenarios there could be alternative stable states in which either the overfished species or the smaller prey species could dominate. While the sparse diet data for vermilion/sunset rockfish do not suggest such a process for this species complex, food habits data for vermilion/sunset are not robust, and the larger community processes on these rocky reef communities may also influence productivity and community composition regardless of the direct predation interactions. Pelagic and benthic juvenile vermilion and sunset rockfish are likely preyed upon by the same wide range of predators that prey on juveniles and adults of other rockfish species, including seabirds, piscivorous fishes, and marine mammals.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+As with most other rockfish and groundfish in the California Current, recruitment, or cohort (year-class) strength appears to be highly variable for the vermilion/sunset rockfish complex, with only a modest apparent relationship to spawning output. Oceanographic and ecosystem factors are widely recognized to be key drivers of recruitment variability for most species of groundfish, as well as most elements of California Current food webs. Empirical estimates of recruitment from pelagic juvenile rockfish surveys have been used to inform incoming year class strength for some of these stocks, however vermilion and sunset rockfish are rarely encountered in these surveys. Specifically, only 47 of nearly 300,000 total juvenile \emph{Sebastes} encountered in juvenile surveys since 2001 were identified as vermilion or sunset rockfish {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(\textbf{Field2021?})\leavevmode\tagmcend\tagstructend}. Despite this, the results here suggest that at least a reasonable fraction of recruitment variability for sunset and vermilion rockfish is shared with other rockfish and groundfish stocks throughout the California Current, many of which also had strong year classes in 1984, 1999 and 2015. Previous studies have demonstrated that large-scale oceanographic drivers, such as the relative transport of subarctic waters (typically indicated by relative sea level) tend to relate to a substantial fraction of overall groundfish recruitment trends and ecosystem productivity {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(\textbf{Schroeder2019?})\leavevmode\tagmcend\tagstructend}. Although it is feasible that ecosystem factors, the results of pre-recruit surveys for co-occurring species, or the results of other groundfish assessments might ultimately be used to forecast recruitment for more data-limited stocks such as vermilion/sunset, as suggested by {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(\textbf{Thorson2014?})\leavevmode\tagmcend\tagstructend}, such approaches would require more development and evaluation. Consequently, environmental factors are not explicitly considered in this assessment.
 
 \leavevmode\tagmcend\tagstructend\par
 
@@ -429,7 +665,25 @@ Replace text.
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-Replace text.
+Off the coast of Washington State Vermilion rockfish is primarily caught in the recreational/sport fishery with very little mortality from commercial fishing (Table \ref{tab:WA_vermilion_catches}). Vermilion rockfish has been a target of recreational fishing as early as 1949 with catches varying each year from about 100 fish to over 1000 fish (in numbers) since then.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Vermilion rockfish has not been targeted by commercial fisheries in Washington waters. Washington closed state waters to commercial fixed gears in 1995 and to trawling in 1999. Off Washington, the and the depths preferred by Vermilion rockfish are predominantly found within state waters. The state closed its waters Iin response to the development of the live-fish fishery in California and Oregon, and out ofWashington took preemptive action in 1999 to prevent the fishery from developing by prohibiting the landing of live-fish. At the time, rockfish were believed to be low productivity and could not support both commercial and recreational fishing pressure in state waters. There are four treaty tribes that fish under separate rules and are not subject to the state water closure; however, to date, no Vermilion rockfish have been observed within a species composition sample at any tribal commercial offloads. Vermilion rockfish are landed in the Nearshore Rockfish group, a mixed-species market category. Species composition samples were taken from sampled landings and proportions of Vermilion rockfish reported in the Nearshore market category would be estimated by port, quarter, gear, and year. In 2020, COVID-19 closures of tribal lands prevented samplers from accessing all commercial catch.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Examination of the WCGOP data set, 2002-2019, also shows that commercial catches of Vermilion are rare off Washington. In the individual fishing quota program--which began in 2011 and where coverage of discards is effectively 100 percent--there has been only one Vermilion catch event observed. The boat is recorded as having caught 400 lbs of Vermilion and as departing from and returning to a port in Oregon. The catch from that boat was recorded as having been retained and therefore would have been recorded on an Oregon fish ticket. WCGOP also has also covered the Limited Entry Sablefish fishery since 2002. Observers recorded three catch events of Vermilion off Washington in 2002 totalling 25 lbs. Observer coverage in that fishery sector in 2002 was over 20\%. Since 2002 observer coverage in that sector has ranged 9\%-52\%. Only only other catch even of Vermilion has been recorded off Washington. The non-trawl Rockfish Conservation Area off of Washington extends from shore to 100 fathoms and excludes the sector from Vermilion's core habitats. WCGOP also covered the ocean pink trawl fishery in Washington since 2010 at coverage levels of 9\%-19\% and has recorded a single Vermilion catch event off Washington of 2 lbs.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+The primary region of recreational fishing off the Washington coast occurs in the northernmost regions. These areas have rocky habitat that rockfish species such as Vermilion rockfish are associated with in comparison to the southern coast of Washington which consists primarily of soft and sandy substrate. The stock off the Washington coast was assessed as a separate stock from other populations off the West Coast based on three factors: 1) suspected limited flow of fish between Washington and Oregon given the substrate separation, 2) the different exploitation patterns within Washington waters compared to Oregon and California, and 3) the quantity of length data in Washington compared to other areas.
 
 \leavevmode\tagmcend\tagstructend\par
 
@@ -442,27 +696,14 @@ Replace text.
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-Replace text.
-
-\leavevmode\tagmcend\tagstructend\par
-
-\tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
-
-\hypertarget{foreign-fisheries}{%
-\subsection{Foreign Fisheries}\label{foreign-fisheries}}
-
-\leavevmode\tagmcend\tagstructend
-
-\tagstructbegin{tag=P}\tagmcbegin{tag=P}
-
-Replace text.
+Vermilion rockfish is managed by the Pacific Fishery Management Council (PFMC) as a part of the Shelf Rockfish North and Shelf Rockfish South complexes. The North and South areas are split at N. 40°10' Lat. N. off the West Coast. The complex is managed based on a complex level overfishing limit (OFL) and annual catch limit (ACL). The OFL and ACL values for the complex are determined by summing the species specific OFLs and ACLs managed within the complex. Removals for species within the Rockfish complex are managed and tracked against the complex total OFL and ACL, rather than on a species by species basis. The OFL and ACLs for vermilion rockfish North of 40°10' Lat. N. management area and the total removals are shown in Table \ref{tab:OR_vermilion_mgmt}. There are no state-specific allocations of this complex and so removals are evaluated at the regional level (North of 40°10').
 
 \leavevmode\tagmcend\tagstructend\par
 
 \tagstructbegin{tag=H1}\tagmcbegin{tag=H1}
 
-\hypertarget{data}{%
-\section{Data}\label{data}}
+\hypertarget{data-and-model-inputs}{%
+\section{Data and Model Inputs}\label{data-and-model-inputs}}
 
 \leavevmode\tagmcend\tagstructend
 
@@ -479,6 +720,52 @@ A description of each data source is provided below (Figure \ref{fig:data-plot})
 
 \leavevmode\tagmcend\tagstructend
 
+\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
+
+\hypertarget{recreational}{%
+\subsubsection{Recreational}\label{recreational}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=H4}\tagmcbegin{tag=H4}
+
+\hypertarget{removals}{%
+\paragraph{Removals}\label{removals}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Annual catches (Table \ref{tab:WA_vermilion_catches}) from the recreational fishery (1967, 1979-1989) were obtained from historical reports, and landings from 1990-2020 were obtained from the Washington Department of Fish and Wildlife (WDFW) Ocean Sampling Program (OSP) and Puget Sound Baseline Sampling Program. To fill in the missing years, linear interpolations were used to find landed values (in numbers of fish) between 1968 and 1979, and to bring catch down to zero in year 1949. Discard estimates are not available prior to 2002. Based on a discard to retained catch relationship from 2002 to 2020, we estimated historical discards. Discard mortality by depth was applied to post-2001 discards estimate. Prior to 2002, a 32\% mortality rate is applied to discarded fish. The sum of retained and dead released Vermilion Rockfish made up the total removal (in numbers) from the recreational fishery.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H4}\tagmcbegin{tag=H4}
+
+\hypertarget{lengths}{%
+\paragraph{Lengths}\label{lengths}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Length compositions for the recreational fleet were available in 1977, 1978, 1980 - 1983, 1986, and then each year from 1993 - 2020 (Table \ref{tab:WA_vermilion_lengthsamples}; Figure \ref{fig:rec-lts_bubbs}). The number of length observations by year were quite variable ranging between 1 and 266 samples per year. Only years with samples sizes \textgreater10 were used in the model, as years with low sample sizes can sometimes destabalize models while adding little information. The size of sexed and unsexed fish observed by the recreational fleet were between 22 and 77 cm. The mean length observed by year was much smaller in early years, but averaged around 45 cm since 1996.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H4}\tagmcbegin{tag=H4}
+
+\hypertarget{ages}{%
+\paragraph{Ages}\label{ages}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Numbers of collected age structures vary from 3 to 150 per year since 1998, with the majority of the collected age structures coming from 2015 - 2020 (Table \ref{tab:WA_vermilion_agesamples}). No age structures were taken in 2003. The mean minimum age for all years is 6 with the mean max age being 44. The average age across all years is 16. The oldest aged fish in Washington waters is 68 in 1998, but there have been several aged over 50.
+
+\leavevmode\tagmcend\tagstructend\par
+
 \tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
 
 \hypertarget{fishery-independent-data}{%
@@ -486,74 +773,22 @@ A description of each data source is provided below (Figure \ref{fig:data-plot})
 
 \leavevmode\tagmcend\tagstructend
 
-\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
-
-\hypertarget{section}{%
-\subsubsection{\texorpdfstring{\acrlong{s-aslope}}{}}\label{section}}
-
-\leavevmode\tagmcend\tagstructend
-
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-The \gls{s-aslope} operated during the months of October to November aboard the R/V \emph{Miller Freeman}. Partial survey coverage of the US west coast occurred during the years 1988-1996 and complete coverage (north of 34\textdegree 30\textquotesingle S) during the years 1997 and 1999-2001. Typically, only these four years that are seen as complete surveys are included in assessments.
-
-\leavevmode\tagmcend\tagstructend\par
-
-\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
-
-\hypertarget{section-1}{%
-\subsubsection{\texorpdfstring{\acrlong{s-ccfrp}}{}}\label{section-1}}
-
-\leavevmode\tagmcend\tagstructend
-
-\tagstructbegin{tag=P}\tagmcbegin{tag=P}
-
-Since 2007, the \Gls{s-ccfrp} has monitored several areas in California to evaluate the performance of \Gls{mpa}s and understand nearshore fish populations {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Wendt and Starr 2009; Starr et al. 2015)\leavevmode\tagmcend\tagstructend}. In 2017, the survey expanded beyond the four \Gls{mpa}s in central California (Año Nuevo, Point Lobos, Point Buchon, and Piedras Blancas) to include the entire California coast. Fish are collected by volunteer anglers aboard \Gls{cpfv}s guided by one of the following academic institutions based on proximity to fishing location: Humboldt State University; Bodega Marine Laboratories; Moss Landing Marine Laboratories; Cal Poly San Luis Obispo; University of California, Santa Barbara; and Scripps Institution of Oceanography.
+\#\#\#\#Washington Nearshore Survey Data from Washington Department of Fish and Wildlife's Nearshore Rockfish Survey were analyzed to see if an index could be generated, or if additional length data could be added to this assessment. The current data are not extremely robust and the methods have not been reviewed by the SSC, so these data were not used in this assessment. This survey could prove a useful data set in the future once the method review has been completed.
 
 \leavevmode\tagmcend\tagstructend\par
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-Surveys consist of fishing with hook-and-line gear for 30-45 minutes within randomly chosen 500 by 500 m grid cells within and outside \Gls{mpa}s. Prior to 2017, all fish were measured for length and release or descended to depth; since then, some were sampled for otoliths and fin clips.
-
-\leavevmode\tagmcend\tagstructend\par
-
-\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
-
-\hypertarget{section-2}{%
-\subsubsection{\texorpdfstring{\acrlong{s-tri}}{}}\label{section-2}}
-
-\leavevmode\tagmcend\tagstructend
-
-\tagstructbegin{tag=P}\tagmcbegin{tag=P}
-
-The \gls{s-tri} was first conducted by the \gls{afsc} in 1977, and the survey continued until 2004 {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Weinberg et al. 2002)\leavevmode\tagmcend\tagstructend}. Its basic design was a series of equally-spaced east-to-west transects across the continential shelf from which searches for tows in a specific depth range were initiated. The survey design changed slightly over time. In general, all of the surveys were conducted in the mid summer through early fall. The 1977 survey was conducted from early July through late September. The surveys from 1980 through 1989 were conducted from mid-July to late September. The 1992 survey was conducted from mid July through early October. The 1995 survey was conducted from early June through late August. The 1998 survey was conducted from early June through early August. Finally, the 2001 and 2004 surveys were conducted from May to July.
-
-\leavevmode\tagmcend\tagstructend\par
-
-\tagstructbegin{tag=P}\tagmcbegin{tag=P}
-
-Haul depths ranged from 91-457 m during the 1977 survey with no hauls shallower than 91 m. Due to haul performance issues and truncated sampling with respect to depth, the data from 1977 were omitted from this analysis. The surveys in 1980, 1983, and 1986 covered the US West Coast south to 36.8\textdegree N latitude and a depth range of 55-366 m. The surveys in 1989 and 1992 covered the same depth range but extended the southern range to 34.5\textdegree N (near Point Conception). From 1995 through 2004, the surveys covered the depth range 55-500 m and surveyed south to 34.5\textdegree N. In 2004, the final year of the \gls{s-tri} series, the \gls{nwfsc} \gls{fram} conducted the survey following similar protocols to earlier years.
-
-\leavevmode\tagmcend\tagstructend\par
-
-\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
-
-\hypertarget{section-3}{%
-\subsubsection{\texorpdfstring{\acrlong{s-wcgbt}}{}}\label{section-3}}
-
-\leavevmode\tagmcend\tagstructend
-
-\tagstructbegin{tag=P}\tagmcbegin{tag=P}
-
-The \Gls{s-wcgbt} is based on a random-grid design; covering the coastal waters from a depth of 55-1,280 m {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Bradburn, Keller, and Horness 2011)\leavevmode\tagmcend\tagstructend}. This design generally uses four industry-chartered vessels per year assigned to a roughly equal number of randomly selected grid cells and divided into two `passes' of the coast. Two vessels fish from north to south during each pass between late May to early October. This design therefore incorporates both vessel-to-vessel differences in catchability, as well as variance associated with selecting a relatively small number (approximately 700) of possible cells from a very large set of possible cells spread from the Mexican to the Canadian borders.
+Trawl surveys often used in west coast groundfish assessments (e.g., Triennial survey, Alaskan slope survey and the West Coast West Coast Groundfish Bottom Trawl Survey) do collect fishery-independent abundance and biological data off the Washington coast. However, those surveys are not designs to cover vermilion rockfish habitat in Washington, and vermilion are rarely if ever encountered. Indices of abundance were therefore not calculated from these surveys.
 
 \leavevmode\tagmcend\tagstructend\par
 
 \tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
 
-\hypertarget{biological-data}{%
-\subsection{Biological Data}\label{biological-data}}
+\hypertarget{biological-parameters}{%
+\subsection{Biological Parameters}\label{biological-parameters}}
 
 \leavevmode\tagmcend\tagstructend
 
@@ -566,7 +801,7 @@ The \Gls{s-wcgbt} is based on a random-grid design; covering the coastal waters 
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-The length-at-age was estimated for female and male Vermilion rockfish using data from collections sampling the commerical and recreational fisheries off the coast of Washington from years xx-xx (Table \ref{tab:len-at-age-samps}. Figure \ref{fig:len-age-data} shows the lengths and ages for all years by sex and data source as well as predicted von Bertalanffy growth function (VBGF) fits to the data. Females grow larger than males and sex-specific growth parameters were estimated at the following values:
+The length-at-age was estimated for female and male vermilion rockfish using data from collections sampling the recreational fishery off the coast of Washington from years 2004-2020 (Table \ref{tab:WA_vermilion_agesamples}. Inital attempts of estimating the growth parameters provided very small {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(t_0\)\leavevmode\tagmcend\tagstructend} values (\textless-6). Values for {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(t_0\)\leavevmode\tagmcend\tagstructend} were then fixed to the Oregon values and {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend} and {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(k\)\leavevmode\tagmcend\tagstructend} were estimate:
 
 \leavevmode\tagmcend\tagstructend\par
 
@@ -582,7 +817,7 @@ Males $L_{\infty}$ = 54.2 cm; $k$ = 0.109; $t_0$ = -1.96
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-The estimated VBGF parameters provided initial values for the estimation of growth in the model, as all age and length data are included in the model. The resultant growth curves estimated by the model are presented in Figure \ref{fig:len-age-ss}. Sensitivity to the treatment of growth parameters (fixed or estimated) are explored through sensitivity analyses.
+The estimated VBGF parameters provided initial values for the estimation of growth in the model, as all age and length data are included in the model. Sex-specific growth curves (i.e., females are larger than males) estimated by the model without fixing to the Oregon {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(t_0\)\leavevmode\tagmcend\tagstructend} values are presented in Figure \ref{fig:len-age-ss}. Sensitivities to the treatment of growth parameters (fixed or estimated) are explored through sensitivity analyses.
 
 \leavevmode\tagmcend\tagstructend\par
 
@@ -592,6 +827,30 @@ The estimated VBGF parameters provided initial values for the estimation of grow
 \subsubsection{Ageing Precision and Bias}\label{ageing-precision-and-bias}}
 
 \leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Counting ages from ageing structures in long-lived temparate fishes is challenging. Ages derived from these structures can be hard to reproduce within and between readers (i.e., imprecision), and may not contain the true age (i.e., bias). Stock assessment outputs can be affected by bias and imprecision in ageing, thus it is important to quantify and integrate this source of variability when fitting age data in assessments. In Stock Synthesis, this is done by including ageing error matrices that include the mean age (row 1) and standard deviation in age (row 2). Ageing bias is implemented when the inputted mean age deviates from the expected middle age for any given age bin (e.g., 1.75 inputted versus 1.5 being the true age); ageing imprecision is given as the standard deviation for each age bin (row 2).
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+An ageing error matrix for the recreational fishery samples were calculated using within reader comparisons (n = 861). An additional ageing error matrix was constructed from the Committee of Age Reading Experts (CARE) otolith exchange, where an exchange of 50 individuals was done among WDFW, ODFW, SWFSC, and NWFSC. The WDFW internal read ageing error matrix was used in the reference model, with the CARE comparison explored in a sensitivity model run.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Estimation of ageing error matrices for each lab used the approach of Punt et al.~(2008). The ageing error matrix offers a way to calculate both bias and imprecision in age reads. Reader 1, the primary reader of the ages used in the stock assessment, is always considered unbiased, but may be imprecise. Several model configurations are available for exploration based on either the functional form (e.g., constant CV, curvilinear standard deviation, or curvilinear CV) of the bias in reader 2 or in the precision of the readers. Model selection uses AIC corrected for small sample size (AICc), which converges to AIC when sample sizes are large. Bayesian Information Criterion (BIC) was also considered when selecting a final model. Table \ref{tab:age-error-models} provides model selection results.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+The WDFW intralab comparison supported imprecision with a curvilinear standard deviation for the recretaional fishery. The CARE comparison was also curvelinear, but on the coefficient of variation, with huge ageing error imprecision as age increases. The functional forms for each matrix are given in Figure \ref{fig:age-error}.
+
+\leavevmode\tagmcend\tagstructend\par
 
 \tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
 
@@ -608,16 +867,67 @@ Natural mortality was not directly measured, so life-history based empirical rel
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-We assumed the age of 54 years to represent the practical longevity (i.e., 90\% of the common seen maximum age of 60) for both females and males, though the oldest ages in OR and WA were \textgreater60 years, and ages of 80+ were encountered in California. Empirical {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend} estimators using the von Bertalanffy growth parameters were also considered (Figure \ref{fig:M_female}), but they produced unreasonably high estimates (2-3 times higher than the longevity estimates). This is likely explained by the fact that while Vermilion rockfish have protracted longevity at {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend}. Additionally, the FishLife {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(\textbf{thorson\_predicting\_2017?})\leavevmode\tagmcend\tagstructend} estimate was included, though, given the source of FishLife data is FishBase, there is a good chance the estimates of {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend} are also from methods using longevity, though the actual source of longevity in FishLife was unknown. The final composite {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend} distributionn (Figure \ref{fig:M_composite_dists}) are based on 4 empirical estimators, and result in a median value of 0.1. We assume a lognormal distribution with a standard deviation of 0.438 ({\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}Hamel (2015)\leavevmode\tagmcend\tagstructend}) for the purposes of the prior used to estimate {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend}. This creates a wide prior to allow the data in the model to also influence the final estimated value of {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend}.We also explore sensitivity to these assumptions of natural mortality through likelihood profiling.
+We assumed the age of 54 years to represent the practical longevity (i.e., 90\% of the commonly seen maximum age of 60) for both females and males, though the absolute oldest age in OR was \textgreater60 years. In the larger biomass, higher sampled area of California, ages 80+ were even encountered. Empirical {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend} estimators using the von Bertalanffy growth parameters were also considered, but they produced unreasonably high estimates (2-3 times higher than the longevity estimates). This is likely explained by the fact that while vermilion rockfish have protracted longevity at {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend}. Additionally, the FishLife {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(\textbf{thorson\_predicting\_2017?})\leavevmode\tagmcend\tagstructend} estimate was included, though, given the source of FishLife data is FishBase, there is a good chance the estimates of {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend} are also from methods using longevity, though the actual source of longevity in FishLife was unknown. The final composite {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend} distributionn (Figure \ref{fig:M_composite_dists}) are based on 4 empirical estimators, and result in a median value of 0.1. We assume a lognormal distribution with a standard deviation of 0.438 ({\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}Hamel (2015)\leavevmode\tagmcend\tagstructend}) for the purposes of the prior used to estimate {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend}. This creates a wide prior to allow the data in the model to also influence the final estimated value of {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend}.We also explore sensitivity to these assumptions of natural mortality through likelihood profiling.
 
 \leavevmode\tagmcend\tagstructend\par
 
-\tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
+\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
 
-\hypertarget{environmental-and-ecosystem-data}{%
-\subsection{Environmental and Ecosystem Data}\label{environmental-and-ecosystem-data}}
+\hypertarget{maturation-and-fecundity}{%
+\subsubsection{Maturation and Fecundity}\label{maturation-and-fecundity}}
 
 \leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Maturity-at-length is borrowed from the work of Hannah and Kautzi {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(2012)\leavevmode\tagmcend\tagstructend} which is based on samples from Oregon and estimated the 50 percent size-at-maturity of 39.4 cm, though the slope of the maturity curve was not provided. Looking at the maturity curve in Hannah and Kautzi {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(2012)\leavevmode\tagmcend\tagstructend}, and length at 95\% maturity was assumed at 48cm, resulting in a slope of -0.34. Maturity was assumed to stay asymptotic for larger fish (Figure \ref{fig:maturity}) as no functional maturity estimate was availale {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Head, Cope, and Wulfing 2020)\leavevmode\tagmcend\tagstructend}.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+The fecundity-at-length was based on research by Dick et al.{\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(2017)\leavevmode\tagmcend\tagstructend}. The fecundity relationship for vermilion rockfish was estimated equal to {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(Fec\)\leavevmode\tagmcend\tagstructend}=4.32e-07{\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L\)\leavevmode\tagmcend\tagstructend}\textsuperscript{3.55} in millions of eggs where {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L\)\leavevmode\tagmcend\tagstructend} is length in cm. Fecundity-at-length is shown in Figure \ref{fig:fecundity}.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
+
+\hypertarget{length-weight-relationship}{%
+\subsubsection{Length-Weight Relationship}\label{length-weight-relationship}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+The length(cm)-weight(kg) relationship for vermilion rockfish was estimated outside the model using all coastwide biological data available from commercial data sources that provided the only sex-specific information on length and weight (Figure \ref{fig:len-weight-fit}). The estimated length-weight relationship for female fish was {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(W\)\leavevmode\tagmcend\tagstructend}=1.36e-05{\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L\)\leavevmode\tagmcend\tagstructend}\textsuperscript{3.1} and males at {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(W\)\leavevmode\tagmcend\tagstructend}=2.38e-05{\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L\)\leavevmode\tagmcend\tagstructend}\textsuperscript{2.96}.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
+
+\hypertarget{sex-ratio}{%
+\subsubsection{Sex Ratio}\label{sex-ratio}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+No information on the sex ratio at birth was available so it was assumed to be 50:50.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
+
+\hypertarget{steepness}{%
+\subsubsection{Steepness}\label{steepness}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+The Thorson-Dorn rockfish prior (developed for use West Coast rockfish assessments) conducted by James Thorson (personal communication, NWFSC, NOAA) and reviewed and endorsed by the Scientific and Statistical Committee (SSC) in 2017, has been a primary source of information on steepness for rockfishes. This approach, however, was subsequently rejected for future analysis in 2019 when the new meta-analysis resulted in a mean value of approximately 0.95. In the absense of a new method for generating a prior for steepness the default approach reverts to the previously endorsed method, the 2017 prior for steepness ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(h\)\leavevmode\tagmcend\tagstructend}; beta distribution with {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\mu\)\leavevmode\tagmcend\tagstructend}=0.72 and {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\sigma\)\leavevmode\tagmcend\tagstructend}=0.15) is retained.
+
+\leavevmode\tagmcend\tagstructend\par
 
 \tagstructbegin{tag=H1}\tagmcbegin{tag=H1}
 
@@ -628,17 +938,120 @@ We assumed the age of 54 years to represent the practical longevity (i.e., 90\% 
 
 \tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
 
+\hypertarget{summary-of-previous-assessments}{%
+\subsection{Summary of Previous Assessments}\label{summary-of-previous-assessments}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Vermilion rockfish in Washington has not been previously assessed in full, so this is the first benchmark for this management unit. Depletion Corrected Average Catch (DCAC) was used to set annual catch limits (ACLs) for vermilion rockfish since 2010 {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(\textbf{dick\_estimates\_2010?})\leavevmode\tagmcend\tagstructend} which estimate the mean sustainable yield as 5.7 mt (median of 5.9 mt). This method assumed vermilion rockfish relative stocks status was at 40\% in 2009.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
+
+\hypertarget{modelling-platform}{%
+\subsubsection{Modelling Platform}\label{modelling-platform}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Stock Synthesis version 3.30.16 was used as the statistical catch-at-age modelling framework. The SS-DL tool ({\tagstructbegin{tag=Link}\tagmcbegin{tag=Link}\url{https://github.com/shcaba/SS-DL-tool}\leavevmode\tagmcend\tagstructend}) was used for model exploration, likelihood profiling, and sensitivity analyses. The companion R package r4ss, version 1.38.0, along with R version 4.0.5 were used to investigate and plot model fits.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
+
+\hypertarget{bridging-analysis}{%
+\subsubsection{Bridging Analysis}\label{bridging-analysis}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+No bridgining analysis between the DBSRA model and Stock Synthesis was conducted given the significant differences (DBSRA is provided the depletion value) between the methods. It is well documented already that SS can mimic DBSRA approaches {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Cope 2013)\leavevmode\tagmcend\tagstructend}.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
+
+\hypertarget{model-structure-and-assumptions}{%
+\subsection{Model Structure and Assumptions}\label{model-structure-and-assumptions}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Stock Synthesis is an age-structured modelling framework that allows for the integration of removal histories, length and age compositions in one model. The Washington vermilion rockfish model assessment assumes one removal fleet (a recreational fishery, thus negligible commerical removals) with removals (in 1000s of fish) beginning in 1949. Selectivity for the fleet were specified using the double normal parameterization within SS where selectivity was fixed to be asymptotic with the ascending slope and size of maximum selectivity parameters estimated. Life history parameters are sex-specific, with one growth type, and assumed stationary. Recruitment assumes a Beverton-Holt stock-recruit relationship and recruitment deviations are estimated.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
+
+\hypertarget{estimated-and-fixed-parameters}{%
+\subsubsection{Estimated and Fixed Parameters}\label{estimated-and-fixed-parameters}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Natural mortality ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend}) and all growth parameters ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend}, {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(k\)\leavevmode\tagmcend\tagstructend}, {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(t_0\)\leavevmode\tagmcend\tagstructend}, CV at {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(t_0\)\leavevmode\tagmcend\tagstructend}, and CV at {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend}) are estimated, as is the two selectivity parameters, the log of the initial recruitment ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(logR_0\)\leavevmode\tagmcend\tagstructend}), and recruitment deviations. Maturity, fecundity, length-at-weight, steepness ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(h\)\leavevmode\tagmcend\tagstructend}) and recruitment variance were all fixed. Sensitivity scenarios and likelihood profiles were used to explore uncertainty in the values of the natural mortality and growth parameters. When estimating parameters, the prior for natural mortality was assumed lognormal with a standard deviation of 0.438 (based on the prior developed using the Natural Mortality Tool (see Biology section for more details)); growth parameters were estimated with no priors.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
+
+\hypertarget{data-weighting}{%
+\subsubsection{Data Weighting}\label{data-weighting}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Initial sample sizes for the Washington recreational length and age samples were based on the number of fish sampled. The method of Francis ({\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(2011)\leavevmode\tagmcend\tagstructend}, equation TA1.8) was then used to balance the length and conditional age-at-length composition data among other inputs and likelihood components. The Francis method treats mean length and age as indices, with effective sample size defining the variance around the mean. If the variability around the mean does not encompass model predictions, the data should be down-weighted until predictions fit within the intervals. This method accounts for correlation in the data (i.e., the multinomial distribution), but can be sensitive to years that are outliers, as the amount of down-weighting is applied to all years within a data source, and are not year-specific. Sensitivities were performed examining different data-weighting treatments: 1) the Dirichlet-Multinomial approach {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(Thorson et al. 2017)\leavevmode\tagmcend\tagstructend}, 2) the McAllister-Ianelli Harmonic Mean approach {\tagstructbegin{tag=Reference}\tagmcbegin{tag=Reference}(McAllister and Ianelli 1997)\leavevmode\tagmcend\tagstructend}, or 3) no data-weighting of lengths.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
+
+\hypertarget{model-selection-and-evaluation}{%
+\subsection{Model Selection and Evaluation}\label{model-selection-and-evaluation}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+The base assessment model for Washington vermilion rockfish was developed to balance parsimony and realism, and the goal was to estimate a spawning output trajectory and realtive stock status for the population of vermilion rockfish in federal waters off California. The model contains many assumptions to achieve parsimony and uses different data types and sources to estimate reality. A series of investigative model runs were done to achieve the final base model. These include considerations of model structure, data and parameter treatment, estimation phasing, and jittered starting values to achieve a converged and balanced model that provides sensible parameter estimates and derived quantities.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
+
 \hypertarget{summary-of-previous-assessments-and-reviews}{%
 \subsection{Summary of Previous Assessments and Reviews}\label{summary-of-previous-assessments-and-reviews}}
 
 \leavevmode\tagmcend\tagstructend
 
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+There are no previous assessments for the Washington vermilion rockfish management unit, thus no summary of previous assessments or reviews.
+
+\leavevmode\tagmcend\tagstructend\par
+
 \tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
 
-\hypertarget{history-of-modeling-approaches-not-required-for-an-update-assessment}{%
-\subsubsection{History of Modeling Approaches (not required for an update assessment)}\label{history-of-modeling-approaches-not-required-for-an-update-assessment}}
+\hypertarget{history-of-modeling-approaches}{%
+\subsubsection{History of Modeling Approaches}\label{history-of-modeling-approaches}}
 
 \leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+The previous treatment of vermilion rockfish that contained the area of Washington was the application of DBSRA in order to determine OFLs, and was not a model to provide estimates of stock status.
+
+\leavevmode\tagmcend\tagstructend\par
 
 \tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
 
@@ -647,17 +1060,16 @@ We assumed the age of 54 years to represent the practical longevity (i.e., 90\% 
 
 \leavevmode\tagmcend\tagstructend
 
-\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-\hypertarget{response-to-groundfish-subcommittee-requests-not-required-in-draft}{%
-\subsubsection{Response to Groundfish Subcommittee Requests (not required in draft)}\label{response-to-groundfish-subcommittee-requests-not-required-in-draft}}
+There are no recent STAR or SSC recommendations regarding Washington vermilion rockfish.
 
-\leavevmode\tagmcend\tagstructend
+\leavevmode\tagmcend\tagstructend\par
 
 \tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
 
-\hypertarget{model-structure-and-assumptions}{%
-\subsection{Model Structure and Assumptions}\label{model-structure-and-assumptions}}
+\hypertarget{model-structure-and-assumptions-1}{%
+\subsection{Model Structure and Assumptions}\label{model-structure-and-assumptions-1}}
 
 \leavevmode\tagmcend\tagstructend
 
@@ -703,56 +1115,136 @@ Describe estimated vs.~fixed parameters, priors
 
 \tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
 
-\hypertarget{base-model-results}{%
-\subsection{Base Model Results}\label{base-model-results}}
+\hypertarget{reference-model-diagnostics-and-results}{%
+\subsection{Reference Model Diagnostics and Results}\label{reference-model-diagnostics-and-results}}
 
 \leavevmode\tagmcend\tagstructend
 
 \tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
 
-\hypertarget{parameter-estimates}{%
-\subsubsection{Parameter Estimates}\label{parameter-estimates}}
-
-\leavevmode\tagmcend\tagstructend
-
-\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
-
-\hypertarget{fits-to-the-data}{%
-\subsubsection{Fits to the Data}\label{fits-to-the-data}}
-
-\leavevmode\tagmcend\tagstructend
-
-\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
-
-\hypertarget{population-trajectory}{%
-\subsubsection{Population Trajectory}\label{population-trajectory}}
-
-\leavevmode\tagmcend\tagstructend
-
-\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
-
-\hypertarget{reference-points-1}{%
-\subsubsection{Reference Points}\label{reference-points-1}}
-
-\leavevmode\tagmcend\tagstructend
-
-\tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
-
-\hypertarget{model-diagnostics}{%
-\subsection{Model Diagnostics}\label{model-diagnostics}}
+\hypertarget{model-convergence-and-acceptability}{%
+\subsubsection{Model convergence and acceptability}\label{model-convergence-and-acceptability}}
 
 \leavevmode\tagmcend\tagstructend
 
 \tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-Describe all diagnostics
+While there is no definitive measure of model convergence, several measures are routinely applied. These criteria include a low maximum gradient (\ensuremath{9.25736\times 10^{-5}}), inversion of the Hessian (passed), reasonable parameter values (passed), and acceptable fits to data (passed).
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+An extra effort was given to ensure the model did not rest on a local likelihood minimum. This was done by starting the minimization process from dispersed parameter values away from the maximum likelihood estimates to determine if the approach found a better model fit (i.e., minimum negative log-likelihood value). Starting parameters used a jitter shift value of 0.1. This was repeated 100 times with 9 out of 100 runs returned to the reference model likelihood (Figure \ref{fig:jitter_01}). A better fit, lower negative log-likelihood model was not found in any of the remaining 91 runs. The model did not experience convergence issues when provided reasonable starting values. Through the jittering and likelihood profiles, the present reference model represents the best fit to the data given the assumptions made.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H4}\tagmcbegin{tag=H4}
+
+\hypertarget{fits-to-the-data}{%
+\paragraph{Fits to the Data}\label{fits-to-the-data}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=H5}\tagmcbegin{tag=H5}
+
+\hypertarget{lengths-1}{%
+\subparagraph{Lengths}\label{lengths-1}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Fits to the length data are examined based on the Pearson residuals-at-length, the annual mean lengths, and aggregated length composition data. Annual length composition fits are shown in {\tagstructbegin{tag=Link}\tagmcbegin{tag=Link}\protect\hyperlink{app_a}{Appendix A}\leavevmode\tagmcend\tagstructend}. Lengths are generally sampled better after year 2014, the the overall samples are generally low (e.g., only 3 years have a total sample size \textgreater{} 100).
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Pearson residuals of fits to the length data are generally low with no distinct pattern of misfitting despite lower sample sizes (Figure \ref{fig:rec-pearson}). Fits to the mean lengths, assuming Francis data-weighting, show decreasing female and males lengths after 1999, with a very small increase in mean lengths after 2008, though the overall trend is fairly stable (Figure \ref{fig:rec-mean-len-fit}). Aggregate fits over years are shown in Figure \ref{fig:agg-len-fit}. Given the small samples sizes, the model fits the aggregate lengths adequately.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H5}\tagmcbegin{tag=H5}
+
+\hypertarget{conditional-age-at-length}{%
+\subparagraph{Conditional Age at Length}\label{conditional-age-at-length}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Fits to the conditioanl age at length data are examined based on the age-at-length Pearson residuals, the annual mean ages, and mean age at length by year for the recreational fleet samples. The maximum size of the Pearson residuals for both fleets was large (maximum = 15.95; {\tagstructbegin{tag=Link}\tagmcbegin{tag=Link}\protect\hyperlink{app_b}{Appendix B}\leavevmode\tagmcend\tagstructend}), though these large residuals were not common. Most of the residuals were small and unnoteworthy and demonstrate the expected shape of the growth curve. As with the lengths, the mean age by year decreased after 1999 then leveled off and gradually increased from 2009 onward (Figure \ref{fig:rec-mean-caal}). Mean ages were generally between 15 year and 20 years old. Fits to the mean ages by length bins show acceptable fits consistent with model expectations {\tagstructbegin{tag=Link}\tagmcbegin{tag=Link}\protect\hyperlink{app_c}{Appendix C}\leavevmode\tagmcend\tagstructend}.
 
 \leavevmode\tagmcend\tagstructend\par
 
 \tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
 
-\hypertarget{convergence}{%
-\subsubsection{Convergence}\label{convergence}}
+\hypertarget{reference-model-outputs}{%
+\subsubsection{Reference Model Outputs}\label{reference-model-outputs}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=H4}\tagmcbegin{tag=H4}
+
+\hypertarget{parameter-estimates}{%
+\paragraph{Parameter Estimates}\label{parameter-estimates}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+A total of fifteen primary parameters were estimated, along with seventy-two recruitment deviations. The reference model parameter estimates along with asymptotic standard errors are shown in Table \ref{tab:model-param} and the likelihood components are shown in Table \ref{tab:likes}. Estimates of derived reference points and approximate 95 percent asymptotic confidence intervals are provided in Table \ref{tab:referenceES}. The low sample sizes, but consistent signal in the data sets, along with so many estimated parameters allows the model to incorporate a large amoung of variance in the derived outputs.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+The natural mortality for females and males was estimated at 0 and 0.087 yr\textsuperscript{-1}, respectively. These values are below the mean prior value, but not unrreasonable given the corresponding longevities would be between 62 and 64 year old and the sampled max ages of 68 came from a fished population.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+The estimates of sex-specific growth parameters showed some differences from the externally estimated starting values (Table \ref{tab:model-param} and Figure \ref{fig:len-age-ss}). While {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend} was similar to the external estimates, the model estimated {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(k\)\leavevmode\tagmcend\tagstructend} for female and male fish were lower than the values estimated externally (0.093 for females and 0.103 yr\textsuperscript{-1} for males). The majority of female and male vermilion rockfish growth occurs at younger ages, reaching near maximum length by age 30-40, depending upon sex, with female vermilion rockfish reaching larger maximum lengths (Figure \ref{fig:len-age-ss}). The {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(t_0\)\leavevmode\tagmcend\tagstructend} values (female = \texttt{model\$Growth\_Parameters\$A\_a\_L0{[}1{]}}; male = \texttt{model\$Growth\_Parameters\$A\_a\_L0{[}1{]}}) were more biologically reasonable than the external estimates.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+The estimated logistic selectivity curve for the recreational fishery look plausible (i.e., as a model convergence check for realism, the selectivity curve is not overtly outrageous; Figure \ref{fig:fleet_selectivity}). Length at 50\% selectivity (44.267cm) was between the length at 50\% (39.4cm) and 95\% maturity (48cm).
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+The time series of estimated recruitments and annual recruitment deviations are shown in Figures \ref{fig:recruits} and \ref{fig:rec-devs}. Recruitment strengths were generally low; years with the highest recruitment deviations were estimated to have occurred in 1995,1996,1999,2000, 2006, and 2011. All recruitment deviations after 2011 are negative. The variance check on the recruitment deviations indicates weakly informed recruitments. Recruitment deviations after 2015 are relatively uninformed with estimated deviations near zero where recruitment is estimated primarily based on the spawner-recruit curve (Figure \ref{fig:bh-curve}). The recruitment bias adjustment applied within the model across years is shown in Figure \ref{fig:bias-adj}.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H4}\tagmcbegin{tag=H4}
+
+\hypertarget{population-trajectory}{%
+\paragraph{Population Trajectory}\label{population-trajectory}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+The predicted spawning output (in millions of eggs) is provided in Table \ref{tab:timeseries} and plotted in Figure \ref{fig:ssb}. Estimated spawning output shows a large decline starting after 1980, with a leveling off of the population after 2000. This tracks the time period of major removals, though removals have stayed somewhat elevated in recent years, bouyed by small but positive recruitments. A decline since 2019 is due to the largest catch on record in 2019 (almost twice the previous largest catch). The estimate of total biomass over time, which tracks that of spawning output, is shown in Figure \ref{fig:tot-bio}. Numbers of age-0 individuals indcate years of above average recruitment (Figure \ref{fig:recruits}).
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Median relative spawning output has never declined below the management target ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(SB_{40\%}\)\leavevmode\tagmcend\tagstructend}), and has hovered near 60\% for the past 20 years (Figure \ref{fig:depl}). The relative stock status at the start of 2021 is estimated to be well above the rockfish relative biomass target of 0.4 (0.56). Uncertainty intervals are extremely wide (from near extinct to unfished!) given the number of estimated parameters, indicating an overall weakness in the data to firmly inform relative stock status.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
+
+\hypertarget{uncertainty-exploration}{%
+\subsection{Uncertainty exploration}\label{uncertainty-exploration}}
 
 \leavevmode\tagmcend\tagstructend
 
@@ -763,12 +1255,580 @@ Describe all diagnostics
 
 \leavevmode\tagmcend\tagstructend
 
-\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
 
-\hypertarget{retrospective-analysis}{%
-\subsubsection{Retrospective Analysis}\label{retrospective-analysis}}
+Sensitivity analyses were conducted to evaluate model sensitivity to alternative data treatment and model specifications.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H4}\tagmcbegin{tag=H4}
+
+\hypertarget{data-treatment-sensitivities}{%
+\paragraph{Data treatment sensitivities}\label{data-treatment-sensitivities}}
 
 \leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Data treatments explored were as follows:
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=L}
+
+\begin{itemize}
+\item
+  \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+  Data removal (fixed life history, no recruitment estimation)
+
+  \tagmcend\tagstructend\tagstructend
+
+  \tagstructbegin{tag=L}
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \item
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    Fishery length data only (no catches)
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagmcend\tagstructend\tagstructend
+  \item
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    Catch and lengths only
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagmcend\tagstructend\tagstructend
+  \item
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    Catch and lengths only with Francis weighting
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagmcend\tagstructend\tagstructend
+  \item
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    Catch, lengths and ages with Francis weighting
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagmcend\tagstructend\tagstructend
+  \item
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    Catch length, age and indices with Francis weighting
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagmcend\tagstructend\tagstructend
+  \item
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    Catch length, age and indices with Francis weighting and extra index variance
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagmcend\tagstructend\tagstructend
+  \item
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    Catch length and indices with Francis weighting, estimate life history
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagmcend\tagstructend\tagstructend
+  \end{enumerate}
+
+  \tagstructend
+\item
+  \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+  Data weighting
+
+  \tagmcend\tagstructend\tagstructend
+
+  \tagstructbegin{tag=L}
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{7}
+  \item
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    Dirichlet data-weighting
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagmcend\tagstructend\tagstructend
+  \item
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    McAllister-Ianelli data weighting
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagmcend\tagstructend\tagstructend
+  \item
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    No data-weighting
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagmcend\tagstructend\tagstructend
+  \end{enumerate}
+
+  \tagstructend
+\item
+  \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+  Ageing error
+
+  \tagmcend\tagstructend\tagstructend
+
+  \tagstructbegin{tag=L}
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{10}
+  \item
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    Using ageing error from CARE exchange
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagmcend\tagstructend\tagstructend
+  \end{enumerate}
+
+  \tagstructend
+\item
+  \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+  Length treatment
+
+  \tagmcend\tagstructend\tagstructend
+
+  \tagstructbegin{tag=L}
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{11}
+  \item
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    Use option sex = 3 to maintain sex ratio in commercial data
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagmcend\tagstructend\tagstructend
+  \end{enumerate}
+
+  \tagstructend
+\end{itemize}
+
+\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Likelihood values and estimates of key parameters and derived quantities from each sensitivity are available in Table \ref{tab:data_sensis}. Derived quantities relative to the reference model are provided in Figure \ref{fig:sensi-data-RE}. Time series of spawning output and relative spawning output are shown in Figures \ref{fig:sensi-data-ssb} and \ref{fig:sensi-data-depl}.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Deterministic length-based (with or without catches) models with fixed life history values view the stock scale and status to be below that of the reference model, though above the limit reference point. Bringing in the age data, while still fixing life history and not estimating recruitment, significantly raises the stock scale to above the reference model, though the stock status is similar to the reference model. Introduction of the index made little difference to the relative stock status. Estimating the life history values, even without estimating recruitment, brought the scale back in line with the reference model. The other data treatments regarding weighting did very little to change the results from the reference model
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H4}\tagmcbegin{tag=H4}
+
+\hypertarget{model-specification-sensitivities}{%
+\paragraph{Model specification sensitivities}\label{model-specification-sensitivities}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Model specifications looked at the estimation of indiviual and combinations of life history parameters, the estimation of recruitment, and the treatment of fecundity and selectivity. All scenarios match the reference model specificatins in all other aspects unless otherwised stated.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=L}
+
+\begin{itemize}
+\item
+  \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+  Life history estimation
+
+  \tagmcend\tagstructend\tagstructend
+
+  \tagstructbegin{tag=L}
+
+  \begin{itemize}
+  \item
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    Fix natural mortality ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend})
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagstructbegin{tag=L}
+
+    \begin{enumerate}
+    \def\labelenumi{\arabic{enumi}.}
+    \item
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      Fix {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend}
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+    \item
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      Fix {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend} and {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(CV_old\)\leavevmode\tagmcend\tagstructend}
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+    \item
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      Fix {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend}, {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(t_0\)\leavevmode\tagmcend\tagstructend} and {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(CV_old\)\leavevmode\tagmcend\tagstructend}
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+    \item
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      Fix {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend}, {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(k\)\leavevmode\tagmcend\tagstructend}, {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(t_0\)\leavevmode\tagmcend\tagstructend} and {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(CV_old\)\leavevmode\tagmcend\tagstructend}
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+    \end{enumerate}
+
+    \tagstructend
+  \item
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    Fix growth parameters
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagstructbegin{tag=L}
+
+    \begin{enumerate}
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{4}
+    \item
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      Fix all growth parameters
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+    \item
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      Fix {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend}, {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(k\)\leavevmode\tagmcend\tagstructend}, and {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(t0\)\leavevmode\tagmcend\tagstructend}
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+    \item
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      Fix {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(k\)\leavevmode\tagmcend\tagstructend}, and {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(CV_old\)\leavevmode\tagmcend\tagstructend}
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+    \item
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      Fix {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend} and {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(CV_old\)\leavevmode\tagmcend\tagstructend}
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+    \item
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      Est {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend} for females only
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+    \item
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      Est {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend} for males only
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+    \item
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      5 growth platoons instead of one
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+    \end{enumerate}
+
+    \tagstructend
+  \item
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    Recruitment estimation and variability ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\sigma_R\)\leavevmode\tagmcend\tagstructend}). All years are estimated with bias correction applied.
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagstructbegin{tag=L}
+
+    \begin{enumerate}
+    \def\labelenumi{\arabic{enumi}.}
+    \setcounter{enumi}{11}
+    \item
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      No recruitment estimation
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+    \item
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      No recruitment esimation and fixed life history parameters
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+    \item
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\sigma_R\)\leavevmode\tagmcend\tagstructend} = 0.45
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+    \item
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+      {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\sigma_R\)\leavevmode\tagmcend\tagstructend} = 0.75\\
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+
+      \tagmcend\tagstructend\tagstructend
+    \end{enumerate}
+
+    \tagstructend
+  \end{itemize}
+
+  \tagstructend
+\item
+  \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+  Miscellaneous
+
+  \tagmcend\tagstructend\tagstructend
+
+  \tagstructbegin{tag=L}
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{15}
+  \item
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    Fecundity proportional to weight
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagmcend\tagstructend\tagstructend
+  \item
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    \tagstructbegin{tag=LI}\tagstructbegin{tag=LBody}\tagmcbegin{tag=P}
+
+    Estimate dome-shaped selectivity
+
+    \tagmcend\tagstructend\tagstructend
+
+    \tagmcend\tagstructend\tagstructend
+  \end{enumerate}
+
+  \tagstructend
+\end{itemize}
+
+\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Likelihood values and estimates of key parameters and derived quantities from each sensitivity are available in Tables \ref{tab:modspec_LH_sensis} and \ref{tab:modspec_RecMisc_sensis}. Derived quantities relative to the reference model are provided in Figure \ref{fig:sensi-modspec-RE}. Time series of spawning output and relative spawning output are shown in Figures \ref{fig:sensi-modspec-ssb} and \ref{fig:sensi-modspec-depl}.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Fixing {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend} to the higher prior mean value while estimating {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend} raised both the beginning and ending stock scale and overall ending year relative stock status. Fixing growth but estimaing {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend} dropped stock scale, but preserved the stock status. Allowing either {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend} or {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(k\)\leavevmode\tagmcend\tagstructend} to be estimated increased both stock scale and status. Fixing the life history parameters except for female {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend} also raised stock scale and status, though estiamating males {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend} made little difference to model results. Further investigation on the affect of life history values are provided in the likelihood profiles (next section).
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Recruitment estimation (assuming {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\sigma_R\)\leavevmode\tagmcend\tagstructend} = 0.6) was not sensitive to a range of {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\sigma_R\)\leavevmode\tagmcend\tagstructend} values, though fixing life history values again increased both scale and relative stock status. The two remaining model specifications did little to change the reference model results.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Overall, there were no model specification sensitivity scenarios that caused the population to drop significantly below the reference model estimate of stock status, only above. When stock scale differed, unfished and current stock size offered varied similarly, with current stock size changing more, which led to increases in the relative stocks status.
+
+\leavevmode\tagmcend\tagstructend\par
 
 \tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
 
@@ -777,6 +1837,75 @@ Describe all diagnostics
 
 \leavevmode\tagmcend\tagstructend
 
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Likelihood profiles were conducted for {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(ln(R_0)\)\leavevmode\tagmcend\tagstructend}, steepness ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(h\)\leavevmode\tagmcend\tagstructend}), female and male natural mortality ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend}) values separately and varying together, female and male maximum length ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend}), female and male growth coefficient ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(k\)\leavevmode\tagmcend\tagstructend}), female and male variability of size at maximum age. In addition, joint profiles over {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend} and {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(k\)\leavevmode\tagmcend\tagstructend} (that maintains a correlation structure -0.92 between the parameters consistent with the model calculation of that correlation) were done for females and males separately. Female and male natural mortality was also covaried based on the offset in values from the reference model. Likelihood profiles were conducted by fixing the featured parameter(s) at specific values across a range of values and estimating the remaining parameters. A likelihood profile offers insight into model information on a given parameter or parameter pairing, while providing an additional way to describe uncertainty in the parameter by indentifying the range of parameters within 1.96 likelihood units of the refrence model.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+The {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(ln(R_0)\)\leavevmode\tagmcend\tagstructend} profiles show strong support for the maximum likelhood value of 0.91 (Figure \ref{fig:r0-profile-combo}). Population size expectedly increases as {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(ln(R_0)\)\leavevmode\tagmcend\tagstructend} increases, with the increase in current biomass happening quicker than initial biomass, thus relative stock status increase towards unfished at high {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(ln(R_0)\)\leavevmode\tagmcend\tagstructend} values. This is explained by the harvest rate decreasing because the removal history is fixed and becomes relatively smaller compared to the overall biomass. All data sets were mostly consistent in the information content in the profile, though the length data contained the least amount of information on {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(ln(R_0)\)\leavevmode\tagmcend\tagstructend}.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+The steepness profile showed little information content for this parameter (Figure \ref{fig:steepness-profile-combo}). Despite low information content, model output show little senstivity for {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(h\)\leavevmode\tagmcend\tagstructend} \textgreater{} 0.45, with values for relative stock status ranging between 0.7 and 0.8. Scale outputs ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(SB_0\)\leavevmode\tagmcend\tagstructend} and {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(SB_2021\)\leavevmode\tagmcend\tagstructend}) also showed little change across steepness values. The recruitment likelihood was the biggest driver of steepness towards a value of 1 (Figure \ref{fig:steepness-profile-combo}).
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Natural mortality profiles for females (Figure \ref{fig:M_f-profile-combo}) and males (Figure \ref{fig:M_m-profile-combo}) are consisten with each other and show a range of {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend} values for females and males supported by the data. These values are distinctly below the mean of the prior (0.1) for both sexes. The combined profile that varies female and male {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend} based on the reference offset together at the same changing value behave diretionally most like the female likelihood support values in the range of the individual parameter likelihoods (Figure \ref{fig:M-multiprofile-combo}). Scale and relative stock status are affected by this parameter, with the current spawning output being affected more than initial biomass. This is particularly true as M get larger, creating much higher biomass and higher relative stock status. The uncertainty in the relative stock status ranges from 0.5 to 0.9, very consistent with the asymptotic uncertainty intervals for this value from in reference model. The index provided the strongest data signal for natural mortality, with length and age data being much less informative, but not inconsistent with the index.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Female (Figure \ref{fig:Linf_F-profile-combo}) and male (Figure \ref{fig:Linf_M-profile-combo}) growth profiles show strong signals in the data to estimate {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend}, {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(k\)\leavevmode\tagmcend\tagstructend}, and length CV at maximum age. Lengths and ages are the primary data supporting {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend} values similar to the externaly estimated values for each sex, but {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(k\)\leavevmode\tagmcend\tagstructend} values higher than the externally estimated values. A more realistic profile that maintains the negative correlation bewtween {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_{\infty}\)\leavevmode\tagmcend\tagstructend} and {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(k\)\leavevmode\tagmcend\tagstructend} showing show similar behavior as the two separate profiles (Figure \ref{fig:Linf_k_f-profile}). Changing either value affects stock scale, though relative stock status seems robust over a wide range of values. The profile over the length variability at maximum age also has a distinct influence on stocks scale, but relatives relatives stock status in again robust to most values (Figure \ref{fig:CVold_f-profile-combo}). The female length CV at the oldest age had the biggest influence on stock status as the CV got higher, though still a small affect compared to the uncertainty in the model. Overall, the influence of growth values seems to make the population stock status increase slightly.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
+
+\hypertarget{retrospective-analysis}{%
+\subsubsection{Retrospective Analysis}\label{retrospective-analysis}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+A ten-year retrospective analysis was conducted by running the model and sequentially removing one year of data up through minus 10 years. Retrospective spawning output (Figure \ref{fig:retro-ssb}) and relatives stock statys (Figure \ref{fig:retro-depl}) estimates were gnerally within the confidence intervals of the reference model, though removing 8 to 10 years did reveal a retrospective pattern in the terminal year. None of these patterns changed the overall relative stock status of the stock being above the target relative stock status level since 2000.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
+
+\hypertarget{management}{%
+\subsection{Management}\label{management}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
+
+\hypertarget{reference-points-1}{%
+\subsubsection{Reference Points}\label{reference-points-1}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+Reference points were calculated using the estimated fishery selectivity and removals in the most recent year of the model (2020, Table \ref{tab:referenceES}). Sustainable total yields were 0.77 mt when using an {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(SPR_{50\%}\)\leavevmode\tagmcend\tagstructend} reference harvest rate. The spawning output equivalent to 40 percent of the unfished spawning output ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(SB_{40\%}\)\leavevmode\tagmcend\tagstructend}) was 1.23 millions of eggs.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+The 2021 spawning output relative to unfished equilibrium spawning output is above the vermilion rockfish relative biomass target of 40 percent (Figure \ref{fig:depl}). The fishing intensity, {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(1-SPR\)\leavevmode\tagmcend\tagstructend}, of recent years was near or above the harvest rate limit ({\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(SPR_{50\%}\)\leavevmode\tagmcend\tagstructend}) for most of the 1980s and 1990s. Recent years also show near target fishing levels (Table \ref{tab:timeseries} and Figure \ref{fig:1-spr}), highlighting how the sustainability of current fishing levels are very sensitive to incoming recruitment. Table \ref{tab:referenceES} shows the full suite of estimated reference points for the base model and Figure \ref{fig:yield} shows the equilibrium curve based on a steepness value fixed at 0.72.
+
+\leavevmode\tagmcend\tagstructend\par
+
 \tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
 
 \hypertarget{unresolved-problems-and-major-uncertainties-1}{%
@@ -784,40 +1913,37 @@ Describe all diagnostics
 
 \leavevmode\tagmcend\tagstructend
 
-\tagstructbegin{tag=H1}\tagmcbegin{tag=H1}
-
-\hypertarget{management}{%
-\section{Management}\label{management}}
-
-\leavevmode\tagmcend\tagstructend
-
-\tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
-
-\hypertarget{reference-points-2}{%
-\subsection{Reference Points}\label{reference-points-2}}
-
-\leavevmode\tagmcend\tagstructend
-
-\tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
-
-\hypertarget{unresolved-problems-and-major-uncertainties-2}{%
-\subsection{Unresolved Problems and Major Uncertainties}\label{unresolved-problems-and-major-uncertainties-2}}
-
-\leavevmode\tagmcend\tagstructend
-
-\tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
+\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
 
 \hypertarget{harvest-projections-and-decision-tables}{%
-\subsection{Harvest Projections and Decision Tables}\label{harvest-projections-and-decision-tables}}
+\subsubsection{Harvest Projections and Decision Tables}\label{harvest-projections-and-decision-tables}}
 
 \leavevmode\tagmcend\tagstructend
 
-\tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+A ten year projection of the reference model with removals in 2021 and 2022 equal to the recent average removals from 2017-2019 were run based on the category 2 time-varying buffer using {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(P^*\)\leavevmode\tagmcend\tagstructend} = 0.45 for years 2023-2032 is provided in Table \ref{tab:project}.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+A decision table with uncertainty axes and proposed catch levels will be determined later.
+
+\leavevmode\tagmcend\tagstructend\par
+
+\tagstructbegin{tag=H3}\tagmcbegin{tag=H3}
 
 \hypertarget{evaluation-of-scientific-uncertainty}{%
-\subsection{Evaluation of Scientific Uncertainty}\label{evaluation-of-scientific-uncertainty}}
+\subsubsection{Evaluation of Scientific Uncertainty}\label{evaluation-of-scientific-uncertainty}}
 
 \leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+The estimated uncertainty in the base model around the 2021 spawning output is {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\sigma\)\leavevmode\tagmcend\tagstructend} = 0.71 and the uncertainty in the base model around the 2021 OFL is {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\sigma\)\leavevmode\tagmcend\tagstructend} = 0.76. The estimated model uncertainty was less than the category 2 groundfish data moderate assessment default value of {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(\sigma\)\leavevmode\tagmcend\tagstructend} = 1.0.
+
+\leavevmode\tagmcend\tagstructend\par
 
 \tagstructbegin{tag=H2}\tagmcbegin{tag=H2}
 
@@ -825,6 +1951,12 @@ Describe all diagnostics
 \subsection{Research and Data Needs}\label{research-and-data-needs-1}}
 
 \leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=P}\tagmcbegin{tag=P}
+
+TBD
+
+\leavevmode\tagmcend\tagstructend\par
 
 \tagstructbegin{tag=H1}\tagmcbegin{tag=H1}
 
@@ -852,23 +1984,53 @@ Here are all the mad props!
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
-\leavevmode\hypertarget{ref-bradburn_2003_2011}{}%
-Bradburn, M. J., A. A Keller, and B. H. Horness. 2011. {``The 2003 to 2008 {US} {West} {Coast} Bottom Trawl Surveys of Groundfish Resources Off {Washington}, {Oregon}, and {California}: Estimates of Distribution, Abundance, Length, and Age Composition.''} US Department of Commerce, National Oceanic; Atmospheric Administration, National Marine Fisheries Service.
+\leavevmode\hypertarget{ref-cope_implementing_2013}{}%
+Cope, Jason M. 2013. {``Implementing a Statistical Catch-at-Age Model (Stock Synthesis) as a Tool for Deriving Overfishing Limits in Data-Limited Situations.''} \emph{Fisheries Research} 142 (May): 3--14. \url{https://doi.org/10.1016/j.fishres.2012.03.006}.
+
+\leavevmode\hypertarget{ref-cope_implementing_2013}{}%
+---------. 2013. {``Implementing a Statistical Catch-at-Age Model (Stock Synthesis) as a Tool for Deriving Overfishing Limits in Data-Limited Situations.''} \emph{Fisheries Research} 142 (May): 3--14. \url{https://doi.org/10.1016/j.fishres.2012.03.006}.
+
+\leavevmode\hypertarget{ref-dick_meta-analysis_2017}{}%
+Dick, E. J., Sabrina Beyer, Marc Mangel, and Stephen Ralston. 2017. {``A Meta-Analysis of Fecundity in Rockfishes (Genus \emph{Sebastes}).''} \emph{Fisheries Research} 187 (March): 73--85. \url{https://doi.org/10.1016/j.fishres.2016.11.009}.
+
+\leavevmode\hypertarget{ref-francis_data_2011}{}%
+Francis, R. I. C. Chris, and R. Hilborn. 2011. {``Data Weighting in Statistical Fisheries Stock Assessment Models.''} \emph{Canadian Journal of Fisheries and Aquatic Sciences} 68 (6): 1124--38. \url{https://doi.org/10.1139/f2011-025}.
 
 \leavevmode\hypertarget{ref-hamel_method_2015}{}%
 Hamel, Owen S. 2015. {``A Method for Calculating a Meta-Analytical Prior for the Natural Mortality Rate Using Multiple Life History Correlates.''} \emph{ICES Journal of Marine Science: Journal Du Conseil} 72 (1): 62--69. \url{https://doi.org/10.1093/icesjms/fsu131}.
 
-\leavevmode\hypertarget{ref-Starr2015}{}%
-Starr, R. M., D. E. Wendt, C. L. Barnes, C. I. Marks, D. Malone, G. Waltz, K. T. Schmidt, et al. 2015. {``Variation in Responses of Fishes Across Multiple Reserves Within a Network of Marine Protected Areas in Temperate Waters.''} \emph{PLoS One2} 10 (3): p.e0118502.
+\leavevmode\hypertarget{ref-Hannah2011}{}%
+Hannah, Robert W., and Polly S. Rankin. 2011. {``{Site fidelity and movement of eight species of pacific rockfish at a high-relief rocky reef on the oregon coast}.''} \emph{North American Journal of Fisheries Management} 31 (3): 483--94. \url{https://doi.org/10.1080/02755947.2011.591239}.
+
+\leavevmode\hypertarget{ref-hannah_age_2012}{}%
+Hannah, Robert W, and Lisa A Kautzi. 2012. {``Age, Growth and Female Maturity of Vermilion Rockfish (Sebastes Miniatus) from Oregon Waters,''} 20.
+
+\leavevmode\hypertarget{ref-head_fxnalmatspline_2020}{}%
+Head, Melissa A., Jason M. Cope, and Sophie H. Wulfing. 2020. {``Applying a Flexible Spline Model to Estimate Functional Maturity and Spatio-Temporal Variability in Aurora Rockfish (Sebastes Aurora).''} \emph{Environmental Biology of Fishes}. \url{https://doi.org/10.1007/s10641-020-01014-2}.
+
+\leavevmode\hypertarget{ref-Hyde2009}{}%
+Hyde, John R., and Russell D. Vetter. 2009. {``{Population genetic structure in the redefined vermilion rockfish (\emph{Sebastes miniatus}) indicates limited larval dispersal and reveals natural management units}.''} \emph{Canadian Journal of Fisheries and Aquatic Sciences} 66 (9): 1569--81. \url{https://doi.org/10.1139/F09-104}.
+
+\leavevmode\hypertarget{ref-Lea1999}{}%
+Lea, Robert N, Robert D McAllister, and David André VenTresca. 1999. {``{Biological aspects of nearshore rockfishes of the genus genus\emph{Sebastes} from central California: with notes on ecologically related sport fishes}.''} \emph{Fish Bulletin No. 177}, 112. \url{https://drive.google.com/file/d/1HTxXq-Cjv0GU0rLUZ2wmdrdoe-EAElMx/view?usp=sharing}.
+
+\leavevmode\hypertarget{ref-Love2012a}{}%
+Love, Milton S., Mary Nishimoto, Scott Clark, and Donna M. Schroeder. 2012. {``{Recruitment of young-of-the-year fishes to natural and artificial offshore structure within central and southern California waters, 2008-2010}.''} \emph{Bulletin of Marine Science} 88 (4): 863--82. \url{https://doi.org/10.5343/bms.2011.1101}.
+
+\leavevmode\hypertarget{ref-love_rockfishes_2002}{}%
+Love, Milton S., Mary Yoklavich, and Lyman Thorsteinson. 2002. \emph{The Rockfishes of the Northeast Pacific}. 1st Edition. Berkeley: University of California Press.
+
+\leavevmode\hypertarget{ref-mcallister_bayesian_1997}{}%
+McAllister, M. K., and J. N. Ianelli. 1997. {``Bayesian Stock Assessment Using Catch-Age Data and the Sampling - Importance Resampling Algorithm.''} \emph{Canadian Journal of Fisheries and Aquatic Sciences} 54: 284--300.
+
+\leavevmode\hypertarget{ref-Phillips1964}{}%
+Phillips, Julius B. 1964. {``{Life history studies on ten species of rockfish (genus \emph{Sebastodes})}.''} \emph{Fish Bulletin} 126.
 
 \leavevmode\hypertarget{ref-then_evaluating_2015-1}{}%
 Then, A. Y., J. M. Hoenig, N. G. Hall, and D. A. Hewitt. 2015. {``Evaluating the Predictive Performance of Empirical Estimators of Natural Mortality Rate Using Information on over 200 Fish Species.''} \emph{ICES Journal of Marine Science} 72 (1): 82--92. \url{https://doi.org/10.1093/icesjms/fsu136}.
 
-\leavevmode\hypertarget{ref-weinberg_2001_2002}{}%
-Weinberg, K. L., M. E. Wilkins, F. R. Shaw, and M. Zimmermann. 2002. {``The 2001 {Pacific} {West} {Coast} Bottom Trawl Survey of Groundfish Resources: Estimates of Distribution, Abundance and Length and Age Composition.''} NOAA Technical Memorandum NMFS-AFSC-128. U.S. Department of Commerce.
-
-\leavevmode\hypertarget{ref-Wendt2009}{}%
-Wendt, D. E., and R. M. Starr. 2009. {``Collaborative Research: An Effective Way to Collect Data for Stock Assessments and Evaluate Marine Protected Areas in {C}alifornia.''} \emph{Marine and Coastal Fisheries: Dynamics, Management, and Ecosystem Science.} 1: 315--24.
+\leavevmode\hypertarget{ref-thorson_model-based_2017}{}%
+Thorson, James T., Kelli F. Johnson, R. D. Methot, and I. G. Taylor. 2017. {``Model-Based Estimates of Effective Sample Size in Stock Assessment Models Using the {Dirichlet}-Multinomial Distribution.''} \emph{Fisheries Research} 192: 84--93. \url{https://doi.org/10.1016/j.fishres.2016.06.005}.
 
 \end{CSLReferences}
 
@@ -883,6 +2045,179 @@ Wendt, D. E., and R. M. Starr. 2009. {``Collaborative Research: An Effective Way
 
 \leavevmode\tagmcend\tagstructend
 
+\include{tex_tables/WA_vermilion_catches.tex}
+
+\newpage
+
+\include{tex_tables/OR_vermilion_mgmt.tex}
+
+\newpage
+
+\include{tex_tables/WA_vermilion_lengthsamples.tex}
+
+\newpage
+
+\include{tex_tables/WA_vermilion_agesamples.tex}
+
+\newpage
+
+\include{tex_tables/ageing_error_models.tex}
+
+\newpage
+
+\begingroup\fontsize{9}{11}\selectfont
+
+\begin{landscape}\begingroup\fontsize{9}{11}\selectfont
+
+\tagstructbegin{tag=Table}\tagmcbegin{tag=Table}
+\begin{longtable}[t]{>{\raggedright\arraybackslash}p{6cm}lllll>{\raggedright\arraybackslash}p{4cm}}
+\caption{\label{tab:model-param}List of parameters used in the base model, including estimated values and standard deviations (SD), bounds (minimum and maximum), estimation phase (negative values not estimated), status (indicates if parameters are near bounds), and prior type information (mean and SD).}\\
+\toprule
+Parameter & Value & Phase & Bounds & Status & Prior (Exp.Val, SD)\\
+\midrule
+\endfirsthead
+\caption[]{\label{tab:model-param}List of parameters used in the base model, including estimated values and standard deviations (SD), bounds (minimum and maximum), estimation phase (negative values not estimated), status (indicates if parameters are near bounds), and prior type information (mean and SD). \textit{(continued)}}\\
+\toprule
+Parameter & Value & Phase & Bounds & Status & Prior (Exp.Val, SD)\\
+\midrule
+\endhead
+
+\endfoot
+\bottomrule
+\endlastfoot
+NatM p 1 Fem GP 1 & 0.085 & 3 & OK & 0.0129347 & Log Norm (-2.30259, 0.438)\\
+L at Amin Fem GP 1 & 1.968 & 3 & OK & 3.70137 & None\\
+L at Amax Fem GP 1 & 57.106 & 3 & OK & 1.01762 & None\\
+VonBert K Fem GP 1 & 0.093 & 3 & OK & 0.00850602 & None\\
+CV young Fem GP 1 & 0.090 & 3 & OK & 0.0265344 & None\\
+CV old Fem GP 1 & 0.053 & 3 & OK & 0.00664901 & None\\
+Wtlen 1 Fem GP 1 & 0.000 & -99 & - & - & None\\
+Wtlen 2 Fem GP 1 & 3.100 & -99 & - & - & None\\
+Mat50\% Fem GP 1 & 39.400 & -99 & - & - & None\\
+Mat slope Fem GP 1 & -0.342 & -99 & - & - & None\\
+Eggs scalar Fem GP 1 & 0.000 & -3 & - & - & None\\
+Eggs exp len Fem GP 1 & 3.548 & -3 & - & - & None\\
+NatM p 1 Mal GP 1 & 0.087 & 3 & OK & 0.0134205 & Log Norm (-2.30259, 0.438)\\
+L at Amin Mal GP 1 & -2.671 & 3 & OK & 4.76078 & None\\
+L at Amax Mal GP 1 & 54.240 & 3 & OK & 0.687875 & None\\
+VonBert K Mal GP 1 & 0.109 & 3 & OK & 0.00906197 & None\\
+CV young Mal GP 1 & 0.149 & 3 & OK & 0.0402358 & None\\
+CV old Mal GP 1 & 0.037 & 3 & LO & 0.00760099 & None\\
+Wtlen 1 Mal GP 1 & 0.000 & -99 & - & - & None\\
+Wtlen 2 Mal GP 1 & 2.960 & -99 & - & - & None\\
+CohortGrowDev & 1.000 & -1 & - & - & None\\
+FracFemale GP 1 & 0.500 & -99 & - & - & None\\
+SR LN(R0) & 0.908 & 1 & OK & 0.612927 & None\\
+SR BH steep & 0.720 & -1 & - & - & None\\
+SR sigmaR & 0.600 & -6 & - & - & None\\
+SR regime & 0.000 & -99 & - & - & None\\
+SR autocorr & 0.000 & -99 & - & - & None\\
+Early InitAge 1 & 0.060 & 3 & act & 0.615948 & dev (NA, NA)\\
+Main RecrDev 1949 & 0.107 & 1 & act & 0.627134 & dev (NA, NA)\\
+Main RecrDev 1950 & 0.163 & 1 & act & 0.643499 & dev (NA, NA)\\
+Main RecrDev 1951 & 0.202 & 1 & act & 0.655332 & dev (NA, NA)\\
+Main RecrDev 1952 & 0.205 & 1 & act & 0.656279 & dev (NA, NA)\\
+Main RecrDev 1953 & 0.169 & 1 & act & 0.644486 & dev (NA, NA)\\
+Main RecrDev 1954 & 0.109 & 1 & act & 0.625618 & dev (NA, NA)\\
+Main RecrDev 1955 & 0.046 & 1 & act & 0.606875 & dev (NA, NA)\\
+Main RecrDev 1956 & -0.008 & 1 & act & 0.591989 & dev (NA, NA)\\
+Main RecrDev 1957 & -0.047 & 1 & act & 0.581748 & dev (NA, NA)\\
+Main RecrDev 1958 & -0.069 & 1 & act & 0.575812 & dev (NA, NA)\\
+Main RecrDev 1959 & -0.075 & 1 & act & 0.573543 & dev (NA, NA)\\
+Main RecrDev 1960 & -0.068 & 1 & act & 0.574223 & dev (NA, NA)\\
+Main RecrDev 1961 & -0.054 & 1 & act & 0.577099 & dev (NA, NA)\\
+Main RecrDev 1962 & -0.034 & 1 & act & 0.581387 & dev (NA, NA)\\
+Main RecrDev 1963 & -0.011 & 1 & act & 0.586455 & dev (NA, NA)\\
+Main RecrDev 1964 & 0.015 & 1 & act & 0.592478 & dev (NA, NA)\\
+Main RecrDev 1965 & 0.046 & 1 & act & 0.600844 & dev (NA, NA)\\
+Main RecrDev 1966 & 0.091 & 1 & act & 0.613803 & dev (NA, NA)\\
+Main RecrDev 1967 & 0.157 & 1 & act & 0.633468 & dev (NA, NA)\\
+Main RecrDev 1968 & 0.243 & 1 & act & 0.659115 & dev (NA, NA)\\
+Main RecrDev 1969 & 0.318 & 1 & act & 0.680349 & dev (NA, NA)\\
+Main RecrDev 1970 & 0.318 & 1 & act & 0.677163 & dev (NA, NA)\\
+Main RecrDev 1971 & 0.228 & 1 & act & 0.647798 & dev (NA, NA)\\
+Main RecrDev 1972 & 0.112 & 1 & act & 0.613624 & dev (NA, NA)\\
+Main RecrDev 1973 & 0.024 & 1 & act & 0.589122 & dev (NA, NA)\\
+Main RecrDev 1974 & -0.022 & 1 & act & 0.574495 & dev (NA, NA)\\
+Main RecrDev 1975 & -0.046 & 1 & act & 0.563294 & dev (NA, NA)\\
+Main RecrDev 1976 & -0.089 & 1 & act & 0.550197 & dev (NA, NA)\\
+Main RecrDev 1977 & -0.178 & 1 & act & 0.534298 & dev (NA, NA)\\
+Main RecrDev 1978 & -0.284 & 1 & act & 0.517754 & dev (NA, NA)\\
+Main RecrDev 1979 & -0.353 & 1 & act & 0.506578 & dev (NA, NA)\\
+Main RecrDev 1980 & -0.358 & 1 & act & 0.503724 & dev (NA, NA)\\
+Main RecrDev 1981 & -0.302 & 1 & act & 0.507597 & dev (NA, NA)\\
+Main RecrDev 1982 & -0.231 & 1 & act & 0.512859 & dev (NA, NA)\\
+Main RecrDev 1983 & -0.221 & 1 & act & 0.510556 & dev (NA, NA)\\
+Main RecrDev 1984 & -0.284 & 1 & act & 0.503176 & dev (NA, NA)\\
+Main RecrDev 1985 & -0.330 & 1 & act & 0.496782 & dev (NA, NA)\\
+Main RecrDev 1986 & -0.296 & 1 & act & 0.496976 & dev (NA, NA)\\
+Main RecrDev 1987 & -0.216 & 1 & act & 0.497525 & dev (NA, NA)\\
+Main RecrDev 1988 & -0.150 & 1 & act & 0.498427 & dev (NA, NA)\\
+Main RecrDev 1989 & -0.125 & 1 & act & 0.490802 & dev (NA, NA)\\
+Main RecrDev 1990 & -0.171 & 1 & act & 0.4933 & dev (NA, NA)\\
+Main RecrDev 1991 & -0.051 & 1 & act & 0.487257 & dev (NA, NA)\\
+Main RecrDev 1992 & 0.001 & 1 & act & 0.479754 & dev (NA, NA)\\
+Main RecrDev 1993 & -0.192 & 1 & act & 0.499607 & dev (NA, NA)\\
+Main RecrDev 1994 & -0.007 & 1 & act & 0.511951 & dev (NA, NA)\\
+Main RecrDev 1995 & 0.219 & 1 & act & 0.536386 & dev (NA, NA)\\
+Main RecrDev 1996 & 0.316 & 1 & act & 0.4807 & dev (NA, NA)\\
+Main RecrDev 1997 & -0.143 & 1 & act & 0.503712 & dev (NA, NA)\\
+Main RecrDev 1998 & -0.049 & 1 & act & 0.527827 & dev (NA, NA)\\
+Main RecrDev 1999 & 0.520 & 1 & act & 0.557418 & dev (NA, NA)\\
+Main RecrDev 2000 & 1.370 & 1 & act & 0.332128 & dev (NA, NA)\\
+Main RecrDev 2001 & 0.015 & 1 & act & 0.551525 & dev (NA, NA)\\
+Main RecrDev 2002 & -0.499 & 1 & act & 0.458786 & dev (NA, NA)\\
+Main RecrDev 2003 & -0.429 & 1 & act & 0.457812 & dev (NA, NA)\\
+Main RecrDev 2004 & -0.054 & 1 & act & 0.458839 & dev (NA, NA)\\
+Main RecrDev 2005 & 0.137 & 1 & act & 0.53278 & dev (NA, NA)\\
+Main RecrDev 2006 & 0.993 & 1 & act & 0.360992 & dev (NA, NA)\\
+Main RecrDev 2007 & 0.468 & 1 & act & 0.451916 & dev (NA, NA)\\
+Main RecrDev 2008 & -0.300 & 1 & act & 0.476217 & dev (NA, NA)\\
+Main RecrDev 2009 & -0.275 & 1 & act & 0.459163 & dev (NA, NA)\\
+Main RecrDev 2010 & 0.176 & 1 & act & 0.450055 & dev (NA, NA)\\
+Main RecrDev 2011 & 0.299 & 1 & act & 0.435636 & dev (NA, NA)\\
+Main RecrDev 2012 & -0.232 & 1 & act & 0.496431 & dev (NA, NA)\\
+Main RecrDev 2013 & -0.330 & 1 & act & 0.504523 & dev (NA, NA)\\
+Main RecrDev 2014 & -0.237 & 1 & act & 0.53221 & dev (NA, NA)\\
+Main RecrDev 2015 & -0.177 & 1 & act & 0.561097 & dev (NA, NA)\\
+Main RecrDev 2016 & -0.044 & 1 & act & 0.585831 & dev (NA, NA)\\
+Main RecrDev 2017 & -0.008 & 1 & act & 0.595358 & dev (NA, NA)\\
+Main RecrDev 2018 & -0.007 & 1 & act & 0.595827 & dev (NA, NA)\\
+Main RecrDev 2019 & -0.007 & 1 & act & 0.595838 & dev (NA, NA)\\
+Main RecrDev 2020 & -0.007 & 1 & act & 0.595838 & dev (NA, NA)\\
+ForeRecr 2021 & 0.000 & 4 & act & 0.6 & dev (NA, NA)\\
+ForeRecr 2022 & 0.000 & 4 & act & 0.6 & dev (NA, NA)\\
+InitF seas 1 flt 1Fishery & 0.000 & -1 & - & - & None\\
+Size DblN peak Fishery(1) & 44.267 & 2 & OK & 1.65543 & None\\
+Size DblN top logit Fishery(1) & 15.000 & -1 & - & - & None\\
+Size DblN ascend se Fishery(1) & 4.142 & 2 & OK & 0.308667 & None\\
+Size DblN descend se Fishery(1) & -15.000 & -1 & - & - & None\\
+Size DblN start logit Fishery(1) & -15.000 & -2 & - & - & None\\
+Size DblN end logit Fishery(1) & 15.000 & -1 & - & - & None\\*
+\end{longtable}
+\leavevmode\tagmcend\tagstructend\par
+\endgroup{}
+\end{landscape}
+\endgroup{}
+
+\include{tex_tables/likelihoods.tex}
+
+\include{tex_tables/TimeSeries.tex}
+
+\newpage
+
+\include{tex_tables/data_sensis.tex}
+
+\include{tex_tables/modspec_LH_sensis.tex}
+
+\include{tex_tables/modspec_RecMisc_sensis.tex}
+
+\newpage
+
+\include{tex_tables/e_ReferencePoints_ES.tex}
+
+\newpage
+
 \clearpage
 
 \tagstructbegin{tag=H1}\tagmcbegin{tag=H1}
@@ -892,13 +2227,554 @@ Wendt, D. E., and R. M. Starr. 2009. {``Collaborative Research: An Effective Way
 
 \leavevmode\tagmcend\tagstructend
 
-\tagstructbegin{tag=Figure,alttext={Summary of data sources used in the base model}}\tagmcbegin{tag=Figure}
+\tagstructbegin{tag=Figure,alttext={Oregon and Washington coastlines with rocky habitat indicated by brown shaded areas. Circled areas represent areas of primary vermilion rockfish occurence.}}\tagmcbegin{tag=Figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=1\textwidth,height=1\textheight]{data-plot.png}
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/stock/Vermilion_Map.png}
+\caption{Oregon and Washington coastlines with rocky habitat indicated by brown shaded areas. Circled areas represent areas of primary vermilion rockfish occurence.\label{fig:ORWA-map}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Total mortality from the southern Oregon and northern Washington recreational fisheries. These represent ninty and ninty-seven percent of the total vermilion removals in each state, respectively.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/stock/TM_Vermilion_ORWA.png}
+\caption{Total mortality from the southern Oregon and northern Washington recreational fisheries. These represent ninty and ninty-seven percent of the total vermilion removals in each state, respectively.\label{fig:tm-plot}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Summary of data sources used in the base model.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/data_plot.png}
 \caption{Summary of data sources used in the base model.\label{fig:data-plot}}
 \end{figure}
 
 \tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Bubble plot of length compositions by year. Size of the bubble indicates higher proportion. All proportions within year sum to one.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/comp_lendat__multi-fleet_comparison.png}
+\caption{Bubble plot of length compositions by year. Size of the bubble indicates higher proportion. All proportions within year sum to one.\label{fig:rec-lts_bubbs}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Observed length-at-age by data source and sex. Lines indicate fits to the von Bertalanffy growth equation, with initial parameter estimates provided in the bottom right corner of the figure.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/biology_plots/AG_plot_lines_parameters.png}
+\caption{Observed length-at-age by data source and sex. Lines indicate fits to the von Bertalanffy growth equation, with initial parameter estimates provided in the bottom right corner of the figure.\label{fig:len-age-data}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Model estimated length-at-age in the beginning of the year. Shaded area indicates 95 percent distribution of length-at-age around the estimated growth curve.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/bio1_sizeatage.png}
+\caption{Model estimated length-at-age in the beginning of the year. Shaded area indicates 95 percent distribution of length-at-age around the estimated growth curve.\label{fig:len-age-ss}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Agein error matrix (age by standard deviation) values by source. The commercial and recreational matrices are based on inter-reader comparisons.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/biology_plots/Age_error_plot.png}
+\caption{Agein error matrix (age by standard deviation) values by source. The commercial and recreational matrices are based on inter-reader comparisons.\label{fig:age-error}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Maturity as a function of  length.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/bio6_maturity.png}
+\caption{Maturity as a function of length.\label{fig:maturity}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Fecundity as a function of length.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/bio9_fecundity_len.png}
+\caption{Fecundity as a function of length.\label{fig:fecundity}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Composite natural mortality distriubtion for $S. hopkinsi$ using four longevity estimators each with a SD = 0.2 presuming a lognomral error distibution.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/biology_plots/Mdensityplots_OR_vermilion.png}
+\caption{Composite natural mortality distriubtion for {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(S. hopkinsi\)\leavevmode\tagmcend\tagstructend} using four longevity estimators each with a SD = 0.2 presuming a lognomral error distibution.\label{fig:M_composite_dists}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Length-weight data and fits to sex-specific vermilion samples from the recreational fishery.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/biology_plots/Vermilion_WA_Lt_Wt.png}
+\caption{Length-weight data and fits to sex-specific vermilion samples from the recreational fishery.\label{fig:len-weight-fit}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Selectivity at length by fleet.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/sel01_multiple_fleets_length1.png}
+\caption{Selectivity at length by fleet.\label{fig:selex}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Jitter runs for the squarespot rockfish reference model, with jitter run number on the x-axis and -log likelihood value on the y-axis. Blue dot are models that match the likelihood value of the reference model, while red dots deviate from the reference model. All red dots are above the blue dots, indicating no better fit to the reference model was found.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/Jitter Results/jitterplot_01.png}
+\caption{Jitter runs for the squarespot rockfish reference model, with jitter run number on the x-axis and -log likelihood value on the y-axis. Blue dot are models that match the likelihood value of the reference model, while red dots deviate from the reference model. All red dots are above the blue dots, indicating no better fit to the reference model was found.\label{fig:jitter_01}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Pearson residuals for the recreational fleet. Closed bubble are positive residuals (observed > expected) and open bubbles are negative residuals (observed < expected).}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/comp_lenfit__multi-fleet_comparison.png}
+\caption{Pearson residuals for the recreational fleet. Closed bubble are positive residuals (observed \textgreater{} expected) and open bubbles are negative residuals (observed \textless{} expected).\label{fig:rec-pearson}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Mean length index from the recreational fishery with 95 percent confidence intervals based on sample sizes and data weighting.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/comp_lenfit_data_weighting_TA1.8_Fishery.png}
+\caption{Mean length index from the recreational fishery with 95 percent confidence intervals based on sample sizes and data weighting.\label{fig:rec-mean-len-fit}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Aggregated length comps over all years.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/comp_lenfit__aggregated_across_time.png}
+\caption{Aggregated length comps over all years.\label{fig:agg-len-fit}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Mean age observations from the conditional age-at-length data from the Recreational fishery.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/comp_condAALfit_data_weighting_TA1.8_condAgeFishery.png}
+\caption{Mean age observations from the conditional age-at-length data from the Recreational fishery.\label{fig:rec-mean-caal}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Length-based selectivity curves for the commercial and recreational fisheries.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/sel01_multiple_fleets_length1.png}
+\caption{Length-based selectivity curves for the commercial and recreational fisheries.\label{fig:fleet_selectivity}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Estimated time series of spawning biomass.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/ts7_Spawning_output_with_95_asymptotic_intervals_intervals.png}
+\caption{Estimated time series of spawning biomass.\label{fig:ssb}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Estimated time series of total biomass.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/ts1_Total_biomass_(mt).png}
+\caption{Estimated time series of total biomass.\label{fig:tot-bio}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Estimated time series of fraction of unfished spawning biomass.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/ts9_Relative_spawning_output_intervals.png}
+\caption{Estimated time series of fraction of unfished spawning biomass.\label{fig:depl}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Estimated time series of age-0 recruits (1000s).}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/ts11_Age-0_recruits_(1000s)_with_95_asymptotic_intervals.png}
+\caption{Estimated time series of age-0 recruits (1000s).\label{fig:recruits}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Estimated time series of recruitment deviations.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/recdevs2_withbars.png}
+\caption{Estimated time series of recruitment deviations.\label{fig:rec-devs}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Recruitment deviations variance by year. This plot tracks the information content contained in each recruitment deviation. Values below the red line (assumed recruitment variability) indicates years with more informed recruitment deviations.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/recdevs3_varcheck.png}
+\caption{Recruitment deviations variance by year. This plot tracks the information content contained in each recruitment deviation. Values below the red line (assumed recruitment variability) indicates years with more informed recruitment deviations.\label{fig:rec-devs-sigmas}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Stock-recruit curve. Point colors indicate year, with warmer colors indicating earlier years and cooler colors in showing later years.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/SR_curve.png}
+\caption{Stock-recruit curve. Point colors indicate year, with warmer colors indicating earlier years and cooler colors in showing later years.\label{fig:bh-curve}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Recruitment bias adjustment applied in the base model.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/recruit_fit_bias_adjust.png}
+\caption{Recruitment bias adjustment applied in the base model.\label{fig:bias-adj}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Stock recruit curve where point color indicate year, with warmer colors (yellow to green) indicating earlier years and cooler colors (blue) showing later years.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/SR_curve.png}
+\caption{Stock recruit curve where point color indicate year, with warmer colors (yellow to green) indicating earlier years and cooler colors (blue) showing later years.\label{fig:sr-curve}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Log relative change (log((Model_sensi-Model_ref)/Model_ref)) in data treatment for 5 derived quantities. Colored boxes indicate 95 percent confidence interval of the reference model.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/sensi_data/Sensi_logREplot_SB_Dep_F_MSY.png}
+\caption{Log relative change (log((Model\_sensi-Model\_ref)/Model\_ref)) in data treatment for 5 derived quantities. Colored boxes indicate 95 percent confidence interval of the reference model.\label{fig:sensi-data-RE}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Spawning biomass time series by data treatment compared to the reference model.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/sensi_data/compare2_spawnbio_uncertainty.png}
+\caption{Spawning biomass time series by data treatment compared to the reference model.\label{fig:sensi-data-ssb}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Relative spawning biomass time series by data treatment compared to the reference model.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/sensi_data/compare4_Bratio_uncertainty.png}
+\caption{Relative spawning biomass time series by data treatment compared to the reference model.\label{fig:sensi-data-depl}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Log relative change (log((Model_sensi-Model_ref)/Model_ref)) in data treatment for 5 derived quantities. Colored boxes indicate 95 percent confidence interval of the reference model.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/sensi_data/Sensi_logREplot_SB_Dep_F_MSY.png}
+\caption{Log relative change (log((Model\_sensi-Model\_ref)/Model\_ref)) in data treatment for 5 derived quantities. Colored boxes indicate 95 percent confidence interval of the reference model.\label{fig:sensi-modspec-RE}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Spawning biomass time series by data treatment compared to the reference model.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/sensi_data/compare2_spawnbio_uncertainty.png}
+\caption{Spawning biomass time series by data treatment compared to the reference model.\label{fig:sensi-modspec-ssb}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Relative spawning biomass time series by data treatment compared to the reference model.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/sensi_data/compare4_Bratio_uncertainty.png}
+\caption{Relative spawning biomass time series by data treatment compared to the reference model.\label{fig:sensi-modspec-depl}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={$Ln(R0)$ likelihood profiles (change in the negative log-likelihood across a range of $ln(R0)$ values) and derived quantities (left four figures) and likelihood component contributions (right three figures). Red line in the top left most figure indicates the significance level in likelihood difference.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/likelihoods/Profile_plots_R0.png}
+\caption{{\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(Ln(R0)\)\leavevmode\tagmcend\tagstructend} likelihood profiles (change in the negative log-likelihood across a range of {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(ln(R0)\)\leavevmode\tagmcend\tagstructend} values) and derived quantities (left four figures) and likelihood component contributions (right three figures). Red line in the top left most figure indicates the significance level in likelihood difference.\label{fig:r0-profile-combo}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Steepness likelihood profiles (change in the negative log-likelihood across a range of steepness values) and derived quantities (left four figures) and likelihood component contributions (right three figures).}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/likelihoods/Profile_plots_h.png}
+\caption{Steepness likelihood profiles (change in the negative log-likelihood across a range of steepness values) and derived quantities (left four figures) and likelihood component contributions (right three figures).\label{fig:steepness-profile-combo}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Female $M$ likelihood profiles (change in the negative log-likelihood across a range of $M$ values) and derived quantities (left four figures) and likelihood component contributions (right three figures).}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/likelihoods/Profile_plots_M_f.png}
+\caption{Female {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend} likelihood profiles (change in the negative log-likelihood across a range of {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend} values) and derived quantities (left four figures) and likelihood component contributions (right three figures).\label{fig:M_f-profile-combo}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Male $M$ likelihood profiles (change in the negative log-likelihood across a range of $M$ values) and derived quantities (left four figures) and likelihood component contributions (right three figures).}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/likelihoods/Profile_plots_M_m.png}
+\caption{Male {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend} likelihood profiles (change in the negative log-likelihood across a range of {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend} values) and derived quantities (left four figures) and likelihood component contributions (right three figures).\label{fig:M_m-profile-combo}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Female and male $M$ multi-parameter likelihood profiles and derived quantities. Red lines in the top left figure indicate significantly similar values compared to the reference model. Broken and solid lines in the bottom right figure indicate target and limit referene points, respectively.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/likelihoods/multilikelihood_profile_M_f_m.png}
+\caption{Female and male {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(M\)\leavevmode\tagmcend\tagstructend} multi-parameter likelihood profiles and derived quantities. Red lines in the top left figure indicate significantly similar values compared to the reference model. Broken and solid lines in the bottom right figure indicate target and limit referene points, respectively.\label{fig:M-multiprofile-combo}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Female $Linf$ likelihood profiles (change in the negative log-likelihood across a range of $L_inf$ values) and derived quantities (left four figures) and likelihood component contributions (right three figures).}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/likelihoods/Profile_plots_Linf_f.png}
+\caption{Female {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(Linf\)\leavevmode\tagmcend\tagstructend} likelihood profiles (change in the negative log-likelihood across a range of {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_inf\)\leavevmode\tagmcend\tagstructend} values) and derived quantities (left four figures) and likelihood component contributions (right three figures).\label{fig:Linf_F-profile-combo}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Female $k$ likelihood profiles (change in the negative log-likelihood across a range of $k$ values) and derived quantities (left four figures) and likelihood component contributions (right three figures).}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/likelihoods/Profile_plots_k_f.png}
+\caption{Female {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(k\)\leavevmode\tagmcend\tagstructend} likelihood profiles (change in the negative log-likelihood across a range of {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(k\)\leavevmode\tagmcend\tagstructend} values) and derived quantities (left four figures) and likelihood component contributions (right three figures).\label{fig:k_f-profile-combo}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Female $Linf$ and $k$ multi-parameter likelihood profiles and derived quantities. Red lines in the top left figure indicate significantly similar values compared to the reference model. Broken and solid lines in the bottom right figure indicate target and limit referene points, respectively.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/likelihoods/multilikelihood_profile_F_Linf_k.png}
+\caption{Female {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(Linf\)\leavevmode\tagmcend\tagstructend} and {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(k\)\leavevmode\tagmcend\tagstructend} multi-parameter likelihood profiles and derived quantities. Red lines in the top left figure indicate significantly similar values compared to the reference model. Broken and solid lines in the bottom right figure indicate target and limit referene points, respectively.\label{fig:Linf_k_f-profile}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Female variability at maximum age likelihood profiles (change in the negative log-likelihood across a range of CV at maximum age values) and derived quantities (left four figures) and likelihood component contributions (right three figures).}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/likelihoods/Profile_plots_CV_f.png}
+\caption{Female variability at maximum age likelihood profiles (change in the negative log-likelihood across a range of CV at maximum age values) and derived quantities (left four figures) and likelihood component contributions (right three figures).\label{fig:CVold_f-profile-combo}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Male $Linf$ likelihood profiles (change in the negative log-likelihood across a range of $L_inf$ values) and derived quantities (left four figures) and likelihood component contributions (right three figures).}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/likelihoods/Profile_plots_Linf_m.png}
+\caption{Male {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(Linf\)\leavevmode\tagmcend\tagstructend} likelihood profiles (change in the negative log-likelihood across a range of {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_inf\)\leavevmode\tagmcend\tagstructend} values) and derived quantities (left four figures) and likelihood component contributions (right three figures).\label{fig:Linf_M-profile-combo}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Male $k$ likelihood profiles (change in the negative log-likelihood across a range of $k$ values) and derived quantities (left four figures) and likelihood component contributions (right three figures).}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/likelihoods/Profile_plots_k_m.png}
+\caption{Male {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(k\)\leavevmode\tagmcend\tagstructend} likelihood profiles (change in the negative log-likelihood across a range of {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(k\)\leavevmode\tagmcend\tagstructend} values) and derived quantities (left four figures) and likelihood component contributions (right three figures).\label{fig:k_m-profile-combo}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Male $L_inf$ and $k$ multi-parameter likelihood profiles and derived quantities. Red lines in the top left figure indicate significantly similar values compared to the reference model. Broken and solid lines in the bottom right figure indicate target and limit referene points, respectively.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/likelihoods/multilikelihood_profile_M_Linf_k.png}
+\caption{Male {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(L_inf\)\leavevmode\tagmcend\tagstructend} and {\tagstructbegin{tag=Formula}\tagmcbegin{tag=Formula}\(k\)\leavevmode\tagmcend\tagstructend} multi-parameter likelihood profiles and derived quantities. Red lines in the top left figure indicate significantly similar values compared to the reference model. Broken and solid lines in the bottom right figure indicate target and limit referene points, respectively.\label{fig:Linf_k_m-profile}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Male variability at maximum age likelihood profiles (change in the negative log-likelihood across a range of CV at maximum age values) and derived quantities (left four figures) and likelihood component contributions (right three figures).}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/likelihoods/Profile_plots_CV_m.png}
+\caption{Male variability at maximum age likelihood profiles (change in the negative log-likelihood across a range of CV at maximum age values) and derived quantities (left four figures) and likelihood component contributions (right three figures).\label{fig:CVold_m-profile-combo}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Change in the estimate of spawning output when the most recent 10 years of data area removed sequentially.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/retro/compare2_spawnbio_uncertainty.png}
+\caption{Change in the estimate of spawning output when the most recent 10 years of data area removed sequentially.\label{fig:retro-ssb}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Change in the estimate of fraction unfished when the most recent 10 years of data area removed sequentially.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/retro/compare4_Bratio_uncertainty.png}
+\caption{Change in the estimate of fraction unfished when the most recent 10 years of data area removed sequentially.\label{fig:retro-depl}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\newpage
+
+\tagstructbegin{tag=Figure,alttext={Estimated 1 - relative spawning ratio (SPR) by year.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/SPR2_minusSPRseries.png}
+\caption{Estimated 1 - relative spawning ratio (SPR) by year.\label{fig:1-spr}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\clearpage
+
+\tagstructbegin{tag=Figure,alttext={Phase plot of the relative biomass (also referred to as fraction unfished) versus the SPR ratio where each point represents the biomass ratio at the start of the year and the relative fishing intensity in that same year. Lines through the final point show the 95 percent intervals based on the asymptotic uncertainty for each dimension. The shaded ellipse is a 95 percent region which accounts for the estimated correlations between the biomass ratio and SPR ratio.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/SPR4_phase.png}
+\caption{Phase plot of the relative biomass (also referred to as fraction unfished) versus the SPR ratio where each point represents the biomass ratio at the start of the year and the relative fishing intensity in that same year. Lines through the final point show the 95 percent intervals based on the asymptotic uncertainty for each dimension. The shaded ellipse is a 95 percent region which accounts for the estimated correlations between the biomass ratio and SPR ratio.\label{fig:phase}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Equilibrium yield curve for the base case model. Values are based on the 2020 fishery selectivities and with steepness fixed at 0.80.}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/yield2_yield_curve_with_refpoints.png}
+\caption{Equilibrium yield curve for the base case model. Values are based on the 2020 fishery selectivities and with steepness fixed at 0.80.\label{fig:yield}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\clearpage
+
+\tagstructbegin{tag=H1}\tagmcbegin{tag=H1}
+
+\hypertarget{app-a}{%
+\section{Appendix A: Detailed Fit to Length Composition Data}\label{app-a}}
+
+\leavevmode\tagmcend\tagstructend
+
+\tagstructbegin{tag=Figure,alttext={Length comps, whole catch, Fishery.<br><br>'N adj.' is the input sample size after data-weighting adjustment. N eff. is the calculated effective sample size used in the McAllister-Ianelli tuning method..}}\tagmcbegin{tag=Figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=1\textheight]{C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/comp_lenfit_flt1mkt0.png}
+\caption{Length comps, whole catch, Fishery.`N adj.' is the input sample size after data-weighting adjustment. N eff. is the calculated effective sample size used in the McAllister-Ianelli tuning method..\label{fig:comp_lenfit_flt1mkt0}}
+\end{figure}
+
+\tagmcend\tagstructend
+
+\clearpage
+
+\tagstructbegin{tag=H1}\tagmcbegin{tag=H1}
+
+\hypertarget{app-b}{%
+\section{Appendix B: Detailed Fit to Conditional-Age-at-Length Composition Data}\label{app-b}}
+
+\leavevmode\tagmcend\tagstructend
+
+\clearpage
+
+\tagstructbegin{tag=H1}\tagmcbegin{tag=H1}
+
+\hypertarget{app-c}{%
+\section{Appendix C: Detailed Fit to Conditional-Age-at-Length Composition Data}\label{app-c}}
+
+\leavevmode\tagmcend\tagstructend
 \end{document}

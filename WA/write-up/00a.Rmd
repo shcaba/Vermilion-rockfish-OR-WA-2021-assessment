@@ -25,10 +25,34 @@ knitr::knit_hooks$set(plot = function(x,options) {
 
 load("00opts.Rdata")
 
+spp = 'vermilion rockfish'
+Spp = 'Vermilion rockfish'
+
 if(file.exists("00mod.Rdata")){
   load("00mod.Rdata")
 } else {
   print("Model output not being read. Please run the read_model() function.")
 }
+
+ base_name = "Reference model"
+ mod_loc = file.path(
+   "C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models",
+   base_name)
+
+modelcor<-SS_output(mod_loc,cormax=0.8)
+
+stock_fig_loc = "C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/stock"
+
+bio_fig_loc = "C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/biology_plots"
+
+sensi_data_fig_loc = "C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/sensi_data"
+
+sensi_modspex_fig_loc = "C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/sensi_modspex"
+
+likeprof_fig_loc = "C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/likelihoods"
+
+retro_loc = "C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/figures/retro"
+
+source("derived_quants.R")
 
 ```

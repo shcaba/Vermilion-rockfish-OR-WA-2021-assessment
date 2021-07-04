@@ -1,11 +1,23 @@
-# Management 
+## Management 
 
-## Reference Points
+### Reference Points
 
-## Unresolved Problems and Major Uncertainties
+Reference points were calculated using the estimated fishery selectivity and removals in the most recent year of the model (`r endyr`, Table \ref{tab:referenceES}). Sustainable total yields  were `r round(model$derived_quants[model$derived_quants$Label == 'Dead_Catch_SPR', 'Value'], 2)` mt when using an $SPR_{50\%}$ reference harvest rate. The spawning output equivalent to 40 percent of the unfished spawning output ($SB_{40\%}$) was `r round(model$derived_quants[model$derived_quants$Label == 'SSB_SPR', 'Value'], 2)` millions of eggs. 
 
-## Harvest Projections and Decision Tables
+The `r endyr + 1` spawning output relative to unfished equilibrium spawning output is above the `r spp` relative biomass target of 40 percent (Figure \ref{fig:depl}). The fishing intensity, $1-SPR$, of recent years was near or above the harvest rate limit ($SPR_{50\%}$) for most of the 1980s and 1990s. Recent years also show near target fishing levels (Table \ref{tab:timeseries} and Figure \ref{fig:1-spr}), highlighting how the sustainability of current fishing levels are very sensitive to incoming recruitment. Table \ref{tab:referenceES} shows the full suite of estimated reference points for the base model and Figure \ref{fig:yield} shows the equilibrium curve based on a steepness value fixed at `r round(model$parameters[model$parameters$Label == "SR_BH_steep","Value"], 2)`.
 
-## Evaluation of Scientific Uncertainty
+### Unresolved Problems and Major Uncertainties
+
+
+### Harvest Projections and Decision Tables
+
+A ten year projection of the reference model with removals in 2021 and 2022 equal to the recent average removals from 2017-2019 were run based on the category 2 time-varying buffer using $P^*$ = 0.45 for years 2023-2032 is provided in Table \ref{tab:project}.
+
+A decision table with uncertainty axes and proposed catch levels will be determined later.
+
+### Evaluation of Scientific Uncertainty
+
+The estimated uncertainty in the base model around the `r endyr + 1` spawning output is $\sigma$ = `r round(model$Pstar_sigma,2)` and the uncertainty in the base model around the `r endyr + 1` OFL is $\sigma$ = `r round(model$OFL_sigma,2)`. The estimated model uncertainty was less than the category 2 groundfish data moderate assessment default value of  $\sigma$ = 1.0. 
 
 ## Research and Data Needs
+TBD

@@ -1,1 +1,6 @@
 ## Fishery-Independent Data
+####Washington Nearshore Survey
+Data from Washington Department of Fish and Wildlife’s Nearshore Rockfish Survey were analyzed to see if an index could be generated, or if additional length data could be added to this assessment.  The current data are not extremely robust and the methods have not been reviewed by the SSC, so these data were not used in this assessment.  This survey could prove a useful data set in the future once the method review has been completed.
+
+Trawl surveys often used in west coast groundfish assessments (e.g., Triennial survey, Alaskan slope survey and the West Coast West Coast Groundfish Bottom Trawl Survey) do collect fishery-independent abundance and biological data off the Washington coast. However, those surveys are not designs to cover vermilion rockfish habitat in Washington, and vermilion are rarely if ever encountered. Indices of abundance were therefore not calculated from these surveys. 
+

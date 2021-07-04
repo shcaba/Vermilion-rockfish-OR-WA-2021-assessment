@@ -19,7 +19,7 @@ hi = model$derived_quants[model$derived_quants$Label == "Bratio_2021", 2] + qnor
 depl_2021_low = round(low, digits = 2) 
 depl_2021_hi  = round(hi,  digits = 2) 
 
-start = which(model$derived_quants$Label == "Bratio_1912")
+start = which(model$derived_quants$Label == "Bratio_1892")
 end = which(model$derived_quants$Label == "Bratio_2021")
 all = model$derived_quants[start:end, c("Label","Value")]
 min = sort(all$Value, index.return = TRUE)$ix
@@ -28,7 +28,7 @@ depl_min_yr = substring(all[min[1], "Label"], 8)
 
 
 # SPR
-start = which(model$derived_quants$Label == "SPRratio_1911")
+start = which(model$derived_quants$Label == "SPRratio_1892")
 end = which(model$derived_quants$Label == "SPRratio_2020")
 all = model$derived_quants[start:end, c("Label","Value")]
 max = sort(all$Value, index.return = TRUE, decreasing = TRUE)$ix
@@ -39,7 +39,7 @@ grab = which(all$Label == "SPRratio_2011")
 spr_recent_10 = round(all[grab:nrow(all), "Value"],2)
 
 # Exploitation
-start = which(model$derived_quants$Label == "F_1911")
+start = which(model$derived_quants$Label == "F_1892")
 end = which(model$derived_quants$Label == "F_2020")
 all = model$derived_quants[start:end, c("Label","Value")]
 grab = which(all$Label == "F_2011")

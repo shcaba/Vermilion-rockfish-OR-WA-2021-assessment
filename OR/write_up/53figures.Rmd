@@ -13,14 +13,14 @@
 ```{r, results = 'asis'}
 add_figure(
 filein = file.path(stock_fig_loc, "Vermilion_Map.png"), 
-caption = "Oregon and Washington coastlines with rocky habitat indicated by brown shaded areas. Circled areas represent areas of primary vermilion rockfish occurence.",
+caption = "Oregon and Washington coastlines with rocky habitat indicated by brown shaded areas. Circled areas represent areas of primary vermilion rockfish occurence",
 label = 'ORWA-map')
 ```
 
 ```{r, results = 'asis'}
 add_figure(
 filein = file.path(stock_fig_loc, "TM_Vermilion_ORWA.png"), 
-caption = "Total mortality from the southern Oregon and northern Washington recreational fisheries. These represent ninty and ninty-seven percent of the total vermilion removals in each state, respectively.",
+caption = "Total mortality from the southern Oregon and northern Washington recreational fisheries. These represent ninty and ninty-seven percent of the total vermilion removals in each state, respectively",
 label = 'tm-plot')
 ```
 
@@ -391,6 +391,118 @@ label = 'sensi-modspec-depl')
 <!-- ============================================================================== -->
 <!-- ******************      Likelihood Profiles      ***************************** --> 
 <!-- ============================================================================== -->
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(likeprof_fig_loc,"Profile_plots_R0.png"), 
+caption = "$Ln(R0)$ likelihood profiles (change in the negative log-likelihood across a range of $ln(R0)$ values) and derived quantities (left four figures) and likelihood component contributions (right three figures). Red line in the top left most figure indicates the significance level in likelihood difference",
+label = 'r0-profile-combo')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(likeprof_fig_loc,"Profile_plots_h.png"), 
+caption = "Steepness likelihood profiles (change in the negative log-likelihood across a range of steepness values) and derived quantities (left four figures) and likelihood component contributions (right three figures)",
+label = 'steepness-profile-combo')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(likeprof_fig_loc,"Profile_plots_M_f.png"), 
+caption = "Female $M$ likelihood profiles (change in the negative log-likelihood across a range of $M$ values) and derived quantities (left four figures) and likelihood component contributions (right three figures)",
+label = 'M_f-profile-combo')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(likeprof_fig_loc, "Profile_plots_M_m.png"), 
+caption = "Male $M$ likelihood profiles (change in the negative log-likelihood across a range of $M$ values) and derived quantities (left four figures) and likelihood component contributions (right three figures)",
+label = 'M_m-profile-combo')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(likeprof_fig_loc, "multilikelihood_profile_M_f_m.png"), 
+caption = "Female and male $M$ multi-parameter likelihood profiles and derived quantities. Red lines in the top left figure indicate significantly similar values compared to the reference model. Broken and solid lines in the bottom right figure indicate target and limit referene points, respectively",
+label = 'M-multiprofile-combo')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(likeprof_fig_loc, "Profile_plots_Linf_f.png"), 
+caption = "Female $Linf$ likelihood profiles (change in the negative log-likelihood across a range of $L_inf$ values) and derived quantities (left four figures) and likelihood component contributions (right three figures)",
+label = 'Linf_F-profile-combo')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(likeprof_fig_loc,"Profile_plots_k_f.png"), 
+caption = "Female $k$ likelihood profiles (change in the negative log-likelihood across a range of $k$ values) and derived quantities (left four figures) and likelihood component contributions (right three figures)",
+label = 'k_f-profile-combo')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(likeprof_fig_loc,"multilikelihood_profile_F_Linf_k.png"), 
+caption = "Female $Linf$ and $k$ multi-parameter likelihood profiles and derived quantities. Red lines in the top left figure indicate significantly similar values compared to the reference model. Broken and solid lines in the bottom right figure indicate target and limit referene points, respectively",
+label = 'Linf_k_f-profile')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(likeprof_fig_loc,"Profile_plots_CV_f.png"), 
+caption = "Female variability at maximum age likelihood profiles (change in the negative log-likelihood across a range of CV at maximum age values) and derived quantities (left four figures) and likelihood component contributions (right three figures)",
+label = 'CVold_f-profile-combo')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(likeprof_fig_loc,  "Profile_plots_Linf_m.png"), 
+caption = "Male $Linf$ likelihood profiles (change in the negative log-likelihood across a range of $L_inf$ values) and derived quantities (left four figures) and likelihood component contributions (right three figures)",
+label = 'Linf_M-profile-combo')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(likeprof_fig_loc,  "Profile_plots_k_m.png"), 
+caption = "Male $k$ likelihood profiles (change in the negative log-likelihood across a range of $k$ values) and derived quantities (left four figures) and likelihood component contributions (right three figures)",
+label = 'k_m-profile-combo')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(likeprof_fig_loc,  "multilikelihood_profile_M_Linf_k.png"), 
+caption = "Male $L_inf$ and $k$ multi-parameter likelihood profiles and derived quantities. Red lines in the top left figure indicate significantly similar values compared to the reference model. Broken and solid lines in the bottom right figure indicate target and limit referene points, respectively",
+label = 'Linf_k_m-profile')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(likeprof_fig_loc,  "Profile_plots_CV_m.png"), 
+caption = "Male variability at maximum age likelihood profiles (change in the negative log-likelihood across a range of CV at maximum age values) and derived quantities (left four figures) and likelihood component contributions (right three figures)",
+label = 'CVold_m-profile-combo')
+```
+
+
+<!-- ====================================================================== -->
+<!-- ******************     Retrospectives    ***************************** --> 
+<!-- ====================================================================== -->
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(retro_loc,  "compare2_spawnbio_uncertainty.png"), 
+caption = "Change in the estimate of spawning output when the most recent 10 years of data area removed sequentially",
+label = 'retro-ssb')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(retro_loc,  "compare4_Bratio_uncertainty.png"),
+caption = "Change in the estimate of fraction unfished when the most recent 10 years of data area removed sequentially",
+label = 'retro-depl')
+```
+
+\newpage
 
 <!-- ====================================================================== -->
 <!-- ******************    Reference Points    **************************** --> 
