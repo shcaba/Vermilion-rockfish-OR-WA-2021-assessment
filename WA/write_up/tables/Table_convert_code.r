@@ -17,7 +17,7 @@ file = file.path("C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA 
 
 out<-read.csv("C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/tables/WA_vermilion_agesamples.csv")
 t = table_format(x = out,
-                 caption = 'Recreational age samples for Oregon vermilion rockfish.',
+                 caption = 'Recreational age samples for Washington vermilion rockfish.',
                  label = 'WA_vermilion_agesamples',
                  longtable = TRUE,
                  font_size = 9,

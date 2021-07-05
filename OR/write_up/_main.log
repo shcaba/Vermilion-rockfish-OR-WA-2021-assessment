@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.5.17)  3 JUL 2021 23:37
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.5.17)  4 JUL 2021 23:30
  restricted system commands enabled.
 **_main.tex
 (./_main.tex
@@ -6264,10 +6264,10 @@ Here is how much of LuaTeX's memory you used:
  806 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 dir, 2 glue, 4 kern, 3 glyph, 48 attribute, 79 gl
 ue_spec, 18 attribute_list, 5 write, 1 close, 6 pdf_action nodes
-   avail lists: 1:74,2:17857,3:2480,4:338,5:701,6:1126,7:16845,8:105,9:7477,10:2
+   avail lists: 1:72,2:17857,3:2480,4:338,5:701,6:1126,7:16845,8:105,9:7477,10:2
 0,11:936,12:1
  70751 multiletter control sequences out of 65536+600000
- 90 fonts using 19370995 bytes
+ 90 fonts using 19371395 bytes
  218i,12n,216p,2561b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 warning  (pdf backend): unreferenced destination with name 'app_c'
@@ -6291,7 +6291,7 @@ g/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/Users/Ja
 son.Cope/AppData/Roaming/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmroman12-i
 talic.otf><c:/Users/Jason.Cope/AppData/Roaming/TinyTeX/texmf-dist/fonts/opentype
 /public/lm/lmroman12-regular.otf>
-Output written on _main.pdf (141 pages, 191129147 bytes).
+Output written on _main.pdf (141 pages, 191130500 bytes).
 
 PDF statistics: 2592 PDF objects out of 2984 (max. 8388607)
  455 named destinations out of 1000 (max. 131072)

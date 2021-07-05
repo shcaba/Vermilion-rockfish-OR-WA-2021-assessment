@@ -1,0 +1,86 @@
+## Uncertainty exploration
+
+
+### Sensitivity Analyses
+Sensitivity analyses were conducted to evaluate model sensitivity to alternative data treatment and model specifications.
+
+#### Data treatment sensitivities
+Data treatments explored were as follows:
+
+- Data removal (fixed life history, no recruitment estimation) 
+	1. Fishery length data only (no catches; L) 
+  	2. Catch and lengths only (CL)
+  	3. Catch and lengths only with Francis weighting (CL_Fr)
+  	4. Catch, lengths, and ages with Francis weighting (CLA_fixed)
+  	5. Catch, length, and age with Francis weighting and estimated recruitment (CLA_fixed_recs)
+- Data weighting
+  	6. Dirichlet data-weighting
+  	7. McAllister-Ianelli data weighting
+  	8. No data-weighting
+- Catch histories
+	9. Catch using original 1967 catches
+	10. Minimum historical (1949-1977) catch series
+	11. Maximum historical (1949-1977) catch series
+- Length treatment
+	12. Use option sex = 3 to maintain sex ratio in commercial data  
+- Ageing error
+  	13. Using ageing error from CARE exchange
+
+Likelihood values and estimates of key parameters and derived quantities from each sensitivity are available in Table \ref{tab:data_sensis}. Derived quantities relative to the reference model are provided in Figure \ref{fig:sensi-data-RE}. Time series of spawning output and relative spawning output are shown in Figures \ref{fig:sensi-data-ssb} and \ref{fig:sensi-data-depl}.
+
+The deterministic length-based model without catches and with fixed life history values view the stock scale and status to be below that of the reference model and near the target reference point. Bringing in the length data returns the model back to reference levels, but introducing age data with out without recruitment while still fixing life history parameters significantly raises the stock scale and relative stock staus above the reference model. The other data treatments, including data weighting options, did very little to change the results from the reference model, except the choice of using the CARE ageing error matrix. The matrix ageing error was so extreme, it caused the model to not converge.
+
+
+#### Model specification sensitivities
+Model specifications looked at the estimation of indiviual and combinations of life history parameters, the estimation of recruitment, and the treatment of fecundity and selectivity. All scenarios match the reference model specificatins in all other aspects unless otherwised stated.
+
+- Life history estimation
+	1. Fix all life history parameters 
+	- Fix natural mortality ($M$)
+		2. Fix $M$ 
+		3. Fix $M$, $k$, $t_0$, and $CVs$
+		4. Fix $M$, $t_0$, and $CVs$
+		5. Fix $M$ and $CV$s 
+		6. Fix female $M$ and growth parameters 
+		7. Fix male $M$ and growth parameters 
+	- Fix growth parameters
+		8. Fix all growth parameters
+	 	9. Fix $L_{\infty}$ and $CVs$
+	 	10. Fix $k$ and $CVs$
+	 	11. Fix $CVs$
+	 	12. 5 growth platoons instead of one
+	- Recruitment estimation and variability ($\sigma_R$). All years are estimated with bias correction applied.
+	 	13. No recruitment estimation
+	 	14. $\sigma_R$ = 0.45
+	 	15. $\sigma_R$ = 0.75	
+- Miscellaneous
+	16. Fecundity proportional to weight
+	17. Estimate dome-shaped selectivity
+	
+Likelihood values and estimates of key parameters and derived quantities from each sensitivity are available in Tables \ref{tab:modspec_LH_sensis} and \ref{tab:modspec_RecMisc_sensis}. Derived quantities relative to the reference model are provided in Figure \ref{fig:sensi-modspec-RE}. Time series of spawning output and relative spawning output are shown in Figures \ref{fig:sensi-modspec-ssb} and \ref{fig:sensi-modspec-depl}.
+
+Fixing all life history parameters significantly increases the scale and status of the stock. Fixing $M$ to the higher prior mean value raised both the beginning and ending stock scale and overall ending year relative stock status, except when estimating $L_{\infty}$ (at an un reasonably low value of 52 and 49cm for females and males respectively) that maintained the intial stock scale near the reference level, but increased the current stock status. 
+
+Model results were less sensitivity to the fixing of growth parameters. Fixing all growth parameters had the largest relative affect of raising both scale and stock status, as it caused $M$ to be lower, but wasn't a dramatic departure from the reference model. The initial growth values have small $L_{\infty}$ values compared to estimates, so it is expected all scenarios with small $L_{\infty}$ values will reflect a higher stock status and scale. The choice of invoking 5 growth types resulted is less current spawning output and relative stock scale. This makes sense if more of the population is available to the fishery given the fishery selectivity curve. Further investigation of the affects of life history values are provided in the likelihood profiles (next section).
+
+Model results were not sensitive to the choice of no estimation of recruitment and the assumption of recruitment variability, nor with the treatment of fecundity or dome-shaped selectivity estimation (very little dome-shaped selectivity was indicated).
+
+Overall, there few model specification sensitivity scenarios that caused the population to drop below the reference model estimate of stock status, and nothing that dropped it below the target reference point. When stock scale differed, it was mostly due to the treatment of natural mortality or small $L_{\infty}$ values and current stock size was often what changed the most. From these results, it is likely most of the model uncertainty is due to $M$, and that while the variance is forced to be normally distributed in the asymptotic form, it is mostly on the upper side of both scale and status compared to the reference model.
+
+
+### Likelihood Profiles
+Likelihood profiles were conducted for $ln(R_0)$, steepness ($h$), female and male natural mortality ($M$) values separately and varying together, female and male maximum length ($L_{\infty}$), female and male growth coefficient ($k$), female and male variability of size at maximum age. In addition, joint profiles over $L_{\infty}$ and $k$ (that maintains a correlation structure `r round(modelcor$cor$cormessage3[2,3],2)` between the parameters consistent with the model calculation of that correlation) were done for females and males separately. Female and male natural mortality was also covaried based on the offset in values from the reference model. Likelihood profiles were conducted by fixing the featured parameter(s) at specific values across a range of values and estimating the remaining parameters. A likelihood profile offers insight into model information on a given parameter or parameter pairing, while providing an additional way to describe uncertainty in the parameter by indentifying the range of parameters within 1.96 likelihood units of the refrence model.
+
+The $ln(R_0)$ profiles show strong support for the maximum likelhood value of `r round(log(model$derived_quants[model$derived_quants$Label == "Recr_Virgin",2]),2)` (Figure \ref{fig:r0-profile-combo}). Population size expectedly increases as $ln(R_0)$ increases, with the increase in current biomass happening quicker than initial biomass, thus relative stock status increase towards unfished at high $ln(R_0)$ values. This is explained by the harvest rate decreasing because the removal history is fixed and becomes relatively smaller compared to the overall biomass. All data sets were mostly consistent in the information content in the profile, though the length data contained the least amount of information on $ln(R_0)$.
+
+The steepness profile showed no information content for this parameter (Figure \ref{fig:steepness-profile-combo}). Despite this lack of information on steepness, model output show little senstivity to stock scale ($SB_0$ and $SB_2021$) or relative stock status. The recruitment likelihood was the biggest driver of steepness towards a value of 1 (Figure \ref{fig:steepness-profile-combo}). 
+
+Natural mortality profiles for females (Figure \ref{fig:M_f-profile-combo}) and males (Figure \ref{fig:M_m-profile-combo}) are consisten with each other and show a wide range of $M$ values for females and males supported by the data. These values are both above and below the mean of the prior (0.1) for both sexes. The combined profile that varies female and male $M$ based on the reference offset together at the same changing value behave similarly to the individual likelihood profiles (Figure \ref{fig:M-multiprofile-combo}). Scale and relative stock status are affected by this parameter, with the current spawning output being affected more than initial biomass. This is particularly true as M get larger, creating much higher biomass and higher relative stock status. The uncertainty in the relative stock status ranges from 0.06 to 0.12, very consistent with the asymptotic uncertainty intervals for this value from in reference model. The length, then age data provided the strongest data signal for natural mortality and were generally consistent with each other.
+
+Female and male growth profiles show good signals in the data to estimate $L_{\infty}$ (Figures \ref{fig:Linf_F-profile-combo} and \ref{fig:Linf_M-profile-combo}), $k$ (Figures \ref{fig:k_F-profile-combo} and \ref{fig:k_M-profile-combo}), and length CV at maximum age (Figures \ref{fig:CVold_F-profile-combo} and \ref{fig:CVold_M-profile-combo}). $L_{\infty}$ had the largest variance of the growth parameters. Lengths and ages are the primary data informing growth parameters with consistent signals. A more realistic profile that maintains the negative correlation bewtween $L_{\infty}$ and $k$ showing show similar behavior as the two separate profiles (Figure \ref{fig:Linf_k_f-profile}). The range of growth parameters explored in the likelihood profiles showed little affect on either scale or stock status; female $k$ and length CV at maximum age had the relatively biggest effect on scale for growth parameters, but overall these were small. These profiles support the conculsion that the main source of uncertainty in the model is the treatment of natural mortality.
+
+
+### Retrospective Analysis
+
+A ten-year retrospective analysis was conducted by running the model and sequentially removing one year of data up through minus 10 years. Retrospective spawning output (Figure \ref{fig:retro-ssb}) and relatives stock statys (Figure \ref{fig:retro-depl}) estimates were generally within the large confidence intervals of the reference model. Removing years 7 and 8 to 10 had the biggest scale effects. There does seem to be a bit of a retrospective pattern with removal of years leading to smaller biomass and lower stock scale, though this is not a unifrom result. All results maintained the population above the stock status target reference point changed in all years.
+

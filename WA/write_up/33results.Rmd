@@ -28,7 +28,7 @@ The estimates of sex-specific growth parameters showed some differences from the
 
 The estimated logistic selectivity curve for the recreational fishery look plausible (i.e., as a model convergence check for realism, the selectivity curve is not overtly outrageous; Figure \ref{fig:fleet_selectivity}). Length at 50% selectivity (`r round(model$parameters[model$parameters$Label == "Size_DblN_peak_Fishery(1)", 3],3)`cm) was between the length at 50% (39.4cm) and 95% maturity (48cm).
 
-The time series of estimated recruitments and annual recruitment deviations are shown in Figures \ref{fig:recruits} and \ref{fig:rec-devs}. Recruitment strengths were generally low; years with the highest recruitment deviations were estimated to have occurred in 1995,1996,1999,2000, 2006, and 2011. All recruitment deviations after 2011 are negative.
+The time series of estimated recruitments and annual recruitment deviations are shown in Figures \ref{fig:recruits} and \ref{fig:rec-devs}. Recruitment strengths were generally low; years with the highest recruitment deviations were estimated to have occurred in 1995, 1996, 1999, 2000, 2006, and 2011. All recruitment deviations after 2011 are negative.
 The variance check on the recruitment deviations indicates weakly informed recruitments. Recruitment deviations after 2015 are relatively uninformed with estimated deviations near zero where recruitment is estimated primarily based on the spawner-recruit curve (Figure \ref{fig:bh-curve}). The recruitment bias adjustment applied within the model across years is shown in Figure \ref{fig:bias-adj}.
 
 

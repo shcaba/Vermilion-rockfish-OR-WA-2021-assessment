@@ -83,10 +83,10 @@ _**These materials do not constitute a formal publication and are for informatio
 # Executive Summary{-}
 
 ## Stock{-}
-This assessment reports the status of vermilion rockfish (_Sebastes miniatus_) off Washington state using data through 2020. Vermilion rockfish are found in California and Orgon waters, but those are treated separately in other stock assessments. The core range of vermilion rockfish are outside of Washington waters and in Califoria; this assessment thus considers a very small population under different mangement considerations and exploitation histories than vermilion rockfish stocks in either California or Oregon. There is substantial biogeographic separation in the populations off Oregon and Washington, thus justifying separation of those populations into different management units and stock assessments.
+This assessment reports the status of vermilion rockfish (_Sebastes miniatus_) off Washington state using data through 2020. Vermilion rockfish are found in California and Orgon waters, but those are treated separately in other stock assessments. The core range of vermilion rockfish are outside of Washington waters and in Califoria; this assessment thus considers a very small population under different mangement considerations and exploitation histories than vermilion rockfish stocks in either California or Oregon. There is substantial biogeographic separation in the populations off Oregon and Washington, thus justifying separation of those populations into different management units and stock assessments. Vermilion in Canadain waters are also rare and not included in this assessment.
 
 ## Landings{-}
-Vermilion rockfish are historically caught both commercially and recreationally mainly by hook and line gear (Figure \ref{fig:es-catch}). Commercial catches ramped up in the late 1960s with decreasing catches since the mid-1980s. Recreational catches started to increase from the 1980s, fluctuating over time, with high catches over the last several years (Table \ref{tab:removalsES}). 
+Vermilion rockfish are mainly caught in recreational fisheries by hook and line gear (Figure \ref{fig:es-catch}). Recreational catches are generally low, but in relative terms increased in mid-1980s and have fluctuated since to a peak catches in 2019 (Table \ref{tab:removalsES}). Vermilion are not targets in the Washington recreational fishery and are considered rare.
 
 
 \clearpage
@@ -101,15 +101,15 @@ Vermilion rockfish are historically caught both commercially and recreationally 
 
 ## Data and Assessment{-}
 
-The stock assessment for vermilion rockfish off Oregon state was developed using the length- and age-structured model Stock Synthesis (version 3.30.16).  No previous stock assessment for vermilion rockfish off Oregon has been conducted. Model structure included two fleets (commercial and recreational) and one fishery-based index of abundance. Life history parameters were sex-specific (i.e., a two-sex model) with natural mortality and growth parameters estimated, along with recruitment.  The model time domain is 1949 to 2020, with a 12 year forecast beginning in 2021.
+The stock assessment for vermilion rockfish off Washington state was developed using the length- and age-structured model Stock Synthesis (version 3.30.16).  No previous stock assessment for vermilion rockfish off Washington has been conducted. Model structure included one recretaional fleet. Life history parameters were sex-specific (i.e., a two-sex model) with natural mortality and growth parameters estimated, along with recruitment. The model covers the years 1949 to 2020, with a 12 year forecast beginning in 2021.
 
-This assessment integrates data and information from multiple sources into one modeling framework. Specifically, the assessment uses landings data, length and conditional age-at-length composition data (using ageing error matrices to incorporate ageing imprecision) for each fishery, and one index of abundance based from the recreational fishery; fixed parameterizations of weight-at-length, maturity-at-length, and fecundity-at-length, the Beverton-Holt stock-recruitment steepness value and recruitment variability. Estimated values include initial population scale ($lnR_0$), natural mortality and growth for each sex, asymptotic selectivity and recruitment deviations. The base model was tuned to account for the weighting of the length and age data and index variances (which was estimated), as well as the specification of recruitment variance and recruitment bias adjustments.  Derived quantities include the time series of spawning biomass, age and size structure, and current and projected future stock status. 
+This assessment integrates data and information from multiple sources into one modeling framework. Specifically, the assessment uses recreational landings data, and length and conditional age-at-length composition data (using ageing error matrices to incorporate ageing imprecision); fixed parameterizations of weight-at-length, maturity-at-length, and fecundity-at-length, the Beverton-Holt stock-recruitment steepness value and recruitment variability. Estimated values include initial population scale ($lnR_0$), natural mortality and growth for each sex, asymptotic selectivity and recruitment deviations. The base model was tuned to account for the weighting of the length and age data, as well as the specification of recruitment variance and recruitment bias adjustments.  Derived quantities include the time series of spawning output, age and size structure, and current and projected future stock status. 
 
 Uncertainty is explicitly included in this assessment through variances of all estimated parameters, while between model uncertainty is explored through sensitivity analyses such as data treatment and weighting, and model specification sensitivity to the treatment of life history parameters, selectivity, and recruitment. A reference model was selected that best fit the observed data while concomitantly balancing the desire to capture the central tendency across those sources of uncertainty, ensure model realism and tractability, and promote robustness to potential model misspecification.
 
 ## Stock Biomass{-}
 
-Spawning output (in millions of eggs) instead of spawning biomass is used to report the mature population scale as fecundity is nonlinearly related to the weight of the population. The estimated spawning output at the beginning of 2021 was 2 mt (~95 percent asymptotic intervals: -1 to 4 mt, Table \ref{tab:ssbES} and Figure \ref{fig:es-ssb}), which when compared to unfished spawning biomass (3 mt) equates to a relative stock status level of 56 percent (~95 percent asymptotic intervals: 6 to 107 percent, Figure \ref{fig:es-depl}).  Overall, spawning output declined with the onset of increasing commercial removals in the 1960s, continued to decline with the increase in recreational catches through the 1990s, even dropping below the target relative stock size. Major recruitment pulses since the mid 1990s onward that are supported by each of the data sets caused a sharp increase of the population through the mid 2010s, after which another decline. Minimum relative stock sizes of 55 percent of unfished levels were seen in 2002. Currently the stock is estimated to be well above the management target of $SB_{25\%}$ in 2021 and has remained well above the target throughout the time series (Table \ref{tab:ssbES} and Figure \ref{fig:es-depl}).
+Spawning output (in millions of eggs) instead of spawning biomass is used to report the mature population scale as fecundity is nonlinearly related to the weight of the population. The estimated spawning output at the beginning of 2021 was 2 mt (~95 percent asymptotic intervals: -1 to 4 mt, Table \ref{tab:ssbES} and Figure \ref{fig:es-ssb}), which when compared to unfished spawning biomass (3 mt) gives a relative stock status level of 56 percent (~95 percent asymptotic intervals: 6 to 107 percent, Figure \ref{fig:es-depl}).  Overall, spawning output declined with the onset of increasing recreational removals in the mid-1980s, continued to decline with the increase in recreational catches through the 1990s. Major recruitment pulses since the late 1990s onward that are supported by each of the data sets caused a small increase of the population through the early 2010s, after which a very small decline is observed. Minimum relative stock sizes of 55 percent of unfished levels were seen in 2002. Currently the stock is estimated to be above the management target of $SB_{40\%}$ in 2021 and has never dropped below the target throughout the time series (Table \ref{tab:ssbES} and Figure \ref{fig:es-depl}).
 
 \input{tex_tables/b_SSB_ES.tex}
 
@@ -123,7 +123,7 @@ Spawning output (in millions of eggs) instead of spawning biomass is used to rep
 
 ## Recruitment{-}
 
-Recruitment information begins in the 1960s and peaks in the 1990s (Table \ref{tab:recrES} and Figure \ref{fig:es-recruits}). Data were most informative from the the 1990s to the mid-2010s. Peaks years of recruitments are found in years 1993,1994, 1998, 2005 and 2015 (Figure \ref{fig:es-rec-devs}). Overall, the vermilion rockfish stock has not been reduced to levels that would provide considerable information on how recruitment changes with across spawning biomass levels (i.e., inform the steepness parameter).  Thus, all recruitment is based on a fixed assumption about steepness ($h$ = 0.72) and recruitment variability ($\sigma_R$ = 0.6).
+Recruitment information is overall weak for this model, and begins in the 1980s and peaks in early 2000s (Table \ref{tab:recrES} and Figure \ref{fig:es-recruits}). Data were most informative from the the 1990s to the mid-2010s. Peaks years of recruitments are found in years 1995-1996, 1999-2000, 2006, and 2011 (Figure \ref{fig:es-rec-devs}). Overall, the vermilion rockfish stock has not been reduced to levels that would provide considerable information on how recruitment compensation changes across spawning biomass levels (i.e., inform the steepness parameter).  Thus, all recruitment is based on a fixed assumption about steepness ($h$ = 0.72) and recruitment variability ($\sigma_R$ = 0.6).
 
 \input{tex_tables/c_Recr_ES.tex}
 
@@ -137,7 +137,7 @@ Recruitment information begins in the 1960s and peaks in the 1990s (Table \ref{t
 
 ## Exploitation Status{-}
 
-Trends in fishing intensity (1 - SPR) largely mirrored that of landings until the 1990s when recruitment pulses overcame the catches to lower overall fishing intensity (Figure \ref{fig:es-1-spr}). The maximum fishing intensity was 0.75 in 2019, above the target SPR-based harvest rate of 0.50 (1 - $\text{SPR}_{50\%}$). Current levels of 0.4 for 2020 are near the fishing limit. Fishing intensity over the past decade has ranged between 0.4 and 0.75 and the exploitation rate has been high (0.04 - 0.14, Table \ref{tab:exploitES}). Current estimates indicate that vermilion rockfish spawning output is much greater than than the target biomass level ($\text{SB}_{40\%}$), though fishing intensity remains near target $F_MSY$ proxy harvest rate.
+Trends in fishing intensity (1 - SPR) largely mirrored that of landings (Figure \ref{fig:es-1-spr}). The maximum fishing intensity was 0.75 in 2019, above the target SPR-based harvest rate of 0.50 (1 - $\text{SPR}_{50\%}$). Current levels of 0.4 for 2020 are below the fishing limit, but 2019 was the highest on record. Fishing intensity over the past decade has ranged between 0.4 and 0.75 and the exploitation rate has been moderate (0.04 - 0.14, Table \ref{tab:exploitES}). Current estimates indicate that vermilion rockfish spawning output is greater than than the target biomass level ($\text{SB}_{40\%}$), though fishing intensity has fluctuated near target $F_MSY$ proxy harvest rate.
 
 \input{tex_tables/d_SPR_ES.tex}
 
@@ -151,7 +151,7 @@ No ecosystem considerations are included in this stock assessment.
 
 ## Reference Points{-}
 
-The 2021 spawning biomass relative to unfished equilibrium spawning biomass is well above the management target of 40 percent of unfished spawning biomass. The relative biomass compared to the ratio of the estimated SPR to the management target ($\text{SPR}_{50\%}$) across all model years are shown in Figure \ref{fig:es-phase} where warmer colors (red) represent early years and colder colors (blue) represent recent years.  There have been periods where the stock status has decreased below the target and fishing intensity has been higher than the target fishing intensity based on $\text{SPR}_{50\%}$. Figure \ref{fig:es-yield} shows the equilibrium curve based on a steepness value fixed at 0.72 with vertical dashed lines to indicate the estimate of fraction unfished at the start of 2021 (current) and the estimated management targets calculated based on the relative target biomass (B target), the SPR target, and the maximum sustainable yield (MSY).
+The 2021 spawning biomass relative to unfished equilibrium spawning biomass is above the management target of 40 percent of unfished spawning biomass. The relative biomass compared to the ratio of the estimated SPR to the management target ($\text{SPR}_{50\%}$) across all model years are shown in Figure \ref{fig:es-phase} where warmer colors (red) represent early years and colder colors (blue) represent recent years.  There have been periods where fishing intensity has been higher than the target fishing intensity based on $\text{SPR}_{50\%}$, but the stock status has always been above the target. Figure \ref{fig:es-yield} shows the equilibrium curve based on a steepness value fixed at 0.72 with vertical dashed lines to indicate the estimate of fraction unfished at the start of 2021 (current) and the estimated management targets calculated based on the relative target biomass (B target), the SPR target, and the maximum sustainable yield (MSY).
 
 
 
@@ -162,7 +162,7 @@ The 2021 spawning biomass relative to unfished equilibrium spawning biomass is w
 fishery selectivities and with steepness fixed at 0.80.\label{fig:es-yield}](C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/models/Reference model/plots/yield2_yield_curve_with_refpoints.png){width=100% height=100% alt="Equilibrium yield curve for the base case model. Values are based on the 2020
 fishery selectivities and with steepness fixed at 0.80."}
 
-Reference points were calculated using the estimated selectivities and catch distributions among fleets in the most recent year of the model, 2020 (Table \ref{tab:referenceES}). Sustainable total yield, removals, using an $\text{SPR}_{50\%}$ is 1 mt. The spawning biomass equivalent to 40 percent of the unfished spawning biomass ($\text{SB}_{40\%}$) calculated using the SPR target ($\text{SPR}_{50\%}$) was 1 mt. Recent removals have been close to the point estimate of potential long-term yields calculated using an $\text{SPR}_{50\%}$ reference point and the population size has been relatively decreasing toward the target over the past few years.
+Reference points were calculated using the estimated selectivity and catch distribution for the recreational fleet in the most recent year of the model, 2020 (Table \ref{tab:referenceES}). Sustainable total yield, removals, using an $\text{SPR}_{50\%}$ is 1 mt. The spawning biomass equivalent to 40 percent of the unfished spawning biomass ($\text{SB}_{40\%}$) calculated using the SPR target ($\text{SPR}_{50\%}$) was 1 mt. Recent removals have been close to the point estimate of potential long-term yields calculated using an $\text{SPR}_{50\%}$ reference point and the population size has been fluctuating, but consistently above the target over the past few years.
 
 \input{tex_tables/e_ReferencePoints_ES.tex}
 
@@ -170,7 +170,7 @@ Reference points were calculated using the estimated selectivities and catch dis
 
 ## Management Performance{-}
 
-Exploitation on vermilion rockfish increased starting around 1960 and reached a high in the early 1990s. Since that time, catch has mostly fluctuated between 5-10 mt, with some values above 10 mt, particularly in the last 4 years. The last ten years of the vermilion component acceptable biological catch (ABC) and annual catch limit (ACL) (which are equivalent) of the Minor Shelf Rockfish North Complex has been set below the overfishing limit (OFL) (Table \ref{tab:ofl-es}), all of which have been exceeded in the most recent 4 years.
+Exploitation on vermilion rockfish increased starting around the mid-1980s and reached a high in the early 1990s. Since that time, catch has mostly fluctuated between 500-500 fish a year, with a peak <1200 fish in 2019. The last ten years of the vermilion component acceptable biological catch (ABC) and annual catch limit (ACL) (which are equivalent) of the Minor Shelf Rockfish North Complex are by definition set below the overfishing limit (OFL) (Table \ref{tab:ofl-es}). The Washington contribution to the component ACL has not exceeded the colletitve vermilion rockfish component ACL for this complex, and is a very minor portion of the overall coastwide take.
 
 \begingroup\fontsize{10}{12}\selectfont
 \begingroup\fontsize{10}{12}\selectfont
@@ -459,7 +459,7 @@ The estimates of sex-specific growth parameters showed some differences from the
 
 The estimated logistic selectivity curve for the recreational fishery look plausible (i.e., as a model convergence check for realism, the selectivity curve is not overtly outrageous; Figure \ref{fig:fleet_selectivity}). Length at 50% selectivity (44.267cm) was between the length at 50% (39.4cm) and 95% maturity (48cm).
 
-The time series of estimated recruitments and annual recruitment deviations are shown in Figures \ref{fig:recruits} and \ref{fig:rec-devs}. Recruitment strengths were generally low; years with the highest recruitment deviations were estimated to have occurred in 1995,1996,1999,2000, 2006, and 2011. All recruitment deviations after 2011 are negative.
+The time series of estimated recruitments and annual recruitment deviations are shown in Figures \ref{fig:recruits} and \ref{fig:rec-devs}. Recruitment strengths were generally low; years with the highest recruitment deviations were estimated to have occurred in 1995, 1996, 1999, 2000, 2006, and 2011. All recruitment deviations after 2011 are negative.
 The variance check on the recruitment deviations indicates weakly informed recruitments. Recruitment deviations after 2015 are relatively uninformed with estimated deviations near zero where recruitment is estimated primarily based on the spawner-recruit curve (Figure \ref{fig:bh-curve}). The recruitment bias adjustment applied within the model across years is shown in Figure \ref{fig:bias-adj}.
 
 
@@ -481,47 +481,49 @@ Sensitivity analyses were conducted to evaluate model sensitivity to alternative
 Data treatments explored were as follows:
 
 - Data removal (fixed life history, no recruitment estimation) 
-	1. Fishery length data only (no catches)
-  	2. Catch and lengths only
-  	3. Catch and lengths only with Francis weighting
-  	4. Catch, lengths and ages with Francis weighting
-  	5. Catch length, age and indices with Francis weighting
-  	6. Catch length, age and indices with Francis weighting and extra index variance
-  	7. Catch length and indices with Francis weighting, estimate life history
+	1. Fishery length data only (no catches; L) 
+  	2. Catch and lengths only (CL)
+  	3. Catch and lengths only with Francis weighting (CL_Fr)
+  	4. Catch, lengths, and ages with Francis weighting (CLA_fixed)
+  	5. Catch, length, and age with Francis weighting and estimated recruitment (CLA_fixed_recs)
 - Data weighting
-  	8. Dirichlet data-weighting
-  	9. McAllister-Ianelli data weighting
-  	10. No data-weighting
-- Ageing error
-  	11. Using ageing error from CARE exchange
+  	6. Dirichlet data-weighting
+  	7. McAllister-Ianelli data weighting
+  	8. No data-weighting
+- Catch histories
+	9. Catch using original 1967 catches
+	10. Minimum historical (1949-1977) catch series
+	11. Maximum historical (1949-1977) catch series
 - Length treatment
 	12. Use option sex = 3 to maintain sex ratio in commercial data  
+- Ageing error
+  	13. Using ageing error from CARE exchange
 
 Likelihood values and estimates of key parameters and derived quantities from each sensitivity are available in Table \ref{tab:data_sensis}. Derived quantities relative to the reference model are provided in Figure \ref{fig:sensi-data-RE}. Time series of spawning output and relative spawning output are shown in Figures \ref{fig:sensi-data-ssb} and \ref{fig:sensi-data-depl}.
 
-Deterministic length-based (with or without catches) models with fixed life history values view the stock scale and status to be below that of the reference model, though above the limit reference point. Bringing in the age data, while still fixing life history and not estimating recruitment, significantly raises the stock scale to above the reference model, though the stock status is similar to the reference model. Introduction of the index made little difference to the relative stock status. Estimating the life history values, even without estimating recruitment, brought the scale back in line with the reference model. The other data treatments regarding weighting did very little to change the results from the reference model
+The deterministic length-based model without catches and with fixed life history values view the stock scale and status to be below that of the reference model and near the target reference point. Bringing in the length data returns the model back to reference levels, but introducing age data with out without recruitment while still fixing life history parameters significantly raises the stock scale and relative stock staus above the reference model. The other data treatments, including data weighting options, did very little to change the results from the reference model, except the choice of using the CARE ageing error matrix. The matrix ageing error was so extreme, it caused the model to not converge.
 
 
 #### Model specification sensitivities
 Model specifications looked at the estimation of indiviual and combinations of life history parameters, the estimation of recruitment, and the treatment of fecundity and selectivity. All scenarios match the reference model specificatins in all other aspects unless otherwised stated.
 
 - Life history estimation
+	1. Fix all life history parameters 
 	- Fix natural mortality ($M$)
-		1. Fix $M$ 
-		2. Fix $M$ and $CV_old$
-		3. Fix $M$, $t_0$ and $CV_old$
-		4. Fix $M$, $k$, $t_0$ and $CV_old$ 
+		2. Fix $M$ 
+		3. Fix $M$, $k$, $t_0$, and $CVs$
+		4. Fix $M$, $t_0$, and $CVs$
+		5. Fix $M$ and $CV$s 
+		6. Fix female $M$ and growth parameters 
+		7. Fix male $M$ and growth parameters 
 	- Fix growth parameters
-		5. Fix all growth parameters
-	 	6. Fix $L_{\infty}$, $k$, and $t0$
-	 	7. Fix $k$, and $CV_old$
-	 	8. Fix $L_{\infty}$ and $CV_old$
-	 	9. Est $L_{\infty}$ for females only
-	 	10. Est $L_{\infty}$ for males only
-	 	11. 5 growth platoons instead of one
+		8. Fix all growth parameters
+	 	9. Fix $L_{\infty}$ and $CVs$
+	 	10. Fix $k$ and $CVs$
+	 	11. Fix $CVs$
+	 	12. 5 growth platoons instead of one
 	- Recruitment estimation and variability ($\sigma_R$). All years are estimated with bias correction applied.
-	 	12. No recruitment estimation
-	 	13. No recruitment esimation and fixed life history parameters
+	 	13. No recruitment estimation
 	 	14. $\sigma_R$ = 0.45
 	 	15. $\sigma_R$ = 0.75	
 - Miscellaneous
@@ -530,28 +532,30 @@ Model specifications looked at the estimation of indiviual and combinations of l
 	
 Likelihood values and estimates of key parameters and derived quantities from each sensitivity are available in Tables \ref{tab:modspec_LH_sensis} and \ref{tab:modspec_RecMisc_sensis}. Derived quantities relative to the reference model are provided in Figure \ref{fig:sensi-modspec-RE}. Time series of spawning output and relative spawning output are shown in Figures \ref{fig:sensi-modspec-ssb} and \ref{fig:sensi-modspec-depl}.
 
-Fixing $M$ to the higher prior mean value while estimating $L_{\infty}$ raised both the beginning and ending stock scale and overall ending year relative stock status. Fixing growth but estimaing $M$ dropped stock scale, but preserved the stock status. Allowing either $L_{\infty}$ or $k$ to be estimated increased both stock scale and status. Fixing the life history parameters except for female $L_{\infty}$ also raised stock scale and status, though estiamating males $L_{\infty}$ made little difference to model results. Further investigation on the affect of life history values are provided in the likelihood profiles (next section).
+Fixing all life history parameters significantly increases the scale and status of the stock. Fixing $M$ to the higher prior mean value raised both the beginning and ending stock scale and overall ending year relative stock status, except when estimating $L_{\infty}$ (at an un reasonably low value of 52 and 49cm for females and males respectively) that maintained the intial stock scale near the reference level, but increased the current stock status. 
 
-Recruitment estimation (assuming $\sigma_R$ = 0.6) was not sensitive to a range of $\sigma_R$ values, though fixing life history values again increased both scale and relative stock status. The two remaining model specifications did little to change the reference model results.
+Model results were less sensitivity to the fixing of growth parameters. Fixing all growth parameters had the largest relative affect of raising both scale and stock status, as it caused $M$ to be lower, but wasn't a dramatic departure from the reference model. The initial growth values have small $L_{\infty}$ values compared to estimates, so it is expected all scenarios with small $L_{\infty}$ values will reflect a higher stock status and scale. The choice of invoking 5 growth types resulted is less current spawning output and relative stock scale. This makes sense if more of the population is available to the fishery given the fishery selectivity curve. Further investigation of the affects of life history values are provided in the likelihood profiles (next section).
 
-Overall, there were no model specification sensitivity scenarios that caused the population to drop significantly below the reference model estimate of stock status, only above. When stock scale differed, unfished and current stock size offered varied similarly, with current stock size changing more, which led to increases in the relative stocks status. 
+Model results were not sensitive to the choice of no estimation of recruitment and the assumption of recruitment variability, nor with the treatment of fecundity or dome-shaped selectivity estimation (very little dome-shaped selectivity was indicated).
+
+Overall, there few model specification sensitivity scenarios that caused the population to drop below the reference model estimate of stock status, and nothing that dropped it below the target reference point. When stock scale differed, it was mostly due to the treatment of natural mortality or small $L_{\infty}$ values and current stock size was often what changed the most. From these results, it is likely most of the model uncertainty is due to $M$, and that while the variance is forced to be normally distributed in the asymptotic form, it is mostly on the upper side of both scale and status compared to the reference model.
 
 
 ### Likelihood Profiles
-Likelihood profiles were conducted for $ln(R_0)$, steepness ($h$), female and male natural mortality ($M$) values separately and varying together, female and male maximum length ($L_{\infty}$), female and male growth coefficient ($k$), female and male variability of size at maximum age. In addition, joint profiles over  $L_{\infty}$ and $k$ (that maintains a correlation structure -0.92 between the parameters consistent with the model calculation of that correlation) were done for females and males separately. Female and male natural mortality was also covaried based on the offset in values from the reference model. Likelihood profiles were conducted by fixing the featured parameter(s) at specific values across a range of values and estimating the remaining parameters. A likelihood profile offers insight into model information on a given parameter or parameter pairing, while providing an additional way to describe uncertainty in the parameter by indentifying the range of parameters within 1.96 likelihood units of the refrence model.
+Likelihood profiles were conducted for $ln(R_0)$, steepness ($h$), female and male natural mortality ($M$) values separately and varying together, female and male maximum length ($L_{\infty}$), female and male growth coefficient ($k$), female and male variability of size at maximum age. In addition, joint profiles over $L_{\infty}$ and $k$ (that maintains a correlation structure -0.92 between the parameters consistent with the model calculation of that correlation) were done for females and males separately. Female and male natural mortality was also covaried based on the offset in values from the reference model. Likelihood profiles were conducted by fixing the featured parameter(s) at specific values across a range of values and estimating the remaining parameters. A likelihood profile offers insight into model information on a given parameter or parameter pairing, while providing an additional way to describe uncertainty in the parameter by indentifying the range of parameters within 1.96 likelihood units of the refrence model.
 
 The $ln(R_0)$ profiles show strong support for the maximum likelhood value of 0.91 (Figure \ref{fig:r0-profile-combo}). Population size expectedly increases as $ln(R_0)$ increases, with the increase in current biomass happening quicker than initial biomass, thus relative stock status increase towards unfished at high $ln(R_0)$ values. This is explained by the harvest rate decreasing because the removal history is fixed and becomes relatively smaller compared to the overall biomass. All data sets were mostly consistent in the information content in the profile, though the length data contained the least amount of information on $ln(R_0)$.
 
-The steepness profile showed little information content for this parameter (Figure \ref{fig:steepness-profile-combo}). Despite low information content, model output show little senstivity for $h$ > 0.45, with values for relative stock status ranging between 0.7 and 0.8. Scale outputs ($SB_0$ and $SB_2021$) also showed little change across steepness values. The recruitment likelihood was the biggest driver of steepness towards a value of 1 (Figure \ref{fig:steepness-profile-combo}). 
+The steepness profile showed no information content for this parameter (Figure \ref{fig:steepness-profile-combo}). Despite this lack of information on steepness, model output show little senstivity to stock scale ($SB_0$ and $SB_2021$) or relative stock status. The recruitment likelihood was the biggest driver of steepness towards a value of 1 (Figure \ref{fig:steepness-profile-combo}). 
 
-Natural mortality profiles for females (Figure \ref{fig:M_f-profile-combo}) and males (Figure \ref{fig:M_m-profile-combo}) are consisten with each other and show a range of $M$ values for females and males supported by the data. These values are distinctly below the mean of the prior (0.1) for both sexes. The combined profile that varies female and male $M$ based on the reference offset together at the same changing value behave diretionally most like the female likelihood support values in the range of the individual parameter likelihoods (Figure \ref{fig:M-multiprofile-combo}). Scale and relative stock status are affected by this parameter, with the current spawning output being affected more than initial biomass. This is particularly true as M get larger, creating much higher biomass and higher relative stock status. The uncertainty in the relative stock status ranges from 0.5 to 0.9, very consistent with the asymptotic uncertainty intervals for this value from in reference model. The index provided the strongest data signal for natural mortality, with length and age data being much less informative, but not inconsistent with the index.
+Natural mortality profiles for females (Figure \ref{fig:M_f-profile-combo}) and males (Figure \ref{fig:M_m-profile-combo}) are consisten with each other and show a wide range of $M$ values for females and males supported by the data. These values are both above and below the mean of the prior (0.1) for both sexes. The combined profile that varies female and male $M$ based on the reference offset together at the same changing value behave similarly to the individual likelihood profiles (Figure \ref{fig:M-multiprofile-combo}). Scale and relative stock status are affected by this parameter, with the current spawning output being affected more than initial biomass. This is particularly true as M get larger, creating much higher biomass and higher relative stock status. The uncertainty in the relative stock status ranges from 0.06 to 0.12, very consistent with the asymptotic uncertainty intervals for this value from in reference model. The length, then age data provided the strongest data signal for natural mortality and were generally consistent with each other.
 
-Female (Figure \ref{fig:Linf_F-profile-combo}) and male (Figure \ref{fig:Linf_M-profile-combo}) growth profiles show strong signals in the data to estimate $L_{\infty}$, $k$, and length CV at maximum age. Lengths and ages are the primary data supporting $L_{\infty}$ values similar to the externaly estimated values for each sex, but $k$ values higher than the externally estimated values. A more realistic profile that maintains the negative correlation bewtween $L_{\infty}$ and $k$ showing show similar behavior as the two separate profiles (Figure \ref{fig:Linf_k_f-profile}). Changing either value affects stock scale, though relative stock status seems robust over a wide range of values. The profile over the length variability at maximum age also has a distinct influence on stocks scale, but relatives relatives stock status in again robust to most values (Figure \ref{fig:CVold_f-profile-combo}). The female length CV at the oldest age had the biggest influence on stock status as the CV got higher, though still a small affect compared to the uncertainty in the model. Overall, the influence of growth values seems to make the population stock status increase slightly.
+Female and male growth profiles show good signals in the data to estimate $L_{\infty}$ (Figures \ref{fig:Linf_F-profile-combo} and \ref{fig:Linf_M-profile-combo}), $k$ (Figures \ref{fig:k_F-profile-combo} and \ref{fig:k_M-profile-combo}), and length CV at maximum age (Figures \ref{fig:CVold_F-profile-combo} and \ref{fig:CVold_M-profile-combo}). $L_{\infty}$ had the largest variance of the growth parameters. Lengths and ages are the primary data informing growth parameters with consistent signals. A more realistic profile that maintains the negative correlation bewtween $L_{\infty}$ and $k$ showing show similar behavior as the two separate profiles (Figure \ref{fig:Linf_k_f-profile}). The range of growth parameters explored in the likelihood profiles showed little affect on either scale or stock status; female $k$ and length CV at maximum age had the relatively biggest effect on scale for growth parameters, but overall these were small. These profiles support the conculsion that the main source of uncertainty in the model is the treatment of natural mortality.
 
 
 ### Retrospective Analysis
 
-A ten-year retrospective analysis was conducted by running the model and sequentially removing one year of data up through minus 10 years. Retrospective spawning output (Figure \ref{fig:retro-ssb}) and relatives stock statys (Figure \ref{fig:retro-depl}) estimates were gnerally within the confidence intervals of the reference model, though removing 8 to 10 years did reveal a retrospective pattern in the terminal year. None of these patterns changed the overall relative stock status of the stock being above the target relative stock status level since 2000.
+A ten-year retrospective analysis was conducted by running the model and sequentially removing one year of data up through minus 10 years. Retrospective spawning output (Figure \ref{fig:retro-ssb}) and relatives stock statys (Figure \ref{fig:retro-depl}) estimates were generally within the large confidence intervals of the reference model. Removing years 7 and 8 to 10 had the biggest scale effects. There does seem to be a bit of a retrospective pattern with removal of years leading to smaller biomass and lower stock scale, though this is not a unifrom result. All results maintained the population above the stock status target reference point changed in all years.
 
 
 <!--chapter:end:34diagnostics.Rmd-->
