@@ -2,22 +2,28 @@
 
 ### Reference Points
 
-Reference points were calculated using the estimated fishery selectivity and removals in the most recent year of the model (`r endyr`, Table \ref{tab:referenceES}). Sustainable total yields  were `r round(model$derived_quants[model$derived_quants$Label == 'Dead_Catch_SPR', 'Value'], 2)` mt when using an $SPR_{50\%}$ reference harvest rate. The spawning output equivalent to 40 percent of the unfished spawning output ($SB_{40\%}$) was `r round(model$derived_quants[model$derived_quants$Label == 'SSB_SPR', 'Value'], 2)` millions of eggs. 
+Reference points were calculated using the estimated fishery selectivity and removals in the most recent year of the model (`r endyr`, Table \ref{tab:referenceES}). Sustainable total yields  were `r round(model$derived_quants[model$derived_quants$Label == 'Dead_Catch_SPR', 'Value'], 2)` mt when using an $SPR_{50\%}$ reference harvest rate. The spawning output equivalent to 40 percent of the unfished spawning output ($SB_{40\%}$) was `r round(model$derived_quants[model$derived_quants$Label == 'SSB_SPR', 'Value'], 2)` meggs. 
 
-The `r endyr + 1` spawning output relative to unfished equilibrium spawning output is above the `r spp` relative biomass target of 40 percent (Figure \ref{fig:depl}). The fishing intensity, $1-SPR$, of recent years was near or above the harvest rate limit ($SPR_{50\%}$) for most of the 1980s and 1990s. Recent years also show near target fishing levels (Table \ref{tab:timeseries} and Figure \ref{fig:1-spr}), highlighting how the sustainability of current fishing levels are very sensitive to incoming recruitment. Table \ref{tab:referenceES} shows the full suite of estimated reference points for the base model and Figure \ref{fig:yield} shows the equilibrium curve based on a steepness value fixed at `r round(model$parameters[model$parameters$Label == "SR_BH_steep","Value"], 2)`.
+The `r endyr + 1` spawning output relative to unfished equilibrium spawning output is above the `r spp` relative biomass target of 40 percent (Figure \ref{fig:depl}). The fishing intensity, $1-SPR$, of recent years was near or above the harvest rate limit ($SPR_{50\%}$) in the early 1990s and late 2010s. Recent years also show near target fishing levels (Table \ref{tab:timeseries} and Figure \ref{fig:1-spr}). Table \ref{tab:referenceES} shows the full suite of estimated reference points for the base model and Figure \ref{fig:yield} shows the equilibrium curve based on a steepness value fixed at `r round(model$parameters[model$parameters$Label == "SR_BH_steep","Value"], 2)`.
 
 ### Unresolved Problems and Major Uncertainties
+This assessment, while having multiple years of length and age data, has low annual samples sizes for each data source. The growth estimates seem reasonable and do not tend to add a large amount of variability to the model outputs, as the major source of uncertainty stems from the uncertainty in natural mortality. This uncertainty seems larger than even among model uncertainty in the treatments of data or alternative model specifications. The ability to decrease the uncertainty in this parameter would then bring attention back to alternative model specifications. 
 
+The structure of this model is simple-- one non-target fleet with stationary productivity and selectivity and stochastic recruitment allowing non-deterministic changes to the population, yet there is an observable retrospective pattern. This would suggest some sort of bias in the data and/or model misspecification. The limited data and simple models structure makes the latter difficult to explore. It may also be inherent in the fact that this is a small population sensitive to perturbations. Attention to this restrospective pattern should be maintained in future assessments as data increases.
+
+The large ageing error seen in the CARE exchange was untenable for use in a reference model, but should be revisited with further exchanges to figure out why the Washington state ageing was such an outlier to the other laboratories. Further work on the age and growth of `r spp` in Washington would help improve the ageing error and overall growth estimates, and the collection of small individuals would be particularly helpful.
+
+The historical catch history is roughly estimated, though little additional information is avialble to improve this estimate. While this history is very uncertain, the catch level is so small compared to the contemporary catch and overall population that it makes little difference in model results, but remains an area of uncertainty.
 
 ### Harvest Projections and Decision Tables
 
-A ten year projection of the reference model with removals in 2021 and 2022 equal to the recent average removals from 2017-2019 were run based on the category 2 time-varying buffer using $P^*$ = 0.45 for years 2023-2032 is provided in Table \ref{tab:project}.
+A ten year projection of the reference model with removals in 2021 and 2022 equal to the recent average removals from 2017-2019 were run based on the category 1 time-varying buffer using $P^*$ = 0.45 for years 2023-2032 is provided in Table \ref{tab:project}.
 
 A decision table with uncertainty axes and proposed catch levels will be determined later.
 
 ### Evaluation of Scientific Uncertainty
 
-The estimated uncertainty in the base model around the `r endyr + 1` spawning output is $\sigma$ = `r round(model$Pstar_sigma,2)` and the uncertainty in the base model around the `r endyr + 1` OFL is $\sigma$ = `r round(model$OFL_sigma,2)`. The estimated model uncertainty was less than the category 2 groundfish data moderate assessment default value of  $\sigma$ = 1.0. 
+The estimated uncertainty in the base model around the `r endyr + 1` spawning output is $\sigma$ = `r round(model$Pstar_sigma,2)` and the uncertainty in the base model around the `r endyr + 1` OFL is $\sigma$ = `r round(model$OFL_sigma,2)`. The estimated model uncertainty was more than the category 1 groundfish data moderate assessment default value of  $\sigma$ = 0.5. 
 
 ## Research and Data Needs
 TBD

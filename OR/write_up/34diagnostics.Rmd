@@ -30,19 +30,19 @@ Deterministic length-based (with or without catches) models with fixed life hist
 
 
 #### Model specification sensitivities
-Model specifications looked at the estimation of indiviual and combinations of life history parameters, the estimation of recruitment, and the treatment of fecundity and selectivity. All scenarios match the reference model specificatins in all other aspects unless otherwised stated.
+Model specifications looked at the estimation of indiviual and combinations of life history parameters, the estimation of recruitment, and the treatment of fecundity and selectivity. All scenarios match the reference model specifications in all other aspects unless otherwise stated.
 
 - Life history estimation
 	- Fix natural mortality ($M$)
 		1. Fix $M$ 
-		2. Fix $M$ and $CV_old$
-		3. Fix $M$, $t_0$ and $CV_old$
-		4. Fix $M$, $k$, $t_0$ and $CV_old$ 
+		2. Fix $M$ and $CV_{old}$
+		3. Fix $M$, $t_0$ and $CV_{old}$
+		4. Fix $M$, $k$, $t_0$ and $CV_{old}$ 
 	- Fix growth parameters
 		5. Fix all growth parameters
-	 	6. Fix $L_{\infty}$, $k$, and $t0$
-	 	7. Fix $k$, and $CV_old$
-	 	8. Fix $L_{\infty}$ and $CV_old$
+	 	6. Fix $L_{\infty}$, $k$, and $t_0$
+	 	7. Fix $k$, and $CV_{old}$
+	 	8. Fix $L_{\infty}$ and $CV_{old}$
 	 	9. Est $L_{\infty}$ for females only
 	 	10. Est $L_{\infty}$ for males only
 	 	11. 5 growth platoons instead of one
@@ -57,7 +57,7 @@ Model specifications looked at the estimation of indiviual and combinations of l
 	
 Likelihood values and estimates of key parameters and derived quantities from each sensitivity are available in Tables \ref{tab:modspec_LH_sensis} and \ref{tab:modspec_RecMisc_sensis}. Derived quantities relative to the reference model are provided in Figure \ref{fig:sensi-modspec-RE}. Time series of spawning output and relative spawning output are shown in Figures \ref{fig:sensi-modspec-ssb} and \ref{fig:sensi-modspec-depl}.
 
-Fixing $M$ to the higher prior mean value while estimating $L_{\infty}$ raised both the beginning and ending stock scale and overall ending year relative stock status. Fixing growth but estimaing $M$ dropped stock scale, but preserved the stock status. Allowing either $L_{\infty}$ or $k$ to be estimated increased both stock scale and status. Fixing the life history parameters except for female $L_{\infty}$ also raised stock scale and status, though estiamating males $L_{\infty}$ made little difference to model results. Further investigation of the affects of life history values are provided in the likelihood profiles (next section).
+Fixing $M$ to the higher prior mean value while estimating $L_{\infty}$ raised both the beginning and ending stock scale and overall ending year relative stock status. Fixing growth but estimating $M$ dropped stock scale, but preserved the stock status. Allowing either $L_{\infty}$ or $k$ to be estimated increased both stock scale and status. Fixing the life history parameters except for female $L_{\infty}$ also raised stock scale and status, though estiamating males $L_{\infty}$ made little difference to model results. Further investigation of the affects of life history values are provided in the likelihood profiles (next section).
 
 Recruitment estimation (assuming $\sigma_R$ = 0.6) was not sensitive to a range of $\sigma_R$ values, though fixing life history values again increased both scale and relative stock status. The two remaining model specifications did little to change the reference model results.
 
@@ -71,12 +71,12 @@ The $ln(R_0)$ profiles show strong support for the maximum likelhood value of `r
 
 The steepness profile showed little information content for this parameter (Figure \ref{fig:steepness-profile-combo}). Despite low information content, model output show little senstivity for $h$ > 0.45, with values for relative stock status ranging between 0.7 and 0.8. Scale outputs ($SB_0$ and $SB_2021$) also showed little change across steepness values. The recruitment likelihood was the biggest driver of steepness towards a value of 1 (Figure \ref{fig:steepness-profile-combo}). 
 
-Natural mortality profiles for females (Figure \ref{fig:M_f-profile-combo}) and males (Figure \ref{fig:M_m-profile-combo}) are consisten with each other and show a range of $M$ values for females and males supported by the data. These values are distinctly below the mean of the prior (0.1) for both sexes. The combined profile that varies female and male $M$ based on the reference offset together at the same changing value behave diretionally most like the female likelihood support values in the range of the individual parameter likelihoods (Figure \ref{fig:M-multiprofile-combo}). Scale and relative stock status are affected by this parameter, with the current spawning output being affected more than initial biomass. This is particularly true as M get larger, creating much higher biomass and higher relative stock status. The uncertainty in the relative stock status ranges from 0.05 to 0.09, very consistent with the asymptotic uncertainty intervals for this value from in reference model. The index provided the strongest data signal for natural mortality, with length and age data being much less informative, but not inconsistent with the index.
+Natural mortality profiles for females (Figure \ref{fig:M_f-profile-combo}) and males (Figure \ref{fig:M_m-profile-combo}) are consistent with each other and show a range of $M$ values for females and males supported by the data. These values are distinctly below the mean of the prior (0.1) for both sexes. The combined profile that varies female and male $M$ based on the reference offset together at the same changing value behave diretionally most like the female likelihood support values in the range of the individual parameter likelihoods (Figure \ref{fig:M-multiprofile-combo}). Scale and relative stock status are affected by this parameter, with the current spawning output being affected more than initial biomass. This is particularly true as $M$ gets larger, creating much higher biomass and higher relative stock status. The uncertainty in the relative stock status ranges from 0.05 to 0.09, very consistent with the asymptotic uncertainty intervals for this value from in reference model. The index provided the strongest data signal for natural mortality, with length and age data being much less informative, but not inconsistent with the index.
 
 Female (Figure \ref{fig:Linf_F-profile-combo}) and male (Figure \ref{fig:Linf_M-profile-combo}) growth profiles show strong signals in the data to estimate $L_{\infty}$, $k$, and length CV at maximum age. Lengths and ages are the primary data supporting $L_{\infty}$ values similar to the externaly estimated values for each sex, but $k$ values higher than the externally estimated values. A more realistic profile that maintains the negative correlation bewtween $L_{\infty}$ and $k$ showing show similar behavior as the two separate profiles (Figure \ref{fig:Linf_k_f-profile}). Changing either value affects stock scale, though relative stock status seems robust over a wide range of values. The profile over the length variability at maximum age also has a distinct influence on stocks scale, but relatives relatives stock status in again robust to most values (Figure \ref{fig:CVold_f-profile-combo}). The female length CV at the oldest age had the biggest influence on stock status as the CV got higher, though still a small affect compared to the uncertainty in the model. Overall, the influence of growth values seems to make the population stock status increase slightly.
 
 
 ### Retrospective Analysis
 
-A ten-year retrospective analysis was conducted by running the model and sequentially removing one year of data up through minus 10 years. Retrospective spawning output (Figure \ref{fig:retro-ssb}) and relatives stock statys (Figure \ref{fig:retro-depl}) estimates were generally within the confidence intervals of the reference model, though removing 8 to 10 years did reveal a retrospective pattern in the terminal year. None of these patterns changed the overall relative stock status of the stock being above the target relative stock status level since 2000.
+A ten-year retrospective analysis was conducted by running the model and sequentially removing one year of data up through minus 10 years. Retrospective spawning output (Figure \ref{fig:retro-ssb}) and relatives stock status (Figure \ref{fig:retro-depl}) estimates were generally within the confidence intervals of the reference model, though removing 8 to 10 years did reveal a retrospective pattern in the terminal year. None of these patterns changed the overall relative stock status of the stock being above the target relative stock status level since 2000.
 

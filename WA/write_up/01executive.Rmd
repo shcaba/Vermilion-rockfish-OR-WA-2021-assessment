@@ -7,10 +7,10 @@ executive[["stock"]] <- paste0("This assessment reports the status of ",
 # Executive Summary{-}
 
 ## Stock{-}
-This assessment reports the status of `r spp` (_`r spp.sci`_) off Washington state using data through `r endyr`. `r Spp` are found in California and Orgon waters, but those are treated separately in other stock assessments. The core range of `r spp` are outside of Washington waters and in Califoria; this assessment thus considers a very small population under different mangement considerations and exploitation histories than `r spp` stocks in either California or Oregon. There is substantial biogeographic separation in the populations off Oregon and Washington, thus justifying separation of those populations into different management units and stock assessments. Vermilion in Canadain waters are also rare and not included in this assessment.
+This assessment reports the status of `r spp` (_`r spp.sci`_) off Washington state using data through `r endyr`. `r Spp` are found in California and Orgon waters, but those are treated separately in other stock assessments. The core range of `r spp` are outside of Washington waters and in Califoria; this assessment thus considers a very small population at the limit of the species range under different mangement considerations and exploitation histories than `r spp` stocks in either California or Oregon. There is substantial biogeographic separation in the populations off Oregon and Washington, thus justifying separation of those populations into different management units and stock assessments. Vermilion in Canadian waters are also rare and not included in this assessment.
 
 ## Landings{-}
-`r Spp` are mainly caught in recreational fisheries by hook and line gear (Figure \ref{fig:es-catch}). Recreational catches are generally low, but in relative terms increased in mid-1980s and have fluctuated since to a peak catches in 2019 (Table \ref{tab:removalsES}). Vermilion are not targets in the Washington recreational fishery and are considered rare.
+`r Spp` are mainly caught in recreational fisheries by hook and line gear (Figure \ref{fig:es-catch}). Recreational catches are generally low, but in relative terms increased in mid-1980s and have fluctuated since to a peak catch in 2019 (Table \ref{tab:removalsES}). Vermilion are not targets in the Washington recreational fishery and are considered rare.
 
 
 \clearpage
@@ -21,7 +21,7 @@ This assessment reports the status of `r spp` (_`r spp.sci`_) off Washington sta
 ```{r, results = 'asis'}
 add_figure(
 filein = file.path(mod_loc, "plots", "catch2 landings stacked.png"), 
-caption = "Landings by fleet used in the base model where catches in metric tons by fleet are stacked",
+caption = "Landings (1000s of fish) used in the reference model",
 label = 'es-catch')
 ```
 
@@ -31,13 +31,13 @@ label = 'es-catch')
 
 The stock assessment for `r spp` off Washington state was developed using the length- and age-structured model Stock Synthesis (version 3.30.16).  No previous stock assessment for `r spp` off Washington has been conducted. Model structure included one recretaional fleet. Life history parameters were sex-specific (i.e., a two-sex model) with natural mortality and growth parameters estimated, along with recruitment. The model covers the years `r startyr` to `r endyr`, with a 12 year forecast beginning in `r endyr + 1`.
 
-This assessment integrates data and information from multiple sources into one modeling framework. Specifically, the assessment uses recreational landings data, and length and conditional age-at-length composition data (using ageing error matrices to incorporate ageing imprecision); fixed parameterizations of weight-at-length, maturity-at-length, and fecundity-at-length, the Beverton-Holt stock-recruitment steepness value and recruitment variability. Estimated values include initial population scale ($lnR_0$), natural mortality and growth for each sex, asymptotic selectivity and recruitment deviations. The base model was tuned to account for the weighting of the length and age data, as well as the specification of recruitment variance and recruitment bias adjustments.  Derived quantities include the time series of spawning output, age and size structure, and current and projected future stock status. 
+This assessment integrates data and information from multiple sources into one modeling framework. Specifically, the assessment uses recreational landings data, and length and conditional age-at-length composition data (using ageing error matrices to incorporate ageing imprecision); fixed parameterizations of weight-at-length, maturity-at-length, and fecundity-at-length, the Beverton-Holt stock-recruitment steepness value and recruitment variability. Estimated values include initial population scale ($lnR_0$), sex-specific natural mortality and growth, asymptotic selectivity and recruitment deviations. The base model was tuned to account for the weighting of the length and age data, as well as the specification of recruitment variance and recruitment bias adjustments.  Derived quantities include the time series of spawning output, age and size structure, and current and projected future stock status. 
 
-Uncertainty is explicitly included in this assessment through variances of all estimated parameters, while between model uncertainty is explored through sensitivity analyses such as data treatment and weighting, and model specification sensitivity to the treatment of life history parameters, selectivity, and recruitment. A reference model was selected that best fit the observed data while concomitantly balancing the desire to capture the central tendency across those sources of uncertainty, ensure model realism and tractability, and promote robustness to potential model misspecification.
+Uncertainty is explicitly included in this assessment through variances of all estimated parameters, while among model uncertainty is explored through sensitivity analyses such as data treatment and weighting, and model specification sensitivity to the treatment of life history parameters, selectivity, and recruitment. A reference model was selected that best fit the observed data while concomitantly balancing the desire to capture the central tendency across those sources of uncertainty, ensure model realism and tractability, and promote robustness to potential model misspecification.
 
 ## Stock Biomass{-}
 
-Spawning output (in millions of eggs) instead of spawning biomass is used to report the mature population scale as fecundity is nonlinearly related to the weight of the population. The estimated spawning output at the beginning of 2021 was `r ssb_2021` mt (~95 percent asymptotic intervals: `r ssb_2021_low` to `r ssb_2021_hi` mt, Table \ref{tab:ssbES} and Figure \ref{fig:es-ssb}), which when compared to unfished spawning biomass (`r ssb0` mt) gives a relative stock status level of `r round(100*depl_2021,0)` percent (~95 percent asymptotic intervals: `r round(100*depl_2021_low,0)` to `r round(100*depl_2021_hi,0)` percent, Figure \ref{fig:es-depl}).  Overall, spawning output declined with the onset of increasing recreational removals in the mid-1980s, continued to decline with the increase in recreational catches through the 1990s. Major recruitment pulses since the late 1990s onward that are supported by each of the data sets caused a small increase of the population through the early 2010s, after which a very small decline is observed. Minimum relative stock sizes of `r round(100*as.numeric(depl_min),0)` percent of unfished levels were seen in `r depl_min_yr`. Currently the stock is estimated to be above the management target of $SB_{40\%}$ in 2021 and has never dropped below the target throughout the time series (Table \ref{tab:ssbES} and Figure \ref{fig:es-depl}).
+Spawning output (in millions of eggs; meggs) instead of spawning biomass is used to report the mature population scale because fecundity is nonlinearly related to female body weight. The estimated spawning output at the beginning of 2021 was `r ssb_2021` meggs (~95 percent asymptotic intervals: `r ssb_2021_low` to `r ssb_2021_hi` meggs, Table \ref{tab:ssbES} and Figure \ref{fig:es-ssb}), which when compared to unfished spawning biomass (`r ssb0`) meggs gives a relative stock status level of `r round(100*depl_2021,0)` percent (~95 percent asymptotic intervals: `r if(round(100*depl_2021_low,0)>0) {round(100*depl_2021_low)} else {0}` to `r round(100*depl_2021_hi,0)` percent, Figure \ref{fig:es-depl}).  Overall, spawning output declined with the onset of increasing recreational removals in the mid-1980s and continued to decline with the increase in recreational catches through the 1990s. The largest of the estimated recruitment pulses since the late 1990s (that are supported by each of the data sets) caused a small increase in the spawning output through the early 2010s, after which a very small decline is observed. The minimum relative stock size of `r round(100*as.numeric(depl_min),0)` percent of unfished levels is estimated to have occurred in `r depl_min_yr`. Currently the stock is estimated to be above the management target of $SB_{40\%}$ in 2021 and has never dropped below the target throughout the time series (Table \ref{tab:ssbES} and Figure \ref{fig:es-depl}).
 
 \input{tex_tables/b_SSB_ES.tex}
 
@@ -60,7 +60,7 @@ label = 'es-depl')
 
 ## Recruitment{-}
 
-Recruitment information is overall weak for this model, and begins in the 1980s and peaks in early 2000s (Table \ref{tab:recrES} and Figure \ref{fig:es-recruits}). Data were most informative from the the 1990s to the mid-2010s. Peaks years of recruitments are found in years 1995-1996, 1999-2000, 2006, and 2011 (Figure \ref{fig:es-rec-devs}). Overall, the `r spp` stock has not been reduced to levels that would provide considerable information on how recruitment compensation changes across spawning biomass levels (i.e., inform the steepness parameter).  Thus, all recruitment is based on a fixed assumption about steepness ($h$ = 0.72) and recruitment variability ($\sigma_R$ = 0.6).
+Recruitment information is overall weak for this model; informative recruitments start to appear in the 1980s and peak in early 2000s (Table \ref{tab:recrES} and Figure \ref{fig:es-recruits}). Data were most informative from the 1990s to the mid-2010s. Peak years of recruitments are found in years 1995-1996, 1999-2000, 2006, and 2011 (Figure \ref{fig:es-rec-devs}). Overall, the `r spp` stock has not been reduced to levels that would provide considerable information on how recruitment compensation changes across spawning biomass levels (i.e., inform the steepness parameter).  Thus, all recruitment is based on a fixed assumption about steepness ($h$ = 0.72) and recruitment variability ($\sigma_R$ = 0.6).
 
 \input{tex_tables/c_Recr_ES.tex}
 
@@ -82,7 +82,7 @@ label = 'es-rec-devs')
 
 ## Exploitation Status{-}
 
-Trends in fishing intensity (1 - SPR) largely mirrored that of landings (Figure \ref{fig:es-1-spr}). The maximum fishing intensity was `r spr_max` in `r spr_max_yr`, above the target SPR-based harvest rate of 0.50 (1 - $\text{SPR}_{50\%}$). Current levels of `r spr_recent_10[10]` for 2020 are below the fishing limit, but 2019 was the highest on record. Fishing intensity over the past decade has ranged between `r min(spr_recent_10)` and `r max(spr_recent_10)` and the exploitation rate has been moderate (`r min(exploit_recent_10)` - `r max(exploit_recent_10)`, Table \ref{tab:exploitES}). Current estimates indicate that `r spp` spawning output is greater than than the target biomass level ($\text{SB}_{40\%}$), though fishing intensity has fluctuated near target $F_MSY$ proxy harvest rate.
+Trends in fishing intensity (1 - SPR) largely mirrored that of landings (Figure \ref{fig:es-1-spr}). The maximum fishing intensity was `r spr_max` in `r spr_max_yr`, above the target SPR-based harvest rate of 0.50 (1 - $\text{SPR}_{50\%}$). Current levels of `r spr_recent_10[10]` for 2020 are below the retrospectively estimated fishing limit, but 2019 was the highest on record. Fishing intensity over the past decade has ranged between `r min(spr_recent_10)` and `r max(spr_recent_10)` and the exploitation rate has been moderate (`r min(exploit_recent_10)` - `r max(exploit_recent_10)`, Table \ref{tab:exploitES}). Current estimates indicate that `r spp` spawning output is greater than than the target biomass level ($\text{SB}_{40\%}$), though fishing intensity has fluctuated near target $F_{MSY}$ proxy harvest rate.
 
 \input{tex_tables/d_SPR_ES.tex}
 
@@ -96,12 +96,13 @@ label = 'es-1-spr')
 \clearpage
 
 ## Ecosystem Considerations{-}
-No ecosystem considerations are included in this stock assessment.
+This stock assessment does not explicitly incorporate trophic interactions, habitat factors or environmental factors into the assessment model. More predation, diet and habitat work, and mechanistic linkages to environmental conditions would be needed to incorporate these elements into the stock assessment.
 
 ## Reference Points{-}
 
-The 2021 spawning biomass relative to unfished equilibrium spawning biomass is above the management target of 40 percent of unfished spawning biomass. The relative biomass compared to the ratio of the estimated SPR to the management target ($\text{SPR}_{50\%}$) across all model years are shown in Figure \ref{fig:es-phase} where warmer colors (red) represent early years and colder colors (blue) represent recent years.  There have been periods where fishing intensity has been higher than the target fishing intensity based on $\text{SPR}_{50\%}$, but the stock status has always been above the target. Figure \ref{fig:es-yield} shows the equilibrium curve based on a steepness value fixed at `r round(model$parameters[model$parameters$Label == "SR_BH_steep","Value"], 2)` with vertical dashed lines to indicate the estimate of fraction unfished at the start of `r endyr +1` (current) and the estimated management targets calculated based on the relative target biomass (B target), the SPR target, and the maximum sustainable yield (MSY).
+The 2021 spawning biomass relative to unfished equilibrium spawning biomass is above the management target of 40 percent of unfished spawning biomass. The relative biomass and the ratio of the estimated SPR to the management target ($\text{SPR}_{50\%}$) across all model years are shown in Figure \ref{fig:es-phase} where warmer colors (red) represent early years and colder colors (blue) represent recent years.  There have been periods where fishing intensity has been higher than the target fishing intensity based on $\text{SPR}_{50\%}$, but the stock status has always been above the target. Figure \ref{fig:es-yield} shows the equilibrium curve based on a steepness value fixed at `r round(model$parameters[model$parameters$Label == "SR_BH_steep","Value"], 2)` with vertical dashed lines to indicate the estimate of fraction unfished at the start of `r endyr +1` (current) and the estimated management targets calculated based on the relative target biomass (B target), the SPR target, and the maximum sustainable yield (MSY).
 
+Reference points were calculated using the estimated selectivity and catch distribution for the recreational fleet in the most recent year of the model, `r endyr` (Table \ref{tab:referenceES}). Sustainable total yield, removals, using a $\text{SPR}_{50\%}$ is `r format(model$derived_quants[model$derived_quants$Label == 'Dead_Catch_SPR', 'Value'], digits = 3, scientific = FALSE, big.mark = ',')` mt. The spawning output equivalent to 40 percent of the unfished spawning biomass ($\text{SB}_{40\%}$) calculated using the SPR target ($\text{SPR}_{50\%}$) was `r format(model$derived_quants[model$derived_quants$Label == 'SSB_SPR', 'Value'], digits = 4, scientific = FALSE, big.mark = ',')` meggs. Recent removals have been close to the point estimate of potential long-term yields calculated using an $\text{SPR}_{50\%}$ reference point and the population size has been fluctuating, but consistently above the target over the past few years.
 
 ```{r, results = 'asis'}
 add_figure(
@@ -118,15 +119,13 @@ fishery selectivities and with steepness fixed at 0.80",
 label = 'es-yield')
 ```
 
-Reference points were calculated using the estimated selectivity and catch distribution for the recreational fleet in the most recent year of the model, `r endyr` (Table \ref{tab:referenceES}). Sustainable total yield, removals, using an $\text{SPR}_{50\%}$ is `r format(model$derived_quants[model$derived_quants$Label == 'Dead_Catch_SPR', 'Value'], digits = 0, scientific = FALSE, big.mark = ',')` mt. The spawning biomass equivalent to 40 percent of the unfished spawning biomass ($\text{SB}_{40\%}$) calculated using the SPR target ($\text{SPR}_{50\%}$) was `r format(model$derived_quants[model$derived_quants$Label == 'SSB_SPR', 'Value'], digits = 0, scientific = FALSE, big.mark = ',')` mt. Recent removals have been close to the point estimate of potential long-term yields calculated using an $\text{SPR}_{50\%}$ reference point and the population size has been fluctuating, but consistently above the target over the past few years.
-
 \input{tex_tables/e_ReferencePoints_ES.tex}
 
 \clearpage
 
 ## Management Performance{-}
 
-Exploitation on `r spp` increased starting around the mid-1980s and reached a high in the early 1990s. Since that time, catch has mostly fluctuated between 500-500 fish a year, with a peak <1200 fish in 2019. The last ten years of the vermilion component acceptable biological catch (ABC) and annual catch limit (ACL) (which are equivalent) of the Minor Shelf Rockfish North Complex are by definition set below the overfishing limit (OFL) (Table \ref{tab:ofl-es}). The Washington contribution to the component ACL has not exceeded the colletitve `r spp` component ACL for this complex, and is a very minor portion of the overall coastwide take.
+Exploitation on `r spp` increased starting around the mid-1980s and reaching relatively high levels in the early 1990s. Since that time, catch has mostly fluctuated between 100 and 700 fish a year, with a peak of >1200 fish in 2019. The last ten years of the vermilion component acceptable biological catch (ABC) and annual catch limit (ACL) (which are equivalent) of the Minor Shelf Rockfish North Complex are by definition set below the overfishing limit (OFL) (Table \ref{tab:ofl-es}). The Washington contribution to the component ACL has not exceeded the colletitve `r spp` component ACL for this complex, and is a very minor portion of the overall coastwide take of `r spp`.
 
 ```{r, results = 'asis'}
 yrs = hist = 2011:endyr
@@ -141,8 +140,8 @@ for (i in 1:nfleets){
   est.dead = model$timeseries[model$timeseries$Yr %in% yrs, name]
   dead = cbind(dead, est.dead)
 }
-total.catch <- round(apply(catch, 1, sum),0)
-total.dead  <- round(apply(dead, 1, sum), 0)
+total.catch <- round(apply(catch, 1, sum),2)
+total.dead  <- round(apply(dead, 1, sum), 2)
 
 man = read.csv("C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/OR/write_up/tables/vermilion_man_for_doc.csv")
 man = man[man$Year %in% yrs, ]
@@ -159,14 +158,25 @@ table_format(x = out,
 
 ## Unresolved Problems and Major Uncertainties{-}
 
-The base case model was developed with the goal of balancing parsimony with realism and fitting the data. To achieve parsimony, some simplification of model structure was assumed which may impact the interpretation and fit to specific data sets. While life history values are estimated, uncertainty in natural mortality and growth parameters translates into uncertain estimates of both status and sustainable fishing levels for `r spp`. 
+This assessment, while having multiple years of length and age data, has low samples sizes for each data source. The growth estimates seem reasonable and do not tend to add a large amount of variability to the model outputs, the major source of uncertainty stems from the uncertainty in natural mortality. This uncertainy seems larger than even among model uncertainty in the treatments of data or alternative model specifications. The ability to decrease the uncertainty in this parameter would then bring attention back to alternative model specifications. 
+
+The structure of this model is simple-- one non-target fleet and stationary productivity and selectivity with recruitment deviations allowing to add non-deterministic changes to the population, yet there is an observable retrospective pattern. This would suggest some sort of bias in the data and/or model misspecification. The limited data and simple model structure makes the latter difficult to explore. It may also be inherent in the fact that this is a small population sensitive to perturbations. Attention to this restrospective pattern should be maintained in future assessments as data increases.
+
+The large ageing error seen in the Committee of Age Reading Experts (CARE) exchange was untenable for use in a reference model, but should be revisited with further exchanges to figure out why the Washington Depatment of Fish and Wildlife ageing was such an outlier to the other laboratories. Further work on the age and growth of `r spp` in Washington would help improve the ageing error and overall growth estimates.
+
+Historical catches are roughly estimated, though little additional information is available to improve this estimate. While historical catches are very uncertain, the levels are so small compared to the population that is makes little difference in model results, though remains an area of uncertainty.
 
 ## Scientific Uncertainty{-}
 
-The model estimated uncertainty around the `r endyr+1` spawning biomass was $\sigma$ = `r round(model$Pstar_sigma,2)` and the uncertainty around the OFL was $\sigma$ = `r round(model$OFL_sigm, 2)`. This is likely an underestimate of overall uncertainty because of the necessity to fix some parameters such as steepness and no explicit incorporation of model structural uncertainty.
+The model-estimated uncertainty around the `r endyr+1` spawning biomass was $\sigma$ = `r round(model$Pstar_sigma,2)` and the uncertainty around the OFL was $\sigma$ = `r round(model$OFL_sigm, 2)`. This is likely an underestimate of overall uncertainty because of the necessity to fix some parameters such as steepness, as well as a lack of explicit incorporation of model structural uncertainty.
 
 ## Harvest Projections and Decision Table{-}
-TBD
+
+A ten year projection of the reference model with removals in 2021 and 2022 equal to the recent average removals from 2016-2020 were run based on the category 1 time-varying buffer using $P^*$ = 0.45 for years 2023-2032 is provided in Table \ref{tab:project}.
+
+\input{tex_tables/project.tex}
+
+A decision table with uncertainty axes and proposed catch levels will be determined later.
 
 ## Research and Data Needs{-}
 TBD

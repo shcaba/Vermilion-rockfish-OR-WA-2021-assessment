@@ -20,7 +20,7 @@ label = 'ORWA-map')
 ```{r, results = 'asis'}
 add_figure(
 filein = file.path(stock_fig_loc, "TM_Vermilion_ORWA.png"), 
-caption = "Total mortality from the southern Oregon and northern Washington recreational fisheries. These represent ninty and ninty-seven percent of the total vermilion removals in each state, respectively",
+caption = "Total mortality from the southern Oregon and northern Washington recreational fisheries. These represent ninety and ninety-seven percent of the total vermilion removals in each state, respectively",
 label = 'tm-plot')
 ```
 
@@ -34,6 +34,13 @@ add_figure(
 filein = file.path(mod_loc, "plots", "data_plot.png"), 
 caption = "Summary of data sources used in the base model",
 label = 'data-plot')
+```
+
+```{r, results = 'asis'}
+add_figure(
+filein = file.path(bio_fig_loc, "WA_black_vermilion.png"), 
+caption = "Plot of year to the vermilion:black rockfish landing ratio. The linear model presented was used to predict vermilion catch from black rockfish catch for years of missing vermilion rockfish landings. The linear (y=ax+b) coefficients were a= 0.000016 and b= 0.029710",
+label = 'WA_black_vermilion')
 ```
 
 ```{r, results = 'asis'}
@@ -91,7 +98,7 @@ label = 'fecundity')
 ```{r, results = 'asis'}
 add_figure(
 filein = file.path(bio_fig_loc, "Mdensityplots_OR_vermilion.png"), 
-caption = "Composite natural mortality distriubtion for $S. hopkinsi$ using four longevity estimators each with a SD = 0.2 presuming a lognomral error distibution",
+caption = "Composite natural mortality distriubtion for vermilion rockfish using four longevity estimators each with a SD = 0.2 presuming a lognomral error distibution",
 label = 'M_composite_dists')
 ```
 
@@ -121,9 +128,9 @@ label = 'selex')
 
 ```{r, results = 'asis'}
 add_figure(
-filein = file.path(mod_loc, "Jitter Results", "jitterplot_01.png"), 
-caption = "Jitter runs for the squarespot rockfish reference model, with jitter run number on the x-axis and -log likelihood value on the y-axis. Blue dot are models that match the likelihood value of the reference model, while red dots deviate from the reference model. All red dots are above the blue dots, indicating no better fit to the reference model was found",
-label = 'jitter_01')
+filein = file.path(mod_loc, "Jitter Results", "jitterplot_001.png"), 
+caption = "Jitter runs for the vermilion rockfish reference model, with jitter run number on the x-axis and -log likelihood value on the y-axis. Blue dot are models that match the likelihood value of the reference model, while red dots deviate from the reference model. All red dots are above the blue dots, indicating no better fit to the reference model was found",
+label = 'jitter_001')
 ```
 
 
@@ -244,7 +251,7 @@ label = 'bias-adj')
 ```{r, results = 'asis'}
 add_figure(
 filein = file.path(mod_loc, "plots", "SR_curve.png"), 
-caption = "Stock recruit curve where point color indicate year, with warmer colors (yellow to green) indicating earlier years and cooler colors (blue) showing later years",
+caption = "Stock recruit curve where point color indicates year, with warmer colors (yellow to green) indicating earlier years and cooler colors (blue) showing later years",
 label = 'sr-curve')
 ```
 
@@ -276,21 +283,21 @@ label = 'sensi-data-depl')
 
 ```{r, echo=FALSE, results='asis'}
 add_figure(
-filein = file.path(sensi_data_fig_loc, "Sensi_logREplot_SB_Dep_F_MSY.png"),
+filein = file.path(sensi_modspex_fig_loc, "Sensi_logREplot_SB_Dep_F_MSY.png"),
 caption = "Log relative change (log((Model_sensi-Model_ref)/Model_ref)) in data treatment for 5 derived quantities. Colored boxes indicate 95 percent confidence interval of the reference model",
 label = 'sensi-modspec-RE')
 ```
 
 ```{r, echo=FALSE, results='asis'}
 add_figure(
-filein = file.path(sensi_data_fig_loc, "compare2_spawnbio_uncertainty.png"),
+filein = file.path(sensi_modspex_fig_loc, "compare2_spawnbio_uncertainty.png"),
 caption = "Spawning biomass time series by data treatment compared to the reference model",
 label = 'sensi-modspec-ssb')
 ```
 
 ```{r, echo=FALSE, results='asis'}
 add_figure(
-filein = file.path(sensi_data_fig_loc, "compare4_Bratio_uncertainty.png"),
+filein = file.path(sensi_modspex_fig_loc, "compare4_Bratio_uncertainty.png"),
 caption = "Relative spawning biomass time series by data treatment compared to the reference model",
 label = 'sensi-modspec-depl')
 ```
@@ -338,7 +345,7 @@ label = 'M-multiprofile-combo')
 ```{r, results = 'asis'}
 add_figure(
 filein = file.path(likeprof_fig_loc, "Profile_plots_Linf_f.png"), 
-caption = "Female $Linf$ likelihood profiles (change in the negative log-likelihood across a range of $L_inf$ values) and derived quantities (left four figures) and likelihood component contributions (right three figures)",
+caption = "Female $L_{inf}$ likelihood profiles (change in the negative log-likelihood across a range of $L_{inf}$ values) and derived quantities (left four figures) and likelihood component contributions (right three figures)",
 label = 'Linf_F-profile-combo')
 ```
 
@@ -352,7 +359,7 @@ label = 'k_f-profile-combo')
 ```{r, results = 'asis'}
 add_figure(
 filein = file.path(likeprof_fig_loc,"multilikelihood_profile_F_Linf_k.png"), 
-caption = "Female $Linf$ and $k$ multi-parameter likelihood profiles and derived quantities. Red lines in the top left figure indicate significantly similar values compared to the reference model. Broken and solid lines in the bottom right figure indicate target and limit referene points, respectively",
+caption = "Female $L_{inf}$ and $k$ multi-parameter likelihood profiles and derived quantities. Red lines in the top left figure indicate significantly similar values compared to the reference model. Broken and solid lines in the bottom right figure indicate target and limit referene points, respectively",
 label = 'Linf_k_f-profile')
 ```
 
@@ -366,7 +373,7 @@ label = 'CVold_f-profile-combo')
 ```{r, results = 'asis'}
 add_figure(
 filein = file.path(likeprof_fig_loc,  "Profile_plots_Linf_m.png"), 
-caption = "Male $Linf$ likelihood profiles (change in the negative log-likelihood across a range of $L_inf$ values) and derived quantities (left four figures) and likelihood component contributions (right three figures)",
+caption = "Male $L_{inf}$ likelihood profiles (change in the negative log-likelihood across a range of $L_{inf}$ values) and derived quantities (left four figures) and likelihood component contributions (right three figures)",
 label = 'Linf_M-profile-combo')
 ```
 
@@ -380,7 +387,7 @@ label = 'k_m-profile-combo')
 ```{r, results = 'asis'}
 add_figure(
 filein = file.path(likeprof_fig_loc,  "multilikelihood_profile_M_Linf_k.png"), 
-caption = "Male $L_inf$ and $k$ multi-parameter likelihood profiles and derived quantities. Red lines in the top left figure indicate significantly similar values compared to the reference model. Broken and solid lines in the bottom right figure indicate target and limit referene points, respectively",
+caption = "Male $L_{inf}$ and $k$ multi-parameter likelihood profiles and derived quantities. Red lines in the top left figure indicate significantly similar values compared to the reference model. Broken and solid lines in the bottom right figure indicate target and limit referene points, respectively",
 label = 'Linf_k_m-profile')
 ```
 

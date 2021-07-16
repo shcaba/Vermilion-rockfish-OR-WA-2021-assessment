@@ -132,3 +132,6 @@ table_format(x = mod_params,
 
 \newpage
 
+\include{tex_tables/project.tex}
+
+\clearpage

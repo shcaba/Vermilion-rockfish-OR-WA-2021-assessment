@@ -1,119 +1,61 @@
-\begingroup\fontsize{9}{11}\selectfont
+\begingroup\fontsize{7.5}{9}\selectfont
 
-\begin{landscape}\begingroup\fontsize{9}{11}\selectfont
+\begin{landscape}\begingroup\fontsize{7.5}{9}\selectfont
 
-\begin{longtable}[t]{c>{\centering\arraybackslash}p{0.73cm}>{\centering\arraybackslash}p{0.73cm}>{\centering\arraybackslash}p{0.73cm}>{\centering\arraybackslash}p{0.73cm}>{\centering\arraybackslash}p{0.73cm}>{\centering\arraybackslash}p{0.73cm}>{\centering\arraybackslash}p{0.73cm}>{\centering\arraybackslash}p{0.73cm}>{\centering\arraybackslash}p{0.73cm}>{\centering\arraybackslash}p{0.73cm}>{\centering\arraybackslash}p{0.73cm}>{\centering\arraybackslash}p{0.73cm}>{\centering\arraybackslash}p{0.73cm}>{\centering\arraybackslash}p{0.73cm}}
+\begin{longtable}[t]{c>{\centering\arraybackslash}p{0.69cm}>{\centering\arraybackslash}p{0.69cm}>{\centering\arraybackslash}p{0.69cm}>{\centering\arraybackslash}p{0.69cm}>{\centering\arraybackslash}p{0.69cm}>{\centering\arraybackslash}p{0.69cm}>{\centering\arraybackslash}p{0.69cm}>{\centering\arraybackslash}p{0.69cm}>{\centering\arraybackslash}p{0.69cm}>{\centering\arraybackslash}p{0.69cm}>{\centering\arraybackslash}p{0.69cm}>{\centering\arraybackslash}p{0.69cm}>{\centering\arraybackslash}p{0.69cm}>{\centering\arraybackslash}p{0.69cm}>{\centering\arraybackslash}p{0.69cm}}
 \caption{\label{tab:data_sensis}Likelihood, parameter and derivied quantities from data treatment sensitivities.}\\
 \toprule
-Label & Type & Reference Model & 01-Length Only & 02-C+L & 03-C+L Francis & 04-C+L+A & 05-C+L+A+I & 06-C+L+A+I-extra var & 07-C+L+A+I+estLH-extra var & 08-Ref Mod with Dirichlet & 09-Ref Mod with McI & 10-Ref Mod -data wt & 11-Ref Mod with CARE age error & 12. Use Sex=3\\
+& Reference Model & Length Only & CL & CL + Fr & CLA & CLAI & CLAI + xvar & CLAI + xvar + estLH & Dirichlet & McI & no data wt & CARE AE & Sex=3\\
 \midrule
 \endfirsthead
 \caption[]{Likelihood, parameter and derivied quantities from data treatment sensitivities. \textit{(continued)}}\\
 \toprule
-Label & Type & Reference Model & 01-Length Only & 02-C+L & 03-C+L Francis & 04-C+L+A & 05-C+L+A+I & 06-C+L+A+I-extra var & 07-C+L+A+I+estLH-extra var & 08-Ref Mod with Dirichlet & 09-Ref Mod with McI & 10-Ref Mod -data wt & 11-Ref Mod with CARE age error & 12. Use Sex=3\\
+Reference Model & Length Only & CL & CL + Fr & CLA & CLAI & CLAI + xvar & CLAI + xvar + estLH & Dirichlet & McI & no data wt & CARE AE & Sex=3\\
 \midrule
 \endhead
 
 \endfoot
 \bottomrule
 \endlastfoot
-AIC & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & AIC & 5558.32 & 459.34 & 4996.86 & 351.73 & 6695.90 & 6620.96 & 6499.56 & 5538.24 & 6400.60 & 3758.28 & 6303.38 & 5436.42 & 5256.56\\
-NA & deltaAIC & 0.00 & -5098.98 & -561.46 & -5206.59 & 1137.58 & 1062.64 & 941.24 & -20.08 & 842.28 & -1800.04 & 745.06 & -121.90 & -301.76\\
-Survey\_likelihood & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & ALL & -32.83 & NA & NA & NA & NA & -39.28 & 5.82 & -1.58 & -25.42 & -35.00 & -32.57 & -33.07 & -32.46\\
-NA & Commercial & 0.00 & NA & NA & NA & NA & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & \vphantom{1} 0.00\\
-NA & Recreational & -32.83 & NA & NA & NA & NA & -39.28 & 5.82 & -1.58 & -25.42 & -35.00 & -32.57 & -33.07 & -32.46\\
-NA & Fishery1 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & \vphantom{3} NA\\
-NA & Fishery2 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & \vphantom{3} NA\\
-Surv\_lambda & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & ALL & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & \vphantom{2} NA\\
-NA & Commercial & 0.00 & NA & NA & NA & NA & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
-NA & Recreational & 1.00 & NA & NA & NA & NA & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00\\
-NA & Fishery1 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & \vphantom{2} NA\\
-NA & Fishery2 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & \vphantom{2} NA\\
-Length\_likelihood & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & ALL & 449.80 & 222.67 & 2493.43 & 170.86 & 218.94 & 219.67 & 192.97 & 409.57 & 716.39 & 305.17 & 710.88 & 438.60 & 309.35\\
-NA & Commercial & 279.22 & NA & 603.89 & 116.44 & 142.81 & 143.70 & 127.32 & 267.12 & 297.51 & 225.57 & 296.34 & 271.11 & 148.33\\
-NA & Recreational & 170.59 & NA & 1889.55 & 54.43 & 76.13 & 75.97 & 65.66 & 142.45 & 418.88 & 79.60 & 414.54 & 167.49 & 161.02\\
-NA & Fishery1 & NA & 161.19 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & Fishery2 & NA & 61.48 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-Length\_lambda & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & ALL & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & \vphantom{1} NA\\
-NA & Commercial & 1.00 & NA & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00\\
-NA & Recreational & 1.00 & NA & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00\\
-NA & Fishery1 & NA & 1.00 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & Fishery2 & NA & 1.00 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-Age\_likelihood & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & ALL & 2260.95 & NA & NA & NA & 3124.01 & 3124.10 & 3045.99 & 2256.74 & 2295.33 & 1443.19 & 2293.35 & 2214.60 & 2251.49\\
-NA & Commercial & 1018.99 & NA & NA & NA & 1342.01 & 1341.98 & 1304.34 & 1015.71 & 1034.98 & 675.41 & 1033.54 & 1016.11 & 1017.05\\
-NA & Recreational & 1241.97 & NA & NA & NA & 1782.01 & 1782.11 & 1741.66 & 1241.03 & 1260.35 & 767.78 & 1259.81 & 1198.50 & 1234.44\\
-NA & Fishery1 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & \vphantom{1} NA\\
-NA & Fishery2 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & \vphantom{1} NA\\
-Age\_lambda & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & ALL & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & Commercial & 1.00 & NA & NA & NA & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00\\
-NA & Recreational & 1.00 & NA & NA & NA & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00\\
-NA & Fishery1 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & Fishery2 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-Parameters & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & NatM\_p\_1\_Fem\_GP\_1 & 0.08 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.07 & 0.12 & 0.08 & 0.07 & 0.08 & 0.08\\
-NA & L\_at\_Amin\_Fem\_GP\_1 & -17.08 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & -17.88 & -12.84 & -17.71 & -12.95 & -19.23 & -16.57\\
-NA & L\_at\_Amax\_Fem\_GP\_1 & 57.18 & 57.38 & 57.38 & 57.38 & 57.38 & 57.38 & 57.38 & 57.06 & 57.71 & 57.13 & 57.79 & 57.02 & 57.36\\
-NA & VonBert\_K\_Fem\_GP\_1 & 0.15 & 0.13 & 0.13 & 0.13 & 0.13 & 0.13 & 0.13 & 0.15 & 0.14 & 0.15 & 0.14 & 0.15 & 0.14\\
-NA & CV\_young\_Fem\_GP\_1 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10\\
-NA & CV\_old\_Fem\_GP\_1 & 0.05 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.05 & 0.06 & 0.06 & 0.06 & 0.05 & 0.05\\
-NA & Wtlen\_1\_Fem\_GP\_1 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
-NA & Wtlen\_2\_Fem\_GP\_1 & 2.93 & 3.00 & 2.93 & 2.93 & 2.93 & 2.93 & 2.93 & 2.93 & 2.93 & 2.93 & 2.93 & 2.93 & 2.93\\
-NA & Mat50\%\_Fem\_GP\_1 & 39.40 & 39.40 & 39.40 & 39.40 & 39.40 & 39.40 & 39.40 & 39.40 & 39.40 & 39.40 & 39.40 & 39.40 & 39.40\\
-NA & Mat\_slope\_Fem\_GP\_1 & -0.34 & -0.34 & -0.34 & -0.34 & -0.34 & -0.34 & -0.34 & -0.34 & -0.34 & -0.34 & -0.34 & -0.34 & -0.34\\
-NA & Eggs\_scalar\_Fem\_GP\_1 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
-NA & Eggs\_exp\_len\_Fem\_GP\_1 & 3.55 & 3.00 & 3.55 & 3.55 & 3.55 & 3.55 & 3.55 & 3.55 & 3.55 & 3.55 & 3.55 & 3.55 & 3.55\\
-NA & NatM\_p\_1\_Mal\_GP\_1 & 0.07 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.06 & 0.12 & 0.07 & 0.07 & 0.07 & 0.08\\
-NA & L\_at\_Amin\_Mal\_GP\_1 & -29.90 & -4.10 & -4.10 & -4.10 & -4.10 & -4.10 & -4.10 & -29.41 & -33.67 & -27.41 & -33.23 & -31.87 & -36.73\\
-NA & L\_at\_Amax\_Mal\_GP\_1 & 54.19 & 54.67 & 54.67 & 54.67 & 54.67 & 54.67 & 54.67 & 54.30 & 53.65 & 54.57 & 53.70 & 54.14 & 53.68\\
-NA & VonBert\_K\_Mal\_GP\_1 & 0.18 & 0.15 & 0.15 & 0.15 & 0.15 & 0.15 & 0.15 & 0.18 & 0.19 & 0.17 & 0.19 & 0.18 & 0.19\\
-NA & CV\_young\_Mal\_GP\_1 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10\\
-NA & CV\_old\_Mal\_GP\_1 & 0.04 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.04 & 0.05 & 0.05 & 0.05 & 0.05 & 0.04\\
-NA & Wtlen\_1\_Mal\_GP\_1 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00\\
-NA & Wtlen\_2\_Mal\_GP\_1 & 2.83 & 3.00 & 2.83 & 2.83 & 2.83 & 2.83 & 2.83 & 2.83 & 2.83 & 2.83 & 2.83 & 2.83 & 2.83\\
-NA & CohortGrowDev & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00\\
-NA & FracFemale\_GP\_1 & 0.50 & 0.50 & 0.50 & 0.50 & 0.50 & 0.50 & 0.50 & 0.50 & 0.50 & 0.50 & 0.50 & 0.50 & 0.50\\
-NA & SR\_LN(R0) & 2.79 & 8.86 & 2.76 & 2.79 & 3.84 & 3.84 & 3.69 & 2.62 & 19.14 & 2.77 & 2.64 & 2.77 & 2.80\\
-NA & SR\_BH\_steep & 0.72 & 0.72 & 0.72 & 0.72 & 0.72 & 0.72 & 0.72 & 0.72 & 0.72 & 0.72 & 0.72 & 0.72 & 0.72\\
-NA & SR\_sigmaR & 0.60 & 0.70 & 0.70 & 0.70 & 0.70 & 0.70 & 0.70 & 0.60 & 0.50 & 0.50 & 0.50 & 0.60 & 0.60\\
-NA & LnQ\_base\_Recreational(2) & -5.72 & NA & NA & NA & NA & -6.19 & -5.94 & -5.75 & -21.96 & -5.70 & -5.65 & -5.70 & -5.73\\
-NA & Q\_extraSD\_Recreational(2) & 0.08 & NA & NA & NA & NA & 0.05 & NA & NA & 0.13 & 0.07 & 0.08 & 0.08 & 0.08\\
-NA & Size\_DblN\_peak\_Commercial(1) & 43.67 & NA & 55.47 & 55.29 & 48.60 & 48.12 & 48.66 & 43.90 & 43.41 & 44.00 & 43.33 & 43.67 & 43.49\\
-NA & Size\_DblN\_top\_logit\_Commercial(1) & 15.00 & NA & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00\\
-NA & Size\_DblN\_ascend\_se\_Commercial(1) & 3.73 & NA & 4.96 & 4.96 & 4.47 & 4.39 & 4.46 & 3.80 & 3.65 & 3.81 & 3.65 & 3.74 & 3.70\\
-NA & Size\_DblN\_descend\_se\_Commercial(1) & -15.00 & NA & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00\\
-NA & Size\_DblN\_start\_logit\_Commercial(1) & -15.00 & NA & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00\\
-NA & Size\_DblN\_end\_logit\_Commercial(1) & 15.00 & NA & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00\\
-NA & Size\_DblN\_peak\_Recreational(2) & 44.44 & NA & 53.59 & 53.28 & 48.71 & 48.74 & 49.12 & 44.09 & 44.33 & 44.91 & 44.33 & 44.29 & 44.08\\
-NA & Size\_DblN\_top\_logit\_Recreational(2) & 15.00 & NA & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00\\
-NA & Size\_DblN\_ascend\_se\_Recreational(2) & 4.30 & NA & 4.92 & 4.91 & 4.69 & 4.69 & 4.72 & 4.24 & 4.24 & 4.39 & 4.26 & 4.28 & 4.25\\
-NA & Size\_DblN\_descend\_se\_Recreational(2) & -15.00 & NA & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00\\
-NA & Size\_DblN\_start\_logit\_Recreational(2) & -15.00 & NA & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00 & -15.00\\
-NA & Size\_DblN\_end\_logit\_Recreational(2) & 15.00 & NA & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00 & 15.00\\
-NA & Size\_DblN\_peak\_Fishery1(1) & NA & 57.77 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & Size\_DblN\_top\_logit\_Fishery1(1) & NA & 15.00 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & Size\_DblN\_ascend\_se\_Fishery1(1) & NA & 5.09 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & Size\_DblN\_descend\_se\_Fishery1(1) & NA & -15.00 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & Size\_DblN\_start\_logit\_Fishery1(1) & NA & -15.00 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & Size\_DblN\_end\_logit\_Fishery1(1) & NA & 15.00 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & Size\_DblN\_peak\_Fishery2(2) & NA & 55.77 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & Size\_DblN\_top\_logit\_Fishery2(2) & NA & 15.00 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & Size\_DblN\_ascend\_se\_Fishery2(2) & NA & 5.02 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & Size\_DblN\_descend\_se\_Fishery2(2) & NA & -15.00 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & Size\_DblN\_start\_logit\_Fishery2(2) & NA & -15.00 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & Size\_DblN\_end\_logit\_Fishery2(2) & NA & 15.00 & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-Derived quantities & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA & NA\\
-NA & SB0 & 29.24 & 1161.21 & 19.79 & 20.41 & 58.13 & 58.08 & 49.67 & 32.05 & 170062000.00 & 28.61 & 31.29 & 28.91 & 31.76\\
-NA & SSB\_2021 & 21.35 & 9881.18 & 6.06 & 6.75 & 45.20 & 45.03 & 36.16 & 25.96 & 241297000.00 & 20.81 & 22.07 & 20.60 & 22.78\\
-NA & Bratio\_2021 & 0.73 & 0.43 & 0.31 & 0.33 & 0.78 & 0.78 & 0.73 & 0.81 & 1.42 & 0.73 & 0.71 & 0.71 & 0.72\\
-NA & MSY\_SPR & 7.95 & 1679.88 & 6.98 & 7.18 & 19.46 & 19.28 & 15.94 & 7.61 & 63252700.00 & 7.89 & 6.90 & 7.93 & 7.87\\
-NA & F\_SPR & 0.05 & 0.12 & 0.09 & 0.09 & 0.07 & 0.07 & 0.07 & 0.05 & 0.07 & 0.05 & 0.05 & 0.05 & 0.05\\*
+\multicolumn{1}{r}{AIC} & 5558.32 & 459.34 & 4996.86 & 351.73 & 6695.90 & 6620.96 & 6499.56 & 7049.72 & 6376.70 & 3758.28 & 6303.38 & 5436.42 & 5256.56\\
+\multicolumn{1}{r}{deltaAIC} & 0.00 & -5098.98 & -561.46 & -5206.59 & 1137.58 & 1062.64 & 941.24 & 1491.40 & 818.38 & -1800.04 & 745.06 & -121.90 & -301.76\\
+\multicolumn{1}{r}{Survey likelihood} & -32.83 &  &  &  &  & -39.28 & 5.82 & -39.43 & -32.55 & -35.00 & -32.57 & -33.07 & -32.46\\
+\underline{Length likelihood} &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+\multicolumn{1}{r}{Total} & 449.80 & 222.67 & 2493.43 & 170.86 & 218.94 & 219.67 & 192.97 & 918.14 & 714.45 & 305.17 & 710.88 & 438.60 & 309.35\\
+\multicolumn{1}{r}{Comm} & 279.22 & 161.19 & 603.89 & 116.44 & 142.81 & 143.70 & 127.32 & 413.22 & 297.00 & 225.57 & 296.34 & 271.11 & 148.33\\
+\multicolumn{1}{r}{Rec} & 170.59 & 61.48 & 1889.55 & 54.43 & 76.13 & 75.97 & 65.66 & 504.93 & 417.44 & 79.60 & 414.54 & 167.49 & 161.02\\
+\underline{Age likelihood} &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+\multicolumn{1}{r}{Total} & 2260.95 &  &  &  & 3124.01 & 3124.10 & 3045.99 & 2630.13 & 2296.83 & 1443.19 & 2293.35 & 2214.60 & 2251.49\\
+\multicolumn{1}{r}{Comm} & 1018.99 &  &  &  & 1342.01 & 1341.98 & 1304.34 & 1164.52 & 1035.40 & 675.41 & 1033.54 & 1016.11 & 1017.05\\
+\multicolumn{1}{r}{Rec} & 1241.97 &  &  &  & 1782.01 & 1782.11 & 1741.66 & 1465.61 & 1261.43 & 767.78 & 1259.81 & 1198.50 & 1234.44\\
+\underline{Parameters} &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+\multicolumn{1}{r}{Female $M$} & 0.08 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.11 & 0.07 & 0.08 & 0.07 & 0.08 & 0.08\\
+\multicolumn{1}{r}{Female size at age 0} & -17.08 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & -12.71 & -13.07 & -17.71 & -12.95 & -19.23 & -16.57\\
+\multicolumn{1}{r}{Female $L\infty$} & 57.18 & 57.38 & 57.38 & 57.38 & 57.38 & 57.38 & 57.38 & 57.69 & 57.77 & 57.13 & 57.79 & 57.02 & 57.36\\
+\multicolumn{1}{r}{Female $k$} & 0.15 & 0.13 & 0.13 & 0.13 & 0.13 & 0.13 & 0.13 & 0.13 & 0.14 & 0.15 & 0.14 & 0.15 & 0.14\\
+\multicolumn{1}{r}{Female $CV@L\infty$} & 0.05 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.05 & 0.06 & 0.06 & 0.06 & 0.05 & 0.05\\
+\multicolumn{1}{r}{Male $M$} & 0.07 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.07 & 0.07 & 0.07 & 0.07 & 0.08\\
+\multicolumn{1}{r}{Male size at age 0} & -29.90 & -4.10 & -4.10 & -4.10 & -4.10 & -4.10 & -4.10 & -30.69 & -33.02 & -27.41 & -33.23 & -31.87 & -36.73\\
+\multicolumn{1}{r}{Male $L\infty$} & 54.19 & 54.67 & 54.67 & 54.67 & 54.67 & 54.67 & 54.67 & 54.31 & 53.72 & 54.57 & 53.70 & 54.14 & 53.68\\
+\multicolumn{1}{r}{Male $k$} & 0.18 & 0.15 & 0.15 & 0.15 & 0.15 & 0.15 & 0.15 & 0.18 & 0.19 & 0.17 & 0.19 & 0.18 & 0.19\\
+\multicolumn{1}{r}{Male $CV@L\infty$} & 0.04 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.10 & 0.05 & 0.05 & 0.05 & 0.05 & 0.05 & 0.04\\
+\multicolumn{1}{r}{ln(R0)} & 2.79 & 8.86 & 2.76 & 2.79 & 3.84 & 3.84 & 3.69 & 3.49 & 2.64 & 2.77 & 2.64 & 2.77 & 2.80\\
+\multicolumn{1}{r}{ORBS logQ} & -5.72 &  &  &  &  & -6.19 & -5.94 & -5.55 & -5.66 & -5.70 & -5.65 & -5.70 & -5.73\\
+\multicolumn{1}{r}{ORBS extra SD} & 0.08 &  &  &  &  & 0.05 &  & 0.05 & 0.08 & 0.07 & 0.08 & 0.08 & 0.08\\
+\multicolumn{1}{r}{Comm Sel: Peak} & 43.67 & 57.77 & 55.47 & 55.29 & 48.60 & 48.12 & 48.66 & 47.57 & 43.37 & 44.00 & 43.33 & 43.67 & 43.49\\
+\multicolumn{1}{r}{Comm Sel: Asc lt} & 3.73 & 5.09 & 4.96 & 4.96 & 4.47 & 4.39 & 4.46 & 4.32 & 3.66 & 3.81 & 3.65 & 3.74 & 3.70\\
+\multicolumn{1}{r}{Rec Sel: Peak} & 44.44 & 55.77 & 53.59 & 53.28 & 48.71 & 48.74 & 49.12 & 48.37 & 44.36 & 44.91 & 44.33 & 44.29 & 44.08\\
+\multicolumn{1}{r}{Rec Sel: Asc lt} & 4.30 & 5.02 & 4.92 & 4.91 & 4.69 & 4.69 & 4.72 & 4.66 & 4.27 & 4.39 & 4.26 & 4.28 & 4.25\\
+\multicolumn{1}{r}{Dir Comm Lts} &  &  &  &  &  &  &  &  & 5.51 &  &  &  & \\
+\multicolumn{1}{r}{Dir Rec Lts} &  &  &  &  &  &  &  &  & 3.20 &  &  &  & \\
+\multicolumn{1}{r}{Dir Comm Ages} &  &  &  &  &  &  &  &  & 7.95 &  &  &  & \\
+\multicolumn{1}{r}{Dir Rec Ages} &  &  &  &  &  &  &  &  & 8.18 &  &  &  & \\
+\underline{Derived quantities} &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+\multicolumn{1}{r}{$S0_0$} & 29.24 & 1161.21 & 19.79 & 20.41 & 58.13 & 58.08 & 49.67 & 31.71 & 31.14 & 28.61 & 31.29 & 28.91 & 31.76\\
+\multicolumn{1}{r}{$S0_{2021}$} & 21.35 & 9881.18 & 6.06 & 6.75 & 45.20 & 45.03 & 36.16 & 20.23 & 22.06 & 20.81 & 22.07 & 20.60 & 22.78\\
+\multicolumn{1}{r}{$Bratio_{2021}$} & 0.73 & 0.43 & 0.31 & 0.33 & 0.78 & 0.78 & 0.73 & 0.64 & 0.71 & 0.73 & 0.71 & 0.71 & 0.72\\
+\multicolumn{1}{r}{$MSY_{SPR}$} & 7.95 & 1679.88 & 6.98 & 7.18 & 19.46 & 19.28 & 15.94 & 12.17 & 6.94 & 7.89 & 6.90 & 7.93 & 7.87\\
+\multicolumn{1}{r}{$F_{SPR}$} & 0.05 & 0.12 & 0.09 & 0.09 & 0.07 & 0.07 & 0.07 & 0.07 & 0.05 & 0.05 & 0.05 & 0.05 & 0.05\\*
 \end{longtable}
 \endgroup{}
 \end{landscape}

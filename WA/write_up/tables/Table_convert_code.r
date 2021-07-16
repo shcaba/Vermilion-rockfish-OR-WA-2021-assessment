@@ -119,3 +119,19 @@ t = table_format(x = out,
 kableExtra::save_kable(t,
 file = file.path("C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/tex_tables/modspec_RecMisc_sensis.tex")
 )
+
+#Forecast
+out<-read.csv("C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/tables/g_Projections_ES.csv")
+t = table_format(x = out,
+      caption = 'Projections of potential OFLs (mt), ABCs (mt), the buffer (ABC = buffer x OFL), estimated spawning biomass, and fraction unfished. The North of 40.10 OFL and ABC for 2021 and 2022 are included for comparison.',
+      label = 'project',
+      longtable = TRUE,
+      font_size = 9,
+      digits = 2,
+      landscape = FALSE
+#      col_names = c("","Reference model","Catch lengths only","No catch lengths","No extra survey variance","No survey","Dirichlet","MI","No data weighting","Alt catch_3x","Alt catch_2008_shift"))
+)
+
+kableExtra::save_kable(t,
+file = file.path("C:/Users/Jason.Cope/Documents/Github/Vermilion rockfish OR WA assessment 2021/WA/write_up/tex_tables/g_Projections_ES.tex")
+)

@@ -2,27 +2,26 @@
 
 ## Summary of Previous Assessments 
 
-`r Spp` in Oregon has not been previously assessed in full, so this is the first benchmark for this management unit. Depletion Corrected Average Catch (DCAC) was used to set annual catch limits (ACLs) for `r spp` since 2010 [@dick_estimates_2010] which estimate the mean sustainable yield as 5.7 mt (median of 5.9 mt). This method assumed `r spp` relative stocks status was at 40% in 2009.
-
+`r Spp` in Oregon has not been previously assessed in full, so this is the first benchmark for this management unit. Depletion-based Stock Reduction Analysis (DBSRA) assuming 40$ depletionin 2009 was used to set annual catch limits (ACLs) for `r spp` since 2010 [@dick_estimates_2010]. The total `r spp` OFL in 2011 was 319.5 mt. The mean sustainable yield for the northern portion was estimated to be 11.1 mt, just 3.5% of the total OFL. Most of this allocation would be exptected to come from California, as the population of `r spp` continues to be smaller north of California.
 
 ### Modelling Platform
 
-Stock Synthesis version 3.30.16 was used as the statistical catch-at-age modelling framework. The SS-DL tool (https://github.com/shcaba/SS-DL-tool) was used for model exploration, likelihood profiling, and sensitivity analyses. The companion R package r4ss, version 1.38.0, along with R version 4.0.5 were used to investigate and plot model fits. 
+Stock Synthesis version 3.30.16 was used as the statistical catch-at-age modelling framework. The SS-DL tool (https://github.com/shcaba/SS-DL-tool) was used for model exploration, likelihood profiling, and sensitivity analyses. The companion R package r4ss (version 1.38.0) along with R version 4.0.5 were used to investigate and plot model fits. 
 
 
 ### Bridging Analysis
 
-No bridgining analysis between the DBSRA model and Stock Synthesis was conducted given the significant differences (DBSRA is provided the depletion value) between the methods. It is well documented already that SS can mimic DBSRA approaches [@cope_implementing_2013].
+No analysis bridging the DBSRA model and Stock Synthesis model was conducted given the significant differences (e.g., DBSRA is provided the relative stock status value) between the methods. It is well documented already that SS can mimic DBSRA approaches [@cope_implementing_2013].
 
 
 ## Model Structure and Assumptions
 
-Stock Synthesis is an age-structured modelling framework that allow for the inclusion of removal histories, length and age compositions and abundance indices. The Oregon `r spp` model assessment assumes a two removal fleets (mainly a recreational fishery in the contemporary period, though commercial removals are present and were more prominant historically) with removals beginning in `r startyr`. The Oregon Recreational abundance index is the one fishery-dependant data source used to measure abundance trends. Selectivities for the fleet and survey were specified using the double normal parameterization within SS where selectivity was fixed to be asymptotic with the ascending slope and size of maximum selectivity parameters estimated. Life history parameters are sex-specific, with one growth type, and assumed stationary. Recruitment assumes a Beverton-Holt stock-recruit relationship and recruitment deviations are estimated.
+Stock Synthesis is an age-structured modelling framework that allow for the inclusion of removal histories, length and age compositions and abundance indices. The Oregon `r spp` model assessment assumes a two removal fleets (mainly a recreational fishery in the contemporary period, though commercial removals are present and were more prominant historically) with removals beginning in `r startyr`. The Oregon recreational abundance index is the one fishery-dependant data source used to measure abundance trends. Selectivities for the fleet and survey were specified using the double normal parameterization within SS where selectivity was fixed to be asymptotic with the ascending slope and size of maximum selectivity parameters estimated. Life history parameters are sex-specific, with one growth type, and assumed stationary. Recruitment assumes a Beverton-Holt stock-recruit relationship and recruitment deviations are estimated.
 
 
 ### Estimated and Fixed Parameters
 
-All life history parameters are estimated except the CV at length at $t_0$. Estimated parameters in the model are Natural mortality ($M$) and all growth parameters ($L_{\infty}$, $k$, $t_0$, CV at $L_{\infty}$)-- except CV at length at $t_0$ was fixed as it had little impact on the model-- were estimated, as were the two selectivity parameters for each fleet and the survey, the log of the initial recruitment ($logR_0$), and recruitment deviations. Maturity, fecundity, length-at-weight, steepness ($h$) and recruitment variance were all fixed. Sensitivity scenarios and likelihood profiles were used to explore uncertainty in the values of the natural mortality and growth parameters. When estimating parameters, the prior for natural mortality was assumed lognormal with a standard deviation of 0.438 (based on the prior developed using the Natural Mortality Tool (see Biology section for more details)); growth parameters were estimated with no priors.
+All life history parameters are estimated except the CV at length at $t_0$. Estimated parameters in the model are natural mortality ($M$) and all growth parameters ($L_{\infty}$, $k$, $t_0$, CV at $L_{\infty}$)-- except CV at length at $t_0$ was fixed as it had little impact on the model-- were estimated, as were the two selectivity parameters for each fleet and the survey, the log of the initial recruitment ($logR_0$), and recruitment deviations. Length at maturity, fecundity-weight, and length-weight relationshop, steepness ($h$) and recruitment variance were all fixed. Sensitivity scenarios and likelihood profiles were used to explore uncertainty in the values of the natural mortality and growth parameters. When estimating parameters, the prior for natural mortality was assumed lognormal with a standard deviation of 0.438 (based on the prior developed using the Natural Mortality Tool (see Biology section for more details)); growth parameters were estimated with no priors.
 
 
 ### Data Weighting
@@ -34,5 +33,5 @@ Initial sample sizes for the commercial and recreational length and conditional 
 
 ## Model Selection and Evaluation
 
-The base assessment model for Oregon `r spp` was developed to balance parsimony and realism, and the goal was to estimate a spawning output trajectory and realtive stock status for the population of `r spp` in federal waters off California. The model contains many assumptions to achieve parsimony and uses different data types and sources to estimate reality. A series of investigative model runs were done to achieve the final base model. These include considerations of model structure, data and parameter treatment, estimation phasing, and jittered starting values to achieve a converged and balanced model that provides sensible parameter estimates and derived quantities.
+The base assessment model for Oregon `r spp` was developed to balance parsimony and realism, and the goal was to estimate a spawning output trajectory and realtive stock status for the population of `r spp` in state and federal waters off Oregon. The model contains many assumptions to achieve parsimony and uses different data types and sources to estimate reality. A series of investigative model runs were done to achieve the final base model. These include considerations of model structure, data and parameter treatment, estimation phasing, and jittered starting values to achieve a converged and balanced model that provides sensible parameter estimates and derived quantities.
 

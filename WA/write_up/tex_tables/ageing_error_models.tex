@@ -2,55 +2,44 @@
 
 \begin{landscape}\begingroup\fontsize{9}{11}\selectfont
 
-\begin{longtable}[t]{c>{\centering\arraybackslash}p{1cm}>{\centering\arraybackslash}p{1cm}>{\centering\arraybackslash}p{1cm}>{\centering\arraybackslash}p{1cm}>{\centering\arraybackslash}p{1cm}>{\centering\arraybackslash}p{1cm}>{\centering\arraybackslash}p{1cm}>{\centering\arraybackslash}p{1cm}>{\centering\arraybackslash}p{1cm}>{\centering\arraybackslash}p{1cm}}
-\caption{\label{tab:age-error-models}Ageing error models and resultant model selection (AICc) values for 9 models of bias and precision explored for each lab used in the vermilion rockfish assessments. Bold text indicate the chosen model. Model codes: 0= unbiased; 1 = Constant CV; 2 = Curvilinear SD; 3= Curvilinear CV}\\
+\begin{longtable}[t]{c>{\centering\arraybackslash}p{1cm}>{\centering\arraybackslash}p{1.5cm}>{\centering\arraybackslash}p{0.1cm}>{\centering\arraybackslash}p{1cm}>{\centering\arraybackslash}p{1.5cm}>{\centering\arraybackslash}p{0.1cm}>{\centering\arraybackslash}p{1cm}>{\centering\arraybackslash}p{1cm}>{\centering\arraybackslash}p{1cm}>{\centering\arraybackslash}p{1cm}}
+\caption{\label{tab:age-error-models}Ageing error models and resultant model selection (AICc) values for 9 models of bias and precision explored for each lab used in the vermilion rockfish assessments. Bolded text indicates the chosen model. Model codes: 0= unbiased; 1 = Constant CV; 2 = Curvilinear (SD for precision); 3= Curvilinear CV. CARE comparison has 4 readers}\\
 \toprule
-X & Reader.1 & X.1 & X.2 & Reader.2 & X.3 & X.4 & Model.selection & X.5 & X.6 & X.7\\
+ & \multicolumn{2}{c}{\bfseries Reader 1} & & \multicolumn{2}{c}{\bfseries Reader 2 (to 4)} & & \multicolumn{4}{c}{\bfseries Reader Model selection} \\
 \midrule
 \endfirsthead
-\caption[]{Ageing error models and resultant model selection (AICc) values for 9 models of bias and precision explored for each lab used in the vermilion rockfish assessments. Bold text indicate the chosen model. Model codes: 0= unbiased; 1 = Constant CV; 2 = Curvilinear SD; 3= Curvilinear CV \textit{(continued)}}\\
+\caption[]{Ageing error models and resultant model selection (AICc) values for 9 models of bias and precision explored for each lab used in the vermilion rockfish assessments. Bolded text indicates the chosen model. Model codes: 0= unbiased; 1 = Constant CV; 2 = Curvilinear (SD for precision); 3= Curvilinear CV. CARE comparison has 4 readers \textit{(continued)}}\\
 \toprule
-X & Reader.1 & X.1 & X.2 & Reader.2 & X.3 & X.4 & Model.selection & X.5 & X.6 & X.7\\
+ & \multicolumn{2}{c}{\bfseries Reader 1} & & \multicolumn{2}{c}{\bfseries Reader 2 (to 4)} & & \multicolumn{4}{c}{\bfseries Model selection} \\
 \midrule
 \endhead
 
 \endfoot
 \bottomrule
 \endlastfoot
-Model & Bias & Precision & NA & Bias & Precision & NA & AICc & DAICc & BIC & DBIC\\
-1 & 0 & 1 & NA & 0 & 1 & NA & 9076 & 37 & 9234 & 18\\
-2 & 0 & 2 & NA & 0 & 2 & NA & 9058 & 19 & 9223 & 7\\
-3 & 0 & 3 & NA & 0 & 3 & NA & 9080 & 42 & 9246 & 30\\
-4 & 0 & 1 & NA & 1 & 1 & NA & 9068 & 30 & 9238 & 21\\
-5 & 0 & 2 & NA & 1 & 2 & NA & 9074 & 35 & 9250 & 34\\
-6 & 0 & 3 & NA & 1 & 3 & NA & 9039 & 1 & 9216 & 0\\
-7 & 0 & 1 & NA & 2 & 1 & NA & 9074 & 35 & 9251 & 34\\
-8 & 0 & 2 & NA & 2 & 2 & NA & 9038 & 0 & 9223 & 6\\
-9 & 0 & 3 & NA & 2 & 3 & NA & 9039 & 1 & 9224 & 7\\*
-
-\toprule
- &  &  &  &  &  &  &  &  &  & \\
-\midrule
-\endfirsthead
-\caption[]{Add Caption \textit{(continued)}}\\
-\toprule
- &  &  &  &  &  &  &  &  &  & \\
-\midrule
-\endhead
-
-\endfoot
+Model & Bias & Precision & & Bias & Precision & & AICc & $\Delta$AICc & BIC & $\Delta$BIC\\
 \bottomrule
-\endlastfoot
-Model & Bias & Precision & NA & Bias & Precision & NA & AICc & DAICc & BIC & DBIC\\
-1 & 0 & 1 & NA & 0 & 1 & NA & 1064 & 79 & 1178 & 52\\
-2 & 0 & 2 & NA & 0 & 2 & NA & 1063 & 78 & 1181 & 55\\
-3 & 0 & 3 & NA & 0 & 3 & NA & 1071 & 86 & 1189 & 63\\
-4 & 0 & 1 & NA & 1 & 1 & NA & 999 & 15 & 1130 & 4\\
-5 & 0 & 2 & NA & 1 & 2 & NA & 994 & 9 & 1128 & 2\\
-6 & 0 & 3 & NA & 1 & 3 & NA & 1024 & 39 & 1158 & 31\\
-7 & 0 & 1 & NA & 2 & 1 & NA & 1014 & 29 & 1153 & 26\\
-8 & 0 & 2 & NA & 2 & 2 & NA & 985 & 0 & 1126 & 0\\
-9 & 0 & 3 & NA & 2 & 3 & NA & 1001 & 16 & 1142 & 16\\*
+\textbf{WDFW} &  &  &  &  &  &  &  &  &  & \\
+1 & 0 & 1 && 0 & 1 && 9076 & 37 & 9234 & 18\\
+2 & 0 & 2 && 0 & 2 && 9058 & 19 & 9223 & 7\\
+3 & 0 & 3 && 0 & 3 && 9080 & 42 & 9246 & 30\\
+4 & 0 & 1 && 1 & 1 && 9068 & 30 & 9238 & 21\\
+5 & 0 & 2 && 1 & 2 && 9074 & 35 & 9250 & 34\\
+\textbf6 & \textbf0 & \textbf3 && \textbf1 & \textbf3 && \textbf9039 & \textbf1 & \textbf9216 & \textbf0\\
+7 & 0 & 1 && 2 & 1 && 9074 & 35 & 9251 & 34\\
+8 & 0 & 2 && 2 & 2 && 9038 & 0 & 9223 & 6\\
+9 & 0 & 3 && 2 & 3 && 9039 & 1 & 9224 & 7\\*
+
+\textbf{CARE} &  &  &  &  &  &  &  &  &  & \\
+1 & 0 & 1 &  & 0 & 1 &  & 1064 & 79 & 1178 & 52\\
+2 & 0 & 2 &  & 0 & 2 &  & 1063 & 78 & 1181 & 55\\
+3 & 0 & 3 &  & 0 & 3 &  & 1071 & 86 & 1189 & 63\\
+4 & 0 & 1 &  & 1 & 1 &  & 999 & 15 & 1130 & 4\\
+5 & 0 & 2 &  & 1 & 2 &  & 994 & 9 & 1128 & 2\\
+6 & 0 & 3 &  & 1 & 3 &  & 1024 & 39 & 1158 & 31\\
+7 & 0 & 1 &  & 2 & 1 &  & 1014 & 29 & 1153 & 26\\
+\textbf8 & \textbf0 & \textbf2 &  & \textbf2 & \textbf2 &  & \textbf985 & \textbf0 & \textbf1126 & \textbf0\\
+9 & 0 & 3 &  & 2 & 3 &  & 1001 & 16 & 1142 & 16\\*
 \end{longtable}
 \endgroup{}
 \end{landscape}
