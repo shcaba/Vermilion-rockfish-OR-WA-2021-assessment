@@ -129,9 +129,12 @@ label = 'num_age_males')
 ```{r, results = 'asis'}
 add_figure(
 filein = file.path(mod_loc, "plots", "numbers6_len_sex1.png"), 
-caption = "Female vermilion rockfish mean length over time",
+caption = "Female vermilion rockfish mean length (cm) over time",
 label = 'num_lts_females')
 ```
+
+\clearpage
+
 
 ## Males
 ```{r, results = 'asis'}
@@ -140,4 +143,6 @@ filein = file.path(mod_loc, "plots", "numbers6_len_sex2.png"),
 caption = "Male vermilion rockfish mean length over time",
 label = 'num_lts_males')
 ```
+
+
 \clearpage

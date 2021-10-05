@@ -5,7 +5,7 @@
     profile_dir<-"C:/Users/Jason.Cope/Desktop/Vermilion stock assessments/VERMILION ROCKFISH ASSESSMENT OREGON/Model runs/Likelihood Profiles/Reference Model_profile_NatM_p_1_Fem_GP_1"
     profile_dir<-"C:/Users/Jason.Cope/Desktop/Vermilion stock assessments/VERMILION ROCKFISH ASSESSMENT OREGON/Model runs/Likelihood Profiles/Reference Model_profile_NatM_p_1_Mal_GP_1"
 
-
+    #Reload the models to plot and summarize
     par.num<-13
     mod.nums<-8
     profilemodels <- SSgetoutput(dirvec=profile_dir,keyvec=1:mod.nums, getcovar=FALSE)
@@ -19,7 +19,7 @@
     para=profilesummary$pars$Label[par.num]
 	profile_plot(mydir=profile_dir, model_settings, rep=rep, vec=vec, para=para, profilesummary)
 
-
+    #Re-do plots
 	n<-num
     maxyr <- min(profilesummary$endyrs)
     minyr <- max(profilesummary$startyrs)

@@ -7,7 +7,7 @@ executive[["stock"]] <- paste0("This assessment reports the status of ",
 # Executive Summary{-}
 
 ## Stock{-}
-This assessment reports the status of `r spp` (_`r spp.sci`_) off Washington state using data through `r endyr`. `r Spp` are found in California and Orgon waters, but those are treated separately in other stock assessments. The core range of `r spp` are outside of Washington waters and in Califoria; this assessment thus considers a very small population at the limit of the species range under different mangement considerations and exploitation histories than `r spp` stocks in either California or Oregon. There is substantial biogeographic separation in the populations off Oregon and Washington, thus justifying separation of those populations into different management units and stock assessments. Vermilion in Canadian waters are also rare and not included in this assessment.
+This assessment reports the status of `r spp` (_`r spp.sci`_) off Washington state using data through `r endyr`. `r Spp` are also found in California and Oregon waters, but those are treated separately in other stock assessments. The core range of `r spp` are in California, thus outside Washington waters; this assessment thus considers a very small population at the limit of the species range under different mangement considerations and exploitation histories than `r spp` stocks in either California or Oregon. There is substantial biogeographic separation in the populations off Oregon and Washington, thus justifying separation of those populations into different management units and stock assessments. Vermilion in Canadian waters are also rare and not included in this assessment.
 
 ## Landings{-}
 `r Spp` are mainly caught in recreational fisheries by hook and line gear (Figure \ref{fig:es-catch}). Recreational catches are generally low, but in relative terms increased in mid-1980s and have fluctuated since to a peak catch in 2019 (Table \ref{tab:removalsES}). Vermilion are not targets in the Washington recreational fishery and are considered rare.
@@ -29,7 +29,7 @@ label = 'es-catch')
 
 ## Data and Assessment{-}
 
-The stock assessment for `r spp` off Washington state was developed using the length- and age-structured model Stock Synthesis (version 3.30.16).  No previous stock assessment for `r spp` off Washington has been conducted. Model structure included one recretaional fleet. Life history parameters were sex-specific (i.e., a two-sex model) with natural mortality and growth parameters estimated, along with recruitment. The model covers the years `r startyr` to `r endyr`, with a 12 year forecast beginning in `r endyr + 1`.
+The stock assessment for `r spp` off Washington state was developed using the length- and age-structured model Stock Synthesis (version 3.30.16).  No previous stock assessment for `r spp` off Washington has been conducted. Model structure included one recreational fleet. Life history parameters were sex-specific (i.e., a two-sex model) with natural mortality and growth parameters estimated, along with recruitment. The model covers the years `r startyr` to `r endyr`, with a 12 year forecast beginning in `r endyr + 1`.
 
 This assessment integrates data and information from multiple sources into one modeling framework. Specifically, the assessment uses recreational landings data, and length and conditional age-at-length composition data (using ageing error matrices to incorporate ageing imprecision); fixed parameterizations of weight-at-length, maturity-at-length, and fecundity-at-length, the Beverton-Holt stock-recruitment steepness value and recruitment variability. Estimated values include initial population scale ($lnR_0$), sex-specific natural mortality and growth, asymptotic selectivity and recruitment deviations. The base model was tuned to account for the weighting of the length and age data, as well as the specification of recruitment variance and recruitment bias adjustments.  Derived quantities include the time series of spawning output, age and size structure, and current and projected future stock status. 
 
@@ -82,7 +82,7 @@ label = 'es-rec-devs')
 
 ## Exploitation Status{-}
 
-Trends in fishing intensity (1 - SPR) largely mirrored that of landings (Figure \ref{fig:es-1-spr}). The maximum fishing intensity was `r spr_max` in `r spr_max_yr`, above the target SPR-based harvest rate of 0.50 (1 - $\text{SPR}_{50\%}$). Current levels of `r spr_recent_10[10]` for 2020 are below the retrospectively estimated fishing limit, but 2019 was the highest on record. Fishing intensity over the past decade has ranged between `r min(spr_recent_10)` and `r max(spr_recent_10)` and the exploitation rate has been moderate (`r min(exploit_recent_10)` - `r max(exploit_recent_10)`, Table \ref{tab:exploitES}). Current estimates indicate that `r spp` spawning output is greater than than the target biomass level ($\text{SB}_{40\%}$), though fishing intensity has fluctuated near target $F_{MSY}$ proxy harvest rate.
+Trends in fishing intensity (1 - SPR) largely mirrored that of landings (Table \ref{tab:exploitES}; Figure \ref{fig:es-1-spr}). The maximum fishing intensity was `r spr_max` in `r spr_max_yr`, above the target SPR-based harvest rate of 0.50 (1 - $\text{SPR}_{50\%}$). Current levels of `r spr_recent_10[10]` for 2020 are below the retrospectively estimated fishing limit, but 2019 was the highest on record. Fishing intensity over the past decade has ranged between `r min(spr_recent_10)` and `r max(spr_recent_10)` and the exploitation rate has been moderate (`r min(exploit_recent_10)` - `r max(exploit_recent_10)`, Table \ref{tab:exploitES}). Current estimates indicate that `r spp` spawning output is greater than than the target biomass level ($\text{SB}_{40\%}$), though fishing intensity has fluctuated near target $F_{MSY}$ proxy harvest rate.
 
 \input{tex_tables/d_SPR_ES.tex}
 
@@ -172,11 +172,39 @@ The model-estimated uncertainty around the `r endyr+1` spawning biomass was $\si
 
 ## Harvest Projections and Decision Table{-}
 
-A ten year projection of the reference model with removals in 2021 and 2022 equal to the recent average removals from 2016-2020 were run based on the category 1 time-varying buffer using $P^*$ = 0.45 for years 2023-2032 is provided in Table \ref{tab:project}.
+A ten year (2023-2032) projection of the reference model with removals in 2021 and 2022 provided by the Groundfish Management Team for each fleet under the category 2 (sigma=1.0) time-varying buffer using $P^*$ = 0.45 and 40-10 ABC control rule is provided in Table \ref{tab:project}.
+
+\clearpage
 
 \input{tex_tables/project.tex}
 
-A decision table with uncertainty axes and proposed catch levels will be determined later.
+
+The decision table (Table \ref{tab:es-dec-tab}) was constructed using female and male natural mortality to define the low and high states of nature. The multi-parameter likelihood profile was used to find the low (Female M = 0.07092; Male M= 0.06525) and high (Female M = 0.08527; Male M = 0.07845) female and male natural mortality values that produce -log likeliehood values  +0.66 units from the reference -log likelihood value. These correspond to the 12.5% and 87.5% quantiles (standard quantiles used in west coast decision tables). The catch rows in the table were based on three proposed catch streams:
+
+  1. P* = 0.45, sigma = 1.0
+  2. P* = 0.40, sigma = 1.0
+  3. An equilibrium catch based on the $F_{MSY}$ proxy using SPR = 0.5  
+
+`r Spp` stock assessments in California had category 2 designations with more data, but also more uncertainty given the mixed species (sunset and vermilion rockfishes) nature of the fishery. It is believed only vermilion are caught in Washington state, but the category 2 sigma = 1.0 used in the decision tables was based on high model uncertainty.
+
+Catch is modelled as numbers in the assessment, which necessitated conversion of biomass based estimates into numbers for projections. This means that while biomass-based catch streams within each row are static, the numbers associated with those biomass estimates change across the states of nature given age and length structures of varying among states of nature. This requires conversion of biomass to numbers in every year of all low and high states of nature in order to maintain the biomass estimates at expected values. A check was made for each scenario of the decision table to make sure inputted removals in numbers match the expected removals in biomass.
+
+The fixed values for 2021-2022 are very high catches compared to the historical take of vermilion rockfish in Washington state. This has a notable effect on the stock size and status of the low $M$ state of nature. While the reference and high state of nature runs keeps the population near or well above the target stock status for all catch streams, the low state of nature falls well below the overfished limit. The catch streams also show a large drop in catch after the fixed values of 2021-2022, highlighting how each catch control rule will lead to large reductions in future `r spp` catch.
+
+\clearpage
+
+\input{tex_tables/decision_table_es.tex}
+
+\clearpage
 
 ## Research and Data Needs{-}
-TBD
+
+1. Resolution in stock structure. The Washington population of vermilion rockfish seems to have a large degree of separation from the core population and even the main population found in Oregon. Washington state has begun sampling tissue from landed vermilion rockfish in order to add more resolution to the genetic relatedness among vermilion found in U.S. waters. 
+2. The degree of ageing error between otoliths read in the Washington Department of Fish and Wildlife agein lab and others in the CARE exchange highlights the need for further exchanges to determine why these differences exist, as they do not within the WDFW ageing lab, nor among the reads from the other labs. The CARE exchange has high value in general to further our ability to understand the inherent variability of reading ageing structures, and should be strongly supported.
+3. The life history parameters are all assumed constant through time. This assumption of stationarity is one of convenience and parsimony. Any insight into the changing of life history values or differing productivity regimes could help refine these assumptions.
+4. Natural mortality proved the source of greatest uncertainty in the model. While empirical methods can help define priors for natural mortality, good sampling of age structure or direct measures (e.g., tagging) are preferred. While the small size and rare occurrence of vermilion rockfish off Washington state makes these direct methods a challenge to do, improved data collection may help with natural mortality estimation and reduce model uncertainty.
+5. Sample sizes for biological data are small in this assessment, so increases in samples could help reduce model uncertainty. The practicality of this suggestion is questionable as the limited number of `r spp` encountered makes it difficult to increase sample sizes.
+6. A fishery-independent index of abundance would be a welcome inclusion in this assessment. Again, such a rarely encountered fish may be hard to monitor via an index of abundance, but the possibility of a nearshore/shallow shelf survey is welcome.
+7. The large uncertainty estimated in this stock assessment was limited given the asymptotic, symmetric variance estimation from the maximum likelihood estimation method. While a Bayesian model was considered and even explored for this model, it was not included due to challenges in implementation and lack of enough time to achieve a converged model. Continuted development of Bayesian approaches to characterizing uncertainty are strongly encouraged.
+8. Ensemble modelling may be another potential tool to incorporate model uncertainty beyond within model variance estimation that should be considered.
+9. Fishery selectivity continues to be challenging to represent, and are key parameters in the model. Blocks in selectivity and whether there are $a priori$ reasons to expect any dome-shaped selectivity deserve continued thought, though again it is especially challenging given the rarity of occurrence and non-target nature of vermilion rockfish.
